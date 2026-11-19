@@ -187,6 +187,9 @@ export default function Dashboard() {
                             <div className="airbase-item-header">
                               <strong>{base.name}</strong>
                               {base.icao_code && <span className="icao">{base.icao_code}</span>}
+                              {base.capture_zones?.length > 0 && (
+                                <span className="zone-count">{base.capture_zones.length}z</span>
+                              )}
                             </div>
                             <div className="airbase-item-meta">
                               {base.region} — {base.military_district}

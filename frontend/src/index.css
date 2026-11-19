@@ -293,6 +293,17 @@ body::before {
   border-radius: 2px;
 }
 
+.zone-count {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 9px;
+  font-weight: 600;
+  color: var(--green);
+  background: var(--green-dim);
+  padding: 1px 5px;
+  border-radius: 2px;
+  border: 1px solid rgba(39, 174, 96, 0.2);
+}
+
 .airbase-item-meta {
   font-size: 11px;
   color: var(--text-muted);
