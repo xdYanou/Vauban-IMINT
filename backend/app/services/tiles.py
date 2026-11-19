@@ -1,10 +1,8 @@
 """
 High-resolution satellite imagery fetcher using map tile servers.
 
-Supports:
-- Adaptive coverage: grid size calculated from base's capture_radius_km
-- Multi-zone capture: split large bases into overlapping zones for full coverage
-- Image metadata tracking: dimensions stored for bbox overlay scaling
+Each airbase has explicit capture zones (center point + zoom + grid_size).
+The tile service fetches and stitches tiles for each zone.
 """
 import logging
 import math
@@ -38,14 +36,10 @@ def meters_per_pixel(lat: float, zoom: int) -> float:
     return 156543.03 * math.cos(math.radians(lat)) / (2 ** zoom)
 
 
-def calc_grid_size(radius_km: float, lat: float, zoom: int) -> int:
-    """Calculate how many tiles we need per side to cover radius_km from center."""
+def zone_coverage_km(lat: float, zoom: int, grid_size: int) -> float:
+    """Return approximate coverage in km for a zone config."""
     mpp = meters_per_pixel(lat, zoom)
-    area_m = radius_km * 2 * 1000  # diameter in meters
-    tiles_needed = math.ceil(area_m / (TILE_SIZE * mpp))
-    # Ensure even number and minimum 4
-    tiles_needed = max(4, tiles_needed + (tiles_needed % 2))
-    return min(tiles_needed, 16)  # cap at 16x16 to avoid huge requests
+    return grid_size * TILE_SIZE * mpp / 1000
 
 
 class TileService:
@@ -59,27 +53,20 @@ class TileService:
         longitude: float,
         airbase_name: str,
         zoom: int = 17,
-        grid_size: int = None,
-        radius_km: float = 1.5,
+        grid_size: int = 6,
         zone_label: str = None,
     ) -> tuple[Path, int, int]:
         """
-        Fetch a grid of tiles and stitch into one image.
-
-        If grid_size is None, it's auto-calculated from radius_km.
+        Fetch a grid of tiles centered on a point and stitch into one image.
         Returns (image_path, width_px, height_px).
         """
-        if grid_size is None:
-            grid_size = calc_grid_size(radius_km, latitude, zoom)
-
         center_x, center_y = lat_lon_to_tile(latitude, longitude, zoom)
         half = grid_size // 2
 
-        mpp = meters_per_pixel(latitude, zoom)
-        area_km = grid_size * TILE_SIZE * mpp / 1000
+        coverage = zone_coverage_km(latitude, zoom, grid_size)
         logger.info(
-            f"Fetching {grid_size}x{grid_size} tiles at z{zoom} "
-            f"({mpp:.2f}m/px, ~{area_km:.1f}km) for {airbase_name}"
+            f"Fetching {grid_size}x{grid_size} tiles z{zoom} "
+            f"(~{coverage:.1f}km) for {airbase_name}"
             f"{f' [{zone_label}]' if zone_label else ''}"
         )
 
@@ -113,17 +100,16 @@ class TileService:
                     tiles[(r[0], r[1])] = r[2]
 
         if not tiles:
-            raise RuntimeError("No tiles fetched — area may not have imagery coverage")
+            raise RuntimeError("No tiles fetched")
 
-        # Stitch tiles
+        # Stitch
         img_w = grid_size * TILE_SIZE
         img_h = grid_size * TILE_SIZE
         stitched = Image.new("RGB", (img_w, img_h))
 
         for (gx, gy), data in tiles.items():
             try:
-                tile_img = Image.open(BytesIO(data))
-                stitched.paste(tile_img, (gx * TILE_SIZE, gy * TILE_SIZE))
+                stitched.paste(Image.open(BytesIO(data)), (gx * TILE_SIZE, gy * TILE_SIZE))
             except Exception:
                 pass
 
@@ -139,61 +125,6 @@ class TileService:
 
         logger.info(f"Stitched {len(tiles)} tiles -> {output_path} ({img_w}x{img_h}px)")
         return output_path, img_w, img_h
-
-    async def fetch_full_base(
-        self,
-        latitude: float,
-        longitude: float,
-        airbase_name: str,
-        zoom: int = 17,
-        radius_km: float = 1.5,
-    ) -> list[tuple[Path, int, int, str]]:
-        """
-        Smart capture that covers the full base.
-
-        For small bases (radius <= 1.5km): single capture.
-        For large bases (radius > 1.5km): multi-zone with overlapping tiles.
-
-        Returns list of (path, width, height, zone_label).
-        """
-        if radius_km <= 2.0:
-            # Single capture covers it
-            path, w, h = await self.fetch_area(
-                latitude, longitude, airbase_name,
-                zoom=zoom, radius_km=radius_km, zone_label="full",
-            )
-            return [(path, w, h, "full")]
-
-        # Multi-zone: capture overview at lower zoom + detail zones
-        results = []
-
-        # Overview at zoom-2 (covers 4x the area)
-        path, w, h = await self.fetch_area(
-            latitude, longitude, airbase_name,
-            zoom=max(14, zoom - 2), radius_km=radius_km, zone_label="overview",
-        )
-        results.append((path, w, h, "overview"))
-
-        # Detail zones: split the area into quadrants
-        offset_km = radius_km * 0.5
-        offset_lat = offset_km / 111.0
-        offset_lon = offset_km / (111.0 * math.cos(math.radians(latitude)))
-
-        zones = [
-            ("north", latitude + offset_lat, longitude),
-            ("south", latitude - offset_lat, longitude),
-            ("east", latitude, longitude + offset_lon),
-            ("west", latitude, longitude - offset_lon),
-        ]
-
-        for zone_name, lat, lon in zones:
-            path, w, h = await self.fetch_area(
-                lat, lon, airbase_name,
-                zoom=zoom, radius_km=radius_km * 0.6, zone_label=zone_name,
-            )
-            results.append((path, w, h, zone_name))
-
-        return results
 
 
 tile_service = TileService(source="esri")

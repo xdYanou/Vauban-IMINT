@@ -3,9 +3,19 @@ from sqlalchemy.orm import Session
 from pydantic import BaseModel
 
 from app.models.database import get_db
-from app.models.airbase import Airbase
+from app.models.airbase import Airbase, CaptureZone
 
 router = APIRouter(prefix="/api/airbases", tags=["airbases"])
+
+
+class CaptureZoneOut(BaseModel):
+    id: int
+    label: str | None
+    latitude: float
+    longitude: float
+    zoom: int
+    grid_size: int
+    model_config = {"from_attributes": True}
 
 
 class AirbaseOut(BaseModel):
@@ -18,9 +28,7 @@ class AirbaseOut(BaseModel):
     region: str | None
     military_district: str | None
     known_units: str | None
-    capture_radius_km: float | None
-    capture_zoom: int | None
-
+    capture_zones: list[CaptureZoneOut] = []
     model_config = {"from_attributes": True}
 
 
@@ -29,11 +37,12 @@ class CoordsUpdate(BaseModel):
     longitude: float
 
 
-class CaptureSettingsUpdate(BaseModel):
-    capture_radius_km: float | None = None
-    capture_zoom: int | None = None
-    latitude: float | None = None
-    longitude: float | None = None
+class ZoneCreate(BaseModel):
+    label: str | None = None
+    latitude: float
+    longitude: float
+    zoom: int = 17
+    grid_size: int = 6
 
 
 @router.get("/", response_model=list[AirbaseOut])
@@ -61,20 +70,32 @@ def update_coords(airbase_id: int, coords: CoordsUpdate, db: Session = Depends(g
     return airbase
 
 
-@router.patch("/{airbase_id}/settings", response_model=AirbaseOut)
-def update_capture_settings(airbase_id: int, s: CaptureSettingsUpdate, db: Session = Depends(get_db)):
-    """Update capture settings — radius, zoom, coordinates."""
+@router.post("/{airbase_id}/zones", response_model=CaptureZoneOut)
+def add_zone(airbase_id: int, zone: ZoneCreate, db: Session = Depends(get_db)):
+    """Add a capture zone to an airbase."""
     airbase = db.query(Airbase).filter(Airbase.id == airbase_id).first()
     if not airbase:
         raise HTTPException(status_code=404, detail="Airbase not found")
-    if s.capture_radius_km is not None:
-        airbase.capture_radius_km = s.capture_radius_km
-    if s.capture_zoom is not None:
-        airbase.capture_zoom = s.capture_zoom
-    if s.latitude is not None:
-        airbase.latitude = s.latitude
-    if s.longitude is not None:
-        airbase.longitude = s.longitude
+    cz = CaptureZone(
+        airbase_id=airbase_id,
+        label=zone.label,
+        latitude=zone.latitude,
+        longitude=zone.longitude,
+        zoom=zone.zoom,
+        grid_size=zone.grid_size,
+    )
+    db.add(cz)
     db.commit()
-    db.refresh(airbase)
-    return airbase
+    db.refresh(cz)
+    return cz
+
+
+@router.delete("/{airbase_id}/zones/{zone_id}")
+def delete_zone(airbase_id: int, zone_id: int, db: Session = Depends(get_db)):
+    """Remove a capture zone."""
+    cz = db.query(CaptureZone).filter(CaptureZone.id == zone_id, CaptureZone.airbase_id == airbase_id).first()
+    if not cz:
+        raise HTTPException(status_code=404, detail="Zone not found")
+    db.delete(cz)
+    db.commit()
+    return {"status": "deleted"}

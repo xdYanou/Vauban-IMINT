@@ -1,4 +1,4 @@
-from sqlalchemy import Column, Integer, String, Float, DateTime, ForeignKey, JSON
+from sqlalchemy import Column, Integer, String, Float, DateTime, ForeignKey
 from sqlalchemy.orm import relationship
 from datetime import datetime, timezone
 
@@ -17,13 +17,26 @@ class Airbase(Base):
     region = Column(String, nullable=True)
     military_district = Column(String, nullable=True)
     known_units = Column(String, nullable=True)
-    # Coverage: how big the capture area should be (km radius from center)
-    capture_radius_km = Column(Float, default=1.5)
-    # Preferred zoom level for this base
-    capture_zoom = Column(Integer, default=17)
     created_at = Column(DateTime, default=lambda: datetime.now(timezone.utc))
 
     observations = relationship("Observation", back_populates="airbase")
+    capture_zones = relationship("CaptureZone", back_populates="airbase", cascade="all, delete-orphan")
+
+
+class CaptureZone(Base):
+    """A rectangular capture area for an airbase. Each base can have multiple zones."""
+    __tablename__ = "capture_zones"
+
+    id = Column(Integer, primary_key=True, index=True)
+    airbase_id = Column(Integer, ForeignKey("airbases.id"), nullable=False)
+    label = Column(String, nullable=True)  # e.g. "main-apron", "north-shelters"
+    latitude = Column(Float, nullable=False)
+    longitude = Column(Float, nullable=False)
+    zoom = Column(Integer, default=17)
+    grid_size = Column(Integer, default=6)  # tiles per side
+    created_at = Column(DateTime, default=lambda: datetime.now(timezone.utc))
+
+    airbase = relationship("Airbase", back_populates="capture_zones")
 
 
 class Observation(Base):
@@ -35,9 +48,8 @@ class Observation(Base):
     image_path = Column(String, nullable=False)
     source = Column(String, default="sentinel-2")
     cloud_cover_pct = Column(Float, nullable=True)
-    # Zone label for multi-zone captures (e.g. "overview", "apron-north", "apron-south")
-    zone = Column(String, nullable=True)
-    # Image dimensions for bbox overlay scaling
+    zone_id = Column(Integer, ForeignKey("capture_zones.id"), nullable=True)
+    zone_label = Column(String, nullable=True)
     image_width = Column(Integer, nullable=True)
     image_height = Column(Integer, nullable=True)
     created_at = Column(DateTime, default=lambda: datetime.now(timezone.utc))
