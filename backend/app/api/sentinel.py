@@ -104,6 +104,7 @@ async def fetch_and_analyze(
                 "type": d.aircraft_type,
                 "broad_category": d.broad_category,
                 "confidence": d.confidence,
+                "bbox": [d.bbox_x, d.bbox_y, d.bbox_w, d.bbox_h],
             }
             for d in detections
         ],

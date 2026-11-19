@@ -99,7 +99,13 @@ async def fetch_all_zones(
                 "zoom": zone.zoom,
                 "aircraft_count": len(detections),
                 "detections": [
-                    {"type": d.aircraft_type, "broad_category": d.broad_category, "confidence": d.confidence}
+                    {
+                        "type": d.aircraft_type,
+                        "broad_category": d.broad_category,
+                        "confidence": d.confidence,
+                        "classification_conf": d.classification_conf,
+                        "bbox": [d.bbox_x, d.bbox_y, d.bbox_w, d.bbox_h],
+                    }
                     for d in detections
                 ],
             })

@@ -102,7 +102,13 @@ export default function HighResCapture({ airbaseId, airbase, onObservationCreate
                 }}>
                   <DetectionOverlay
                     imageUrl={`http://localhost:8000${zone.image_url}`}
-                    detections={zone.detections_full || []}
+                    detections={(zone.detections || []).map((d) => ({
+                      aircraft_type: d.type,
+                      broad_category: d.broad_category,
+                      confidence: d.confidence,
+                      classification_conf: d.classification_conf,
+                      bbox: d.bbox,
+                    }))}
                   />
                 </div>
               )}
