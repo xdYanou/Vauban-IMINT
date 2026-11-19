@@ -7,6 +7,7 @@ import SentinelSearch from "../components/SentinelSearch";
 import HighResCapture from "../components/HighResCapture";
 import ObservationGallery from "../components/ObservationGallery";
 import CoordsEditor from "../components/CoordsEditor";
+import AircraftIntel from "../components/AircraftIntel";
 
 export default function AirbaseDetail() {
   const { id } = useParams();
@@ -40,8 +41,17 @@ export default function AirbaseDetail() {
   if (loading) return <div className="page-loading">Loading...</div>;
   if (!airbase) return <div className="page-loading">Airbase not found</div>;
 
+  // Aggregate detections across all observations for the intel tab
+  const allDetections = {};
+  timeline.forEach((obs) => {
+    Object.entries(obs.aircraft_types || {}).forEach(([type, count]) => {
+      allDetections[type] = Math.max(allDetections[type] || 0, count);
+    });
+  });
+
   const tabs = [
     { id: "capture", label: "Capture" },
+    { id: "intel", label: "Aircraft Intel" },
     { id: "history", label: `History (${timeline.length})` },
     { id: "analytics", label: "Analytics" },
     { id: "settings", label: "Settings" },
@@ -138,8 +148,15 @@ export default function AirbaseDetail() {
           <ObservationGallery timeline={timeline} />
         )}
 
+        {activeTab === "intel" && (
+          <div className="card">
+            <h3>Detected Aircraft — Threat Assessment</h3>
+            <AircraftIntel detectionSummary={allDetections} />
+          </div>
+        )}
+
         {activeTab === "settings" && (
-          <div className="card" style={{ maxWidth: 700 }}>
+          <div className="card" style={{ maxWidth: "100%" }}>
             <CoordsEditor
               airbase={airbase}
               onUpdated={(updated) => setAirbase(updated)}

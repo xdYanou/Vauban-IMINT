@@ -21,7 +21,7 @@ from fastapi.staticfiles import StaticFiles
 from app.config import settings
 from app.models.database import engine, SessionLocal, Base
 from app.models.airbase import Airbase
-from app.api import airbases, observations, sentinel, tiles, analytics, bulk
+from app.api import airbases, observations, sentinel, tiles, analytics, bulk, aircraft
 
 
 def seed_airbases(db):
@@ -77,6 +77,7 @@ app.include_router(sentinel.router)
 app.include_router(tiles.router)
 app.include_router(analytics.router)
 app.include_router(bulk.router)
+app.include_router(aircraft.router)
 
 # Serve stored images
 Path(settings.image_storage_path).mkdir(parents=True, exist_ok=True)

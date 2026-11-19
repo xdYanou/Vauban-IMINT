@@ -254,7 +254,7 @@ export default function CoordsEditor({ airbase, onUpdated }) {
 
       {/* Map */}
       <div style={{
-        height: 450, borderRadius: 4, overflow: "hidden",
+        height: 600, borderRadius: 4, overflow: "hidden",
         border: addMode ? "2px solid #27ae60" : draft ? "2px solid #e67e22" : "1px solid #1b2535",
       }}>
         <MapContainer

@@ -1,0 +1,339 @@
+{
+  "Su24": {
+    "name": "Su-24M Fencer",
+    "nato_name": "Fencer-D",
+    "role": "All-weather attack / interdictor",
+    "generation": "3+",
+    "country": "Russia",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Sukhoi_Su-24M_at_Latakia_%282%29.jpg/1280px-Sukhoi_Su-24M_at_Latakia_%282%29.jpg",
+    "specs": {
+      "crew": 2,
+      "length_m": 24.6,
+      "wingspan_m": "10.4–17.6 (variable sweep)",
+      "max_speed_kmh": 1700,
+      "combat_radius_km": 560,
+      "service_ceiling_m": 11000,
+      "max_payload_kg": 8000
+    },
+    "weapons": ["Kh-29 (AS-14 Kedge)", "Kh-58 (AS-11 Kilter) ARM", "Kh-31 anti-ship/ARM", "KAB-500/1500 guided bombs", "R-60 AAM (self-defense)"],
+    "description": "Soviet-era variable-sweep wing strike aircraft. Primary Russian tactical bomber, extensively used in Syria and Ukraine. Being gradually replaced by Su-34 but still widely deployed."
+  },
+  "Su25": {
+    "name": "Su-25 Grach",
+    "nato_name": "Frogfoot",
+    "role": "Close air support / ground attack",
+    "generation": "3",
+    "country": "Russia",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Sukhoi_Su-25_in_2012.jpg/1280px-Sukhoi_Su-25_in_2012.jpg",
+    "specs": {
+      "crew": 1,
+      "length_m": 15.4,
+      "wingspan_m": 14.4,
+      "max_speed_kmh": 950,
+      "combat_radius_km": 375,
+      "service_ceiling_m": 7000,
+      "max_payload_kg": 4400
+    },
+    "weapons": ["GSh-30-2 30mm cannon", "S-8/S-13/S-25 rockets", "Kh-25ML guided missiles", "FAB-250/500 bombs", "R-60 AAM"],
+    "description": "Russia's equivalent to the A-10. Heavily armored close air support aircraft designed for low-altitude battlefield interdiction. Titanium cockpit bathtub protects pilot. Heavy losses in Ukraine due to MANPADS threats."
+  },
+  "Su34": {
+    "name": "Su-34 Fullback",
+    "nato_name": "Fullback",
+    "role": "Fighter-bomber / strike",
+    "generation": "4+",
+    "country": "Russia",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Russian_Air_Force_Sukhoi_Su-34_Beltyukov.jpg/1280px-Russian_Air_Force_Sukhoi_Su-34_Beltyukov.jpg",
+    "specs": {
+      "crew": 2,
+      "length_m": 23.3,
+      "wingspan_m": 14.7,
+      "max_speed_kmh": 1900,
+      "combat_radius_km": 1100,
+      "service_ceiling_m": 15000,
+      "max_payload_kg": 8000
+    },
+    "weapons": ["GSh-30-1 30mm cannon", "Kh-31 anti-ship", "Kh-29 air-to-ground", "Kh-59 cruise missile", "KAB-500 guided bombs", "R-77/R-73 AAM"],
+    "description": "Modern strike fighter replacing the Su-24. Distinctive flat nose with side-by-side cockpit. Can perform both air-to-ground and air-to-air missions. Russia's primary precision strike platform in Ukraine. Approximately 150 in service."
+  },
+  "Su57": {
+    "name": "Su-57 Felon",
+    "nato_name": "Felon",
+    "role": "Air superiority / stealth multirole",
+    "generation": "5",
+    "country": "Russia",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Sukhoi_Su-57_at_MAKS_2019.jpg/1280px-Sukhoi_Su-57_at_MAKS_2019.jpg",
+    "specs": {
+      "crew": 1,
+      "length_m": 20.1,
+      "wingspan_m": 14.1,
+      "max_speed_kmh": 2600,
+      "combat_radius_km": 1500,
+      "service_ceiling_m": 20000,
+      "max_payload_kg": 10000
+    },
+    "weapons": ["GSh-30-1 30mm cannon", "R-77M BVR AAM (internal)", "R-74M2 WVR AAM", "Kh-59MK2 cruise missile", "Kh-69 stealth cruise missile"],
+    "description": "Russia's 5th generation stealth fighter. Only ~10 delivered to Russian Air Force. Features internal weapons bays, supercruise capability, and advanced avionics. Limited combat use in Ukraine for standoff missile launches."
+  },
+  "Mig29": {
+    "name": "MiG-29 Fulcrum",
+    "nato_name": "Fulcrum",
+    "role": "Air superiority fighter",
+    "generation": "4",
+    "country": "Russia",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Russian_Air_Force_MiG-29S_%289-13S%29.jpg/1280px-Russian_Air_Force_MiG-29S_%289-13S%29.jpg",
+    "specs": {
+      "crew": 1,
+      "length_m": 17.4,
+      "wingspan_m": 11.4,
+      "max_speed_kmh": 2400,
+      "combat_radius_km": 710,
+      "service_ceiling_m": 18000,
+      "max_payload_kg": 3500
+    },
+    "weapons": ["GSh-30-1 30mm cannon", "R-77 (AA-12 Adder) BVR", "R-73 (AA-11 Archer) WVR", "R-27 (AA-10 Alamo)", "bombs and rockets"],
+    "description": "Lightweight air superiority fighter designed to counter the F-16. Exceptional maneuverability with helmet-mounted sight. Widely exported. MiG-29SMT variant still in Russian service with upgraded radar and avionics."
+  },
+  "Mig31": {
+    "name": "MiG-31 Foxhound",
+    "nato_name": "Foxhound",
+    "role": "Long-range interceptor",
+    "generation": "4",
+    "country": "Russia",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/MiG-31BM_in_flight_%282021%29.jpg/1280px-MiG-31BM_in_flight_%282021%29.jpg",
+    "specs": {
+      "crew": 2,
+      "length_m": 22.7,
+      "wingspan_m": 13.5,
+      "max_speed_kmh": 3000,
+      "combat_radius_km": 720,
+      "service_ceiling_m": 20600,
+      "max_payload_kg": 9000
+    },
+    "weapons": ["R-33 (AA-9 Amos) long-range AAM", "R-37M (AA-13 Arrow) 300km range", "R-77 BVR AAM", "Kh-47M2 Kinzhal hypersonic missile"],
+    "description": "World's fastest combat aircraft in service. Designed to intercept cruise missiles and high-altitude bombers across Russia's vast territory. MiG-31K variant is the carrier platform for the Kinzhal hypersonic missile. Four aircraft can control 800km of airspace."
+  },
+  "Tu95": {
+    "name": "Tu-95MS Bear",
+    "nato_name": "Bear-H",
+    "role": "Strategic bomber / cruise missile carrier",
+    "generation": "2 (modernized)",
+    "country": "Russia",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Tu-95_in_flight.jpg/1280px-Tu-95_in_flight.jpg",
+    "specs": {
+      "crew": 7,
+      "length_m": 49.1,
+      "wingspan_m": 50.1,
+      "max_speed_kmh": 920,
+      "combat_radius_km": 6500,
+      "service_ceiling_m": 12000,
+      "max_payload_kg": 15000
+    },
+    "weapons": ["Kh-101/102 stealth cruise missile (8 external + 6 internal)", "Kh-55SM (AS-15 Kent) ALCM"],
+    "description": "Iconic Soviet strategic bomber with contra-rotating turboprops. Loudest aircraft ever built. Despite 1950s design, remains Russia's primary cruise missile carrier. Regularly launches Kh-101 strikes against Ukraine from standoff range over the Caspian Sea. ~60 in service."
+  },
+  "Tu160": {
+    "name": "Tu-160 White Swan",
+    "nato_name": "Blackjack",
+    "role": "Strategic bomber / cruise missile carrier",
+    "generation": "4",
+    "country": "Russia",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Tu-160_in_flight_2014.jpg/1280px-Tu-160_in_flight_2014.jpg",
+    "specs": {
+      "crew": 4,
+      "length_m": 54.1,
+      "wingspan_m": "35.6–55.7 (variable sweep)",
+      "max_speed_kmh": 2220,
+      "combat_radius_km": 7300,
+      "service_ceiling_m": 15000,
+      "max_payload_kg": 40000
+    },
+    "weapons": ["Kh-101/102 stealth cruise missile (12 internal)", "Kh-55SM ALCM", "Kh-BD 6500km range cruise missile (planned)"],
+    "description": "Largest and heaviest combat aircraft ever built. Variable-sweep supersonic strategic bomber. Russia's most capable nuclear delivery platform. Only ~17 in service, based at Engels-2. Tu-160M2 modernized variant in production. Regularly used to launch cruise missiles at Ukraine."
+  },
+  "Tu22M": {
+    "name": "Tu-22M3 Backfire",
+    "nato_name": "Backfire-C",
+    "role": "Long-range maritime strike / strategic bomber",
+    "generation": "3+",
+    "country": "Russia",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Tupolev_Tu-22M-3_in_flight.jpg/1280px-Tupolev_Tu-22M-3_in_flight.jpg",
+    "specs": {
+      "crew": 4,
+      "length_m": 42.5,
+      "wingspan_m": "23.3–34.3 (variable sweep)",
+      "max_speed_kmh": 2300,
+      "combat_radius_km": 2200,
+      "service_ceiling_m": 13300,
+      "max_payload_kg": 24000
+    },
+    "weapons": ["Kh-22 (AS-4 Kitchen) anti-ship missile", "Kh-32 supersonic cruise missile", "Kh-15 (AS-16 Kickback) SRAM", "FAB-250/500/1500/3000 bombs"],
+    "description": "Variable-sweep supersonic bomber designed for maritime strike against carrier groups. Used extensively for carpet bombing in Syria and Ukraine with unguided FAB bombs. Tu-22M3M modernized variant carries precision-guided munitions. ~60 in service."
+  },
+  "Il76": {
+    "name": "Il-76 Candid",
+    "nato_name": "Candid",
+    "role": "Strategic airlifter / transport",
+    "generation": "3",
+    "country": "Russia",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Russian_Air_Force_Ilyushin_Il-76MD.jpg/1280px-Russian_Air_Force_Ilyushin_Il-76MD.jpg",
+    "specs": {
+      "crew": 5,
+      "length_m": 46.6,
+      "wingspan_m": 50.5,
+      "max_speed_kmh": 900,
+      "combat_radius_km": 4000,
+      "service_ceiling_m": 12100,
+      "max_payload_kg": 48000
+    },
+    "weapons": ["Typically unarmed", "Rear defensive turret (removed on most)"],
+    "description": "Soviet heavy transport workhorse. Can carry tanks, troops, and heavy equipment. Also serves as aerial refueling tanker (Il-78), AWACS (A-50), and laser lab (A-60). Critical for Russian power projection. High activity indicates troop/equipment movements."
+  },
+  "Ka52": {
+    "name": "Ka-52 Alligator",
+    "nato_name": "Hokum-B",
+    "role": "Attack helicopter",
+    "generation": "4",
+    "country": "Russia",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Ka-52_%284%29.jpg/1280px-Ka-52_%284%29.jpg",
+    "specs": {
+      "crew": 2,
+      "length_m": 16.0,
+      "wingspan_m": null,
+      "max_speed_kmh": 300,
+      "combat_radius_km": 460,
+      "service_ceiling_m": 5500,
+      "max_payload_kg": 2000
+    },
+    "weapons": ["2A42 30mm autocannon", "Vikhr-1 (AT-16 Scallion) ATGM", "9K121 Ataka (AT-9 Spiral-2)", "S-8/S-13 rockets", "Igla-V AAM"],
+    "description": "Russia's most advanced attack helicopter with coaxial rotors (no tail rotor). Side-by-side cockpit with ejection seats — unique for helicopters. Extensive combat use in Ukraine for anti-armor operations. Features FLIR, laser designator, and millimeter-wave radar."
+  },
+  "Mi8": {
+    "name": "Mi-8/Mi-17 Hip",
+    "nato_name": "Hip",
+    "role": "Transport / utility helicopter",
+    "generation": "3",
+    "country": "Russia",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Mi-8MTV-5.jpg/1280px-Mi-8MTV-5.jpg",
+    "specs": {
+      "crew": 3,
+      "length_m": 18.2,
+      "wingspan_m": null,
+      "max_speed_kmh": 260,
+      "combat_radius_km": 465,
+      "service_ceiling_m": 6000,
+      "max_payload_kg": 4000
+    },
+    "weapons": ["Door-mounted PKT/PKM machine guns", "S-8 rocket pods", "9M17 Phalanga ATGM (armed variants)"],
+    "description": "Most produced helicopter in aviation history (17,000+). The backbone of Russian rotary-wing operations — troop transport, medevac, cargo, VIP. Mi-8AMTSh armed variant used for assault missions. Presence indicates active military operations at a base."
+  },
+  "Mi24": {
+    "name": "Mi-24 Hind",
+    "nato_name": "Hind",
+    "role": "Attack / transport helicopter",
+    "generation": "3",
+    "country": "Russia",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Mi-24_Desert_Rescue.jpg/1280px-Mi-24_Desert_Rescue.jpg",
+    "specs": {
+      "crew": "2 + 8 passengers",
+      "length_m": 17.5,
+      "wingspan_m": null,
+      "max_speed_kmh": 335,
+      "combat_radius_km": 450,
+      "service_ceiling_m": 4500,
+      "max_payload_kg": 2400
+    },
+    "weapons": ["YakB-12.7 or GSh-23L gun", "9M114 Shturm (AT-6 Spiral) ATGM", "S-8/S-13 rockets", "FAB-250 bombs"],
+    "description": "Iconic Soviet attack helicopter — the 'flying tank'. Unique design combines firepower with troop-carrying cabin. Can deliver 8 soldiers while providing fire support. Battle-proven in Afghanistan, Chechnya, Syria, and Ukraine."
+  },
+  "Mi28": {
+    "name": "Mi-28N Night Hunter",
+    "nato_name": "Havoc",
+    "role": "Attack helicopter",
+    "generation": "4",
+    "country": "Russia",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Mil_Mi-28N_%283%29.jpg/1280px-Mil_Mi-28N_%283%29.jpg",
+    "specs": {
+      "crew": 2,
+      "length_m": 17.0,
+      "wingspan_m": null,
+      "max_speed_kmh": 324,
+      "combat_radius_km": 450,
+      "service_ceiling_m": 5600,
+      "max_payload_kg": 2300
+    },
+    "weapons": ["2A42 30mm autocannon (250 rounds)", "Ataka (AT-9) ATGM", "Khrizantema (AT-15) ATGM", "S-8/S-13 rockets", "Igla-V AAM"],
+    "description": "Russia's dedicated attack helicopter, equivalent to the AH-64 Apache. Night-capable with FLIR and radar. Mi-28NM upgraded variant features millimeter-wave radar above rotor hub. Active in Ukraine for anti-armor strikes."
+  },
+  "An124": {
+    "name": "An-124 Ruslan",
+    "nato_name": "Condor",
+    "role": "Strategic heavy airlift",
+    "generation": "3",
+    "country": "Russia/Ukraine",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Antonov_An-124_Ruslan.jpg/1280px-Antonov_An-124_Ruslan.jpg",
+    "specs": {
+      "crew": 6,
+      "length_m": 69.1,
+      "wingspan_m": 73.3,
+      "max_speed_kmh": 865,
+      "combat_radius_km": 4800,
+      "service_ceiling_m": 12000,
+      "max_payload_kg": 150000
+    },
+    "weapons": ["Unarmed"],
+    "description": "One of the largest aircraft in the world. Can carry main battle tanks, S-400 missile systems, or entire helicopter units. Critical for rapid strategic deployment. Only ~10 in Russian military service. Presence at a base signals major equipment movement."
+  },
+  "An22": {
+    "name": "An-22 Antei",
+    "nato_name": "Cock",
+    "role": "Heavy military transport",
+    "generation": "2",
+    "country": "Russia",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Antonov_An-22A_Antei%2C_Russia_-_Air_Force_AN1572792.jpg/1280px-Antonov_An-22A_Antei%2C_Russia_-_Air_Force_AN1572792.jpg",
+    "specs": {
+      "crew": 5,
+      "length_m": 57.9,
+      "wingspan_m": 64.4,
+      "max_speed_kmh": 740,
+      "combat_radius_km": 5000,
+      "service_ceiling_m": 9000,
+      "max_payload_kg": 80000
+    },
+    "weapons": ["Unarmed"],
+    "description": "World's largest turboprop-powered aircraft. Soviet-era heavy lifter capable of operating from unprepared airstrips. Very few remain in service. Sighting indicates heavy logistics operations."
+  },
+  "fighter": {
+    "name": "Unidentified Fighter",
+    "nato_name": null,
+    "role": "Air superiority / multirole",
+    "generation": "Unknown",
+    "country": "Unknown",
+    "image_url": null,
+    "specs": {},
+    "weapons": [],
+    "description": "Fighter-class aircraft detected but specific type not classified. Could be Su-27/30/35 family, MiG-29, or similar. Requires higher-resolution imagery or Stage 2 classifier for identification."
+  },
+  "bomber": {
+    "name": "Unidentified Bomber",
+    "nato_name": null,
+    "role": "Strategic/tactical bomber",
+    "generation": "Unknown",
+    "country": "Unknown",
+    "image_url": null,
+    "specs": {},
+    "weapons": [],
+    "description": "Bomber-class aircraft detected. Could be Tu-22M3, Tu-95MS, Tu-160, or Su-24. Large airframe visible on apron."
+  },
+  "transport": {
+    "name": "Unidentified Transport",
+    "nato_name": null,
+    "role": "Military transport / cargo",
+    "generation": "Unknown",
+    "country": "Unknown",
+    "image_url": null,
+    "specs": {},
+    "weapons": [],
+    "description": "Transport-class aircraft detected. Could be Il-76, An-124, C-130, or similar. Presence indicates logistics activity."
+  }
+}
