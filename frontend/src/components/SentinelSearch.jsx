@@ -134,7 +134,6 @@ export default function SentinelSearch({ airbaseId, onObservationCreated }) {
                 imageUrl={`http://localhost:8000${result.image_url}`}
                 detections={(result.detections || []).map((d) => ({
                   aircraft_type: d.type,
-                  broad_category: d.broad_category,
                   confidence: d.confidence,
                   bbox: d.bbox,
                 }))}

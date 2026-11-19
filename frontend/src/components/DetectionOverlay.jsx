@@ -43,7 +43,7 @@ export default function DetectionOverlay({ imageUrl, detections = [], width = "1
     return { left: x, top: y, width: w, height: h };
   }
 
-  const color = (det) => TYPE_COLORS[det.aircraft_type] || TYPE_COLORS[det.broad_category] || "#7a8ba0";
+  const color = (det) => TYPE_COLORS[det.aircraft_type] || "#7a8ba0";
 
   return (
     <div>
@@ -147,17 +147,9 @@ export default function DetectionOverlay({ imageUrl, detections = [], width = "1
                   <div style={{ fontWeight: 700, color: c, marginBottom: 3, textTransform: "uppercase" }}>
                     {det.aircraft_type}
                   </div>
-                  {det.broad_category && det.broad_category !== det.aircraft_type && (
-                    <div style={{ color: "#7a8ba0" }}>Category: {det.broad_category}</div>
-                  )}
                   <div style={{ color: "#7a8ba0" }}>
-                    Detect: {(det.confidence * 100).toFixed(1)}%
+                    Confidence: {(det.confidence * 100).toFixed(1)}%
                   </div>
-                  {det.classification_conf && (
-                    <div style={{ color: "#7a8ba0" }}>
-                      Classify: {(det.classification_conf * 100).toFixed(1)}%
-                    </div>
-                  )}
                 </div>
               )}
             </div>

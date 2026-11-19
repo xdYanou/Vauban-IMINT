@@ -15,9 +15,7 @@ router = APIRouter(prefix="/api/observations", tags=["observations"])
 class DetectionOut(BaseModel):
     id: int
     aircraft_type: str
-    broad_category: str | None
     confidence: float
-    classification_conf: float | None
     bbox_x: float
     bbox_y: float
     bbox_w: float
@@ -128,9 +126,7 @@ async def upload_observation(
             Detection(
                 observation_id=obs.id,
                 aircraft_type=det.aircraft_type,
-                broad_category=det.broad_category,
                 confidence=det.confidence,
-                classification_conf=det.classification_conf,
                 bbox_x=det.bbox_x,
                 bbox_y=det.bbox_y,
                 bbox_w=det.bbox_w,

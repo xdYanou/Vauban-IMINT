@@ -76,9 +76,7 @@ async def fetch_and_analyze(
         db.add(Detection(
             observation_id=obs.id,
             aircraft_type=det.aircraft_type,
-            broad_category=det.broad_category,
             confidence=det.confidence,
-            classification_conf=det.classification_conf,
             bbox_x=det.bbox_x,
             bbox_y=det.bbox_y,
             bbox_w=det.bbox_w,
@@ -102,7 +100,6 @@ async def fetch_and_analyze(
         "detections": [
             {
                 "type": d.aircraft_type,
-                "broad_category": d.broad_category,
                 "confidence": d.confidence,
                 "bbox": [d.bbox_x, d.bbox_y, d.bbox_w, d.bbox_h],
             }

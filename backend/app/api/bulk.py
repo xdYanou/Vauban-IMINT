@@ -73,9 +73,7 @@ async def bulk_capture(
                     db.add(Detection(
                         observation_id=obs.id,
                         aircraft_type=det.aircraft_type,
-                        broad_category=det.broad_category,
                         confidence=det.confidence,
-                        classification_conf=det.classification_conf,
                         bbox_x=det.bbox_x,
                         bbox_y=det.bbox_y,
                         bbox_w=det.bbox_w,

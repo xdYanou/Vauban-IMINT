@@ -2,8 +2,6 @@ import { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import { fetchAirbase, fetchAirbaseTimeline, fetchAirbaseSummary } from "../utils/api";
 import ObservationTimeline from "../components/ObservationTimeline";
-import ImageUpload from "../components/ImageUpload";
-import SentinelSearch from "../components/SentinelSearch";
 import HighResCapture from "../components/HighResCapture";
 import ObservationGallery from "../components/ObservationGallery";
 import CoordsEditor from "../components/CoordsEditor";
@@ -85,8 +83,8 @@ export default function AirbaseDetail() {
           </div>
           <div className="airbase-hero-stats">
             <div className="hero-stat">
-              <span className="hero-stat-value">{summary?.observation_count || 0}</span>
-              <span className="hero-stat-label">Observations</span>
+              <span className="hero-stat-value">{summary?.capture_count || 0}</span>
+              <span className="hero-stat-label">Captures</span>
             </div>
             <div className="hero-stat">
               <span className="hero-stat-value">{summary?.total_detections || 0}</span>
@@ -102,14 +100,14 @@ export default function AirbaseDetail() {
         </div>
 
         {/* Latest image preview */}
-        {summary?.latest?.image_url && (
+        {summary?.latest?.images?.[0]?.image_url && (
           <div className="airbase-hero-preview">
             <img
-              src={`http://localhost:8000${summary.latest.image_url}`}
+              src={`http://localhost:8000${summary.latest.images[0].image_url}`}
               alt="Latest observation"
             />
             <div className="preview-overlay">
-              Latest: {new Date(summary.latest.date).toLocaleDateString()} via {summary.latest.source}
+              {new Date(summary.latest.date).toLocaleDateString()} — {summary.latest.total_aircraft} aircraft
             </div>
           </div>
         )}
@@ -131,16 +129,8 @@ export default function AirbaseDetail() {
       {/* Tab content */}
       <div className="tab-content">
         {activeTab === "capture" && (
-          <div className="tab-grid">
-            <div className="card">
-              <HighResCapture airbaseId={airbase.id} airbase={airbase} onObservationCreated={handleNewObservation} />
-            </div>
-            <div className="card">
-              <SentinelSearch airbaseId={airbase.id} onObservationCreated={handleNewObservation} />
-            </div>
-            <div className="card">
-              <ImageUpload airbaseId={airbase.id} onUploaded={handleNewObservation} />
-            </div>
+          <div className="card">
+            <HighResCapture airbaseId={airbase.id} airbase={airbase} onObservationCreated={handleNewObservation} />
           </div>
         )}
 
