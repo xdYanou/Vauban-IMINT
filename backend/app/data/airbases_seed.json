@@ -1,0 +1,227 @@
+[
+  {
+    "name": "Engels-2",
+    "icao_code": "UWSS",
+    "latitude": 51.475,
+    "longitude": 46.205,
+    "region": "Saratov Oblast",
+    "military_district": "Western",
+    "known_units": "121st Guards Heavy Bomber Aviation Regiment (Tu-160, Tu-95MS)"
+  },
+  {
+    "name": "Dyagilevo",
+    "icao_code": "UUBD",
+    "latitude": 54.6117,
+    "longitude": 39.9440,
+    "region": "Ryazan Oblast",
+    "military_district": "Western",
+    "known_units": "43rd Combat Training Centre (Tu-95MS, Tu-22M3, Il-78)"
+  },
+  {
+    "name": "Shaykovka",
+    "icao_code": "UUBT",
+    "latitude": 54.0270,
+    "longitude": 33.9120,
+    "region": "Kaluga Oblast",
+    "military_district": "Western",
+    "known_units": "52nd Guards Heavy Bomber Aviation Regiment (Tu-22M3)"
+  },
+  {
+    "name": "Mozdok",
+    "icao_code": "URMO",
+    "latitude": 43.7870,
+    "longitude": 44.5880,
+    "region": "North Ossetia",
+    "military_district": "Southern",
+    "known_units": "Strategic bomber staging base"
+  },
+  {
+    "name": "Krymsk",
+    "icao_code": "URKL",
+    "latitude": 44.9540,
+    "longitude": 37.3700,
+    "region": "Krasnodar Krai",
+    "military_district": "Southern",
+    "known_units": "3rd Composite Aviation Division (Su-27SM, Su-30SM)"
+  },
+  {
+    "name": "Kushchyovskaya",
+    "icao_code": null,
+    "latitude": 46.5450,
+    "longitude": 39.6080,
+    "region": "Krasnodar Krai",
+    "military_district": "Southern",
+    "known_units": "Su-25, Su-34"
+  },
+  {
+    "name": "Lipetsk",
+    "icao_code": "UUOL",
+    "latitude": 52.7020,
+    "longitude": 39.5370,
+    "region": "Lipetsk Oblast",
+    "military_district": "Western",
+    "known_units": "Combat Training Centre (Su-35S, Su-34, Su-30SM, Su-57)"
+  },
+  {
+    "name": "Kubinka",
+    "icao_code": "UUMB",
+    "latitude": 55.6115,
+    "longitude": 36.6500,
+    "region": "Moscow Oblast",
+    "military_district": "Western",
+    "known_units": "Russian Knights, Swifts aerobatic teams (Su-35S, MiG-29)"
+  },
+  {
+    "name": "Akhtubinsk",
+    "icao_code": "URWA",
+    "latitude": 48.3150,
+    "longitude": 46.2830,
+    "region": "Astrakhan Oblast",
+    "military_district": "Southern",
+    "known_units": "929th Flight Test Centre (all types)"
+  },
+  {
+    "name": "Domna",
+    "icao_code": "UIID",
+    "latitude": 51.1470,
+    "longitude": 113.1500,
+    "region": "Zabaykalsky Krai",
+    "military_district": "Eastern",
+    "known_units": "120th Guards Fighter Aviation Regiment (Su-30SM)"
+  },
+  {
+    "name": "Ukrainka",
+    "icao_code": "UHBU",
+    "latitude": 50.8330,
+    "longitude": 128.3730,
+    "region": "Amur Oblast",
+    "military_district": "Eastern",
+    "known_units": "326th Heavy Bomber Aviation Division (Tu-95MS)"
+  },
+  {
+    "name": "Tsentralnaya Uglovaya",
+    "icao_code": "UHWW",
+    "latitude": 43.3980,
+    "longitude": 132.1480,
+    "region": "Primorsky Krai",
+    "military_district": "Eastern",
+    "known_units": "22nd Fighter Aviation Regiment (Su-35S)"
+  },
+  {
+    "name": "Chelyabinsk-Shagol",
+    "icao_code": "USSS",
+    "latitude": 55.3010,
+    "longitude": 61.2730,
+    "region": "Chelyabinsk Oblast",
+    "military_district": "Central",
+    "known_units": "2nd Guards Fighter Aviation Regiment (MiG-31BM)"
+  },
+  {
+    "name": "Perm-Bolshoye Savino",
+    "icao_code": "USPP",
+    "latitude": 57.9195,
+    "longitude": 56.0205,
+    "region": "Perm Krai",
+    "military_district": "Central",
+    "known_units": "764th Fighter Aviation Regiment (MiG-31BM)"
+  },
+  {
+    "name": "Monchegorsk",
+    "icao_code": "ULMK",
+    "latitude": 68.0670,
+    "longitude": 32.9530,
+    "region": "Murmansk Oblast",
+    "military_district": "Northern Fleet",
+    "known_units": "98th Composite Aviation Regiment (Su-33, MiG-29K)"
+  },
+  {
+    "name": "Severomorsk-3",
+    "icao_code": null,
+    "latitude": 68.8680,
+    "longitude": 33.7230,
+    "region": "Murmansk Oblast",
+    "military_district": "Northern Fleet",
+    "known_units": "279th Shipborne Fighter Aviation Regiment (Su-33, MiG-29K)"
+  },
+  {
+    "name": "Besovets",
+    "icao_code": "ULPB",
+    "latitude": 61.8950,
+    "longitude": 34.1580,
+    "region": "Republic of Karelia",
+    "military_district": "Western",
+    "known_units": "159th Fighter Aviation Regiment (Su-35S)"
+  },
+  {
+    "name": "Khalino",
+    "icao_code": "UUOK",
+    "latitude": 51.7640,
+    "longitude": 36.2520,
+    "region": "Kursk Oblast",
+    "military_district": "Western",
+    "known_units": "14th Guards Fighter Aviation Regiment (MiG-29SMT)"
+  },
+  {
+    "name": "Voronezh-Baltimor",
+    "icao_code": "UUOW",
+    "latitude": 51.8420,
+    "longitude": 39.1700,
+    "region": "Voronezh Oblast",
+    "military_district": "Western",
+    "known_units": "47th Composite Aviation Regiment (Su-34)"
+  },
+  {
+    "name": "Marinovka",
+    "icao_code": null,
+    "latitude": 48.8060,
+    "longitude": 43.2250,
+    "region": "Volgograd Oblast",
+    "military_district": "Southern",
+    "known_units": "11th Composite Aviation Regiment (Su-24M)"
+  },
+  {
+    "name": "Erebuni",
+    "icao_code": "UDYE",
+    "latitude": 40.1035,
+    "longitude": 44.4650,
+    "region": "Armenia (102nd Military Base)",
+    "military_district": "Southern",
+    "known_units": "MiG-29 (9-13)"
+  },
+  {
+    "name": "Hmeimim",
+    "icao_code": "OSLK",
+    "latitude": 35.4010,
+    "longitude": 35.9490,
+    "region": "Syria (Latakia)",
+    "military_district": "Expeditionary",
+    "known_units": "Su-35S, Su-34, Su-24M, Su-57 (rotational)"
+  },
+  {
+    "name": "Belbek",
+    "icao_code": "UKFB",
+    "latitude": 44.6880,
+    "longitude": 33.5780,
+    "region": "Crimea (occupied)",
+    "military_district": "Southern",
+    "known_units": "38th Fighter Aviation Regiment (Su-27SM, Su-30SM)"
+  },
+  {
+    "name": "Saki-Novofyodorovka",
+    "icao_code": "UKFI",
+    "latitude": 45.0930,
+    "longitude": 33.5940,
+    "region": "Crimea (occupied)",
+    "military_district": "Southern",
+    "known_units": "43rd Naval Aviation Regiment (Su-30SM, Su-24M)"
+  },
+  {
+    "name": "Gvardeyskoye",
+    "icao_code": "UKFG",
+    "latitude": 45.1180,
+    "longitude": 33.9780,
+    "region": "Crimea (occupied)",
+    "military_district": "Southern",
+    "known_units": "37th Composite Aviation Regiment (Su-24M, Su-25)"
+  }
+]

@@ -1,0 +1,31 @@
+__pycache__/
+*.pyc
+*.pyo
+.env
+vauban.db
+storage/
+*.zip
+*.tif
+*.tiff
+
+node_modules/
+dist/
+.vite/
+package-lock.json
+
+# ML
+runs/
+*.pt
+*.onnx
+datasets/
+ml/models/
+
+# Logs
+*.log
+vauban.log
+
+# Virtual env
+venv/
+
+.DS_Store
+.vscode/

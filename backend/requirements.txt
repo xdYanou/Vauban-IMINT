@@ -1,0 +1,31 @@
+# Web framework
+fastapi
+uvicorn[standard]
+python-multipart
+
+# Database
+sqlalchemy
+alembic
+
+# Geospatial
+geopandas
+shapely
+
+# Satellite imagery
+sentinelhub
+oauthlib
+requests-oauthlib
+
+# Computer vision / ML
+torch
+torchvision
+ultralytics
+opencv-python
+Pillow
+numpy
+
+# Utils
+python-dotenv
+httpx
+pydantic
+pydantic-settings
