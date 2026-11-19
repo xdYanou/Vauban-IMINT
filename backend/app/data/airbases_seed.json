@@ -223,5 +223,125 @@
     "region": "Crimea (occupied)",
     "military_district": "Southern",
     "known_units": "37th Composite Aviation Regiment (Su-24M, Su-25)"
+  },
+  {
+    "name": "Isfahan (Khatami)",
+    "icao_code": "OIFM",
+    "latitude": 32.7510,
+    "longitude": 51.8610,
+    "country": "Iran",
+    "region": "Isfahan Province",
+    "military_district": "Central",
+    "known_units": "8th TFS (F-14A Tomcat), 82nd TFS (F-14A)"
+  },
+  {
+    "name": "Mehrabad (TFB.1)",
+    "icao_code": "OIII",
+    "latitude": 35.6890,
+    "longitude": 51.3130,
+    "country": "Iran",
+    "region": "Tehran Province",
+    "military_district": "Central",
+    "known_units": "11th TFS (Su-24MK Fencer), transport wing (C-130, Il-76)"
+  },
+  {
+    "name": "Tabriz (TFB.2)",
+    "icao_code": "OITT",
+    "latitude": 38.1340,
+    "longitude": 46.2400,
+    "country": "Iran",
+    "region": "East Azerbaijan",
+    "military_district": "Northwest",
+    "known_units": "21st TFS (F-5E Tiger II), 22nd TFS (MiG-29A/UB)"
+  },
+  {
+    "name": "Nojeh (Hamadan)",
+    "icao_code": "OIHS",
+    "latitude": 34.9460,
+    "longitude": 48.6520,
+    "country": "Iran",
+    "region": "Hamadan Province",
+    "military_district": "Western",
+    "known_units": "31st TFS (Su-24MK), 32nd TFS (F-7 Airguard)"
+  },
+  {
+    "name": "Shiraz (TFB.6)",
+    "icao_code": "OISS",
+    "latitude": 29.5420,
+    "longitude": 52.5900,
+    "country": "Iran",
+    "region": "Fars Province",
+    "military_district": "Southern",
+    "known_units": "61st TFS (F-4E Phantom II), 62nd TFS (Saeqeh)"
+  },
+  {
+    "name": "Bushehr (TFB.7)",
+    "icao_code": "OIBB",
+    "latitude": 28.9490,
+    "longitude": 50.8360,
+    "country": "Iran",
+    "region": "Bushehr Province",
+    "military_district": "Southern",
+    "known_units": "71st TFS (F-4E Phantom II), coastal defence"
+  },
+  {
+    "name": "Bandar Abbas (TFB.9)",
+    "icao_code": "OIKB",
+    "latitude": 27.2190,
+    "longitude": 56.2310,
+    "country": "Iran",
+    "region": "Hormozgan Province",
+    "military_district": "Southeast",
+    "known_units": "91st TFS (F-14A Tomcat), Strait of Hormuz coverage"
+  },
+  {
+    "name": "Chahbahar (TFB.10)",
+    "icao_code": "OIZC",
+    "latitude": 25.4430,
+    "longitude": 60.3820,
+    "country": "Iran",
+    "region": "Sistan-Baluchestan",
+    "military_district": "Southeast",
+    "known_units": "101st TFS (F-4D/E Phantom II)"
+  },
+  {
+    "name": "Dezful (TFB.3)",
+    "icao_code": "OIAD",
+    "latitude": 32.4340,
+    "longitude": 48.3960,
+    "country": "Iran",
+    "region": "Khuzestan Province",
+    "military_district": "Southwest",
+    "known_units": "31st TRW (RF-4E), 33rd TFS (Kowsar)"
+  },
+  {
+    "name": "Omidiyeh (TFB.4)",
+    "icao_code": "OIAJ",
+    "latitude": 30.8350,
+    "longitude": 49.5350,
+    "country": "Iran",
+    "region": "Khuzestan Province",
+    "military_district": "Southwest",
+    "known_units": "41st TFS (F-4E Phantom II), 42nd TFS (F-5E)"
+  },
+  {
+    "name": "Mashhad (TFB.12)",
+    "icao_code": "OIMM",
+    "latitude": 36.2360,
+    "longitude": 59.6410,
+    "country": "Iran",
+    "region": "Razavi Khorasan",
+    "military_district": "Northeast",
+    "known_units": "MiG-29A/UB, F-5E Tiger II"
+  },
+  {
+    "name": "Birjand",
+    "icao_code": "OIMB",
+    "latitude": 32.8980,
+    "longitude": 59.2660,
+    "country": "Iran",
+    "region": "South Khorasan",
+    "military_district": "East",
+    "known_units": "IRGC Aerospace Force, UAV operations (Shahed, Mohajer)"
   }
 ]
