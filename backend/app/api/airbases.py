@@ -1,9 +1,47 @@
+import json
+from pathlib import Path
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 from pydantic import BaseModel
 
 from app.models.database import get_db
 from app.models.airbase import Airbase, CaptureZone
+
+ZONES_BACKUP = Path(__file__).parent.parent / "data" / "zones_backup.json"
+
+
+def _save_zones_backup(db: Session):
+    """Auto-backup all zones to JSON after any change."""
+    zones = db.query(CaptureZone).all()
+    data = [
+        {
+            "airbase_id": z.airbase_id,
+            "label": z.label,
+            "latitude": z.latitude,
+            "longitude": z.longitude,
+            "zoom": z.zoom,
+            "grid_size": z.grid_size,
+        }
+        for z in zones
+    ]
+    with open(ZONES_BACKUP, "w") as f:
+        json.dump(data, f, indent=2)
+
+
+def restore_zones_from_backup(db: Session):
+    """Restore zones from backup JSON if DB is empty."""
+    if db.query(CaptureZone).count() > 0:
+        return
+    if not ZONES_BACKUP.exists():
+        return
+    with open(ZONES_BACKUP) as f:
+        data = json.load(f)
+    if not data:
+        return
+    for z in data:
+        db.add(CaptureZone(**z))
+    db.commit()
+    print(f"Restored {len(data)} capture zones from backup")
 
 router = APIRouter(prefix="/api/airbases", tags=["airbases"])
 
@@ -87,6 +125,7 @@ def add_zone(airbase_id: int, zone: ZoneCreate, db: Session = Depends(get_db)):
     db.add(cz)
     db.commit()
     db.refresh(cz)
+    _save_zones_backup(db)
     return cz
 
 
@@ -98,4 +137,5 @@ def delete_zone(airbase_id: int, zone_id: int, db: Session = Depends(get_db)):
         raise HTTPException(status_code=404, detail="Zone not found")
     db.delete(cz)
     db.commit()
+    _save_zones_backup(db)
     return {"status": "deleted"}

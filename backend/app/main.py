@@ -47,6 +47,8 @@ async def lifespan(app: FastAPI):
     db = SessionLocal()
     try:
         seed_airbases(db)
+        from app.api.airbases import restore_zones_from_backup
+        restore_zones_from_backup(db)
     finally:
         db.close()
 
