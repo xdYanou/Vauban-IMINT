@@ -53,7 +53,7 @@ class DetectionService:
         if self.model is None:
             self.load_model()
 
-        results = self.model(image_path, conf=settings.detection_confidence_threshold)
+        results = self.model(image_path, conf=settings.detection_confidence_threshold, imgsz=1280)
         detections = []
 
         for result in results:
