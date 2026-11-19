@@ -131,6 +131,94 @@ body::before {
   z-index: 10;
 }
 
+/* Country filter buttons */
+.country-filter {
+  display: flex;
+  gap: 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.country-btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 8px 6px;
+  background: var(--bg-secondary);
+  border: none;
+  border-bottom: 2px solid transparent;
+  color: var(--text-muted);
+  font-family: "JetBrains Mono", monospace;
+  font-size: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all 0.15s;
+}
+
+.country-btn:hover {
+  background: var(--bg-tertiary);
+  color: var(--text-secondary);
+}
+
+.country-btn.active {
+  color: var(--accent-glow);
+  border-bottom-color: var(--accent);
+  background: var(--bg-tertiary);
+}
+
+.country-flag { font-size: 14px; line-height: 1; }
+
+.country-count {
+  font-size: 9px;
+  background: var(--bg-elevated);
+  color: var(--text-muted);
+  padding: 1px 5px;
+  border-radius: 8px;
+}
+
+/* Country group headers in sidebar */
+.airbase-list-container {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.country-group-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  background: var(--bg-tertiary);
+  border-bottom: 1px solid var(--border);
+  cursor: pointer;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  user-select: none;
+  transition: background 0.1s;
+}
+
+.country-group-header:hover { background: var(--bg-elevated); }
+
+.country-group-count {
+  font-size: 9px;
+  background: var(--accent-dim);
+  color: var(--accent-glow);
+  padding: 1px 6px;
+  border-radius: 8px;
+  margin-left: auto;
+}
+
+.country-chevron {
+  color: var(--text-muted);
+  font-size: 10px;
+}
+
 .sidebar-search {
   padding: 10px 12px;
   border-bottom: 1px solid var(--border);

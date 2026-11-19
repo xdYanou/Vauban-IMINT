@@ -1,5 +1,4 @@
 import logging
-import asyncio
 from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session
 from datetime import datetime
@@ -17,33 +16,41 @@ router = APIRouter(prefix="/api/bulk", tags=["bulk"])
 
 @router.post("/capture")
 async def bulk_capture(
-    zoom: int = 17,
-    grid_size: int = 6,
+    country: str = None,
     db: Session = Depends(get_db),
 ):
     """
-    Capture high-res imagery for ALL airbases in one go.
-    Returns progress and results for each base.
+    Capture imagery for all airbases (or filter by country).
+    Uses each base's configured zoom and radius for adaptive coverage.
     """
-    airbases = db.query(Airbase).all()
-    logger.info(f"Bulk capture started: {len(airbases)} airbases at zoom {zoom}")
+    query = db.query(Airbase)
+    if country:
+        query = query.filter(Airbase.country == country)
+    airbases = query.all()
+
+    logger.info(f"Bulk capture: {len(airbases)} airbases" + (f" ({country})" if country else ""))
 
     results = []
     for airbase in airbases:
+        z = airbase.capture_zoom or 17
+        r = airbase.capture_radius_km or 1.5
+
         try:
-            image_path = await tile_service.fetch_area(
+            image_path, img_w, img_h = await tile_service.fetch_area(
                 latitude=airbase.latitude,
                 longitude=airbase.longitude,
                 airbase_name=airbase.name,
-                zoom=zoom,
-                grid_size=grid_size,
+                zoom=z,
+                radius_km=r,
             )
 
             obs = Observation(
                 airbase_id=airbase.id,
                 observation_date=datetime.now(),
                 image_path=str(image_path),
-                source=f"esri-z{zoom}",
+                source=f"esri-z{z}",
+                image_width=img_w,
+                image_height=img_h,
             )
             db.add(obs)
             db.flush()
@@ -77,8 +84,9 @@ async def bulk_capture(
                 "observation_id": obs.id,
                 "image_url": f"/images/{relative_path}",
                 "aircraft_count": len(detections),
+                "image_size": [img_w, img_h],
             })
-            logger.info(f"  {airbase.name}: {len(detections)} detections")
+            logger.info(f"  {airbase.name}: z{z} r{r}km {img_w}x{img_h}px {len(detections)} det")
 
         except Exception as e:
             logger.warning(f"  {airbase.name}: FAILED - {e}")
@@ -90,7 +98,7 @@ async def bulk_capture(
             })
 
     succeeded = sum(1 for r in results if r["status"] == "ok")
-    logger.info(f"Bulk capture done: {succeeded}/{len(airbases)} succeeded")
+    logger.info(f"Bulk done: {succeeded}/{len(airbases)}")
 
     return {
         "total": len(airbases),

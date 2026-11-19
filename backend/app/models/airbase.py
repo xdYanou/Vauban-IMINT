@@ -17,6 +17,10 @@ class Airbase(Base):
     region = Column(String, nullable=True)
     military_district = Column(String, nullable=True)
     known_units = Column(String, nullable=True)
+    # Coverage: how big the capture area should be (km radius from center)
+    capture_radius_km = Column(Float, default=1.5)
+    # Preferred zoom level for this base
+    capture_zoom = Column(Integer, default=17)
     created_at = Column(DateTime, default=lambda: datetime.now(timezone.utc))
 
     observations = relationship("Observation", back_populates="airbase")
@@ -31,6 +35,11 @@ class Observation(Base):
     image_path = Column(String, nullable=False)
     source = Column(String, default="sentinel-2")
     cloud_cover_pct = Column(Float, nullable=True)
+    # Zone label for multi-zone captures (e.g. "overview", "apron-north", "apron-south")
+    zone = Column(String, nullable=True)
+    # Image dimensions for bbox overlay scaling
+    image_width = Column(Integer, nullable=True)
+    image_height = Column(Integer, nullable=True)
     created_at = Column(DateTime, default=lambda: datetime.now(timezone.utc))
 
     airbase = relationship("Airbase", back_populates="observations")
@@ -42,10 +51,10 @@ class Detection(Base):
 
     id = Column(Integer, primary_key=True, index=True)
     observation_id = Column(Integer, ForeignKey("observations.id"), nullable=False)
-    aircraft_type = Column(String, nullable=False)      # Fine-grained (e.g. "Su-34") or broad category
-    broad_category = Column(String, nullable=True)       # Stage 1 broad category (e.g. "fighter")
-    confidence = Column(Float, nullable=False)           # Stage 1 detection confidence
-    classification_conf = Column(Float, nullable=True)   # Stage 2 classification confidence
+    aircraft_type = Column(String, nullable=False)
+    broad_category = Column(String, nullable=True)
+    confidence = Column(Float, nullable=False)
+    classification_conf = Column(Float, nullable=True)
     bbox_x = Column(Float, nullable=False)
     bbox_y = Column(Float, nullable=False)
     bbox_w = Column(Float, nullable=False)

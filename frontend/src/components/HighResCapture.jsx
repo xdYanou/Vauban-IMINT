@@ -2,11 +2,13 @@ import { useState } from "react";
 import api from "../utils/api";
 import DetectionOverlay from "./DetectionOverlay";
 
-export default function HighResCapture({ airbaseId, onObservationCreated }) {
-  const [zoom, setZoom] = useState(17);
+export default function HighResCapture({ airbaseId, airbase, onObservationCreated }) {
   const [fetching, setFetching] = useState(false);
   const [error, setError] = useState(null);
   const [result, setResult] = useState(null);
+
+  const zoom = airbase?.capture_zoom || 17;
+  const radius = airbase?.capture_radius_km || 1.5;
 
   async function handleFetch() {
     setFetching(true);
@@ -17,7 +19,7 @@ export default function HighResCapture({ airbaseId, onObservationCreated }) {
       const { data } = await api.post(
         `/api/tiles/fetch/${airbaseId}`,
         null,
-        { params: { zoom, grid_size: zoom >= 18 ? 6 : 8 } }
+        { params: { zoom, radius_km: radius }, timeout: 120000 }
       );
       setResult(data);
       onObservationCreated(data);
@@ -28,31 +30,17 @@ export default function HighResCapture({ airbaseId, onObservationCreated }) {
     }
   }
 
-  const zoomInfo = {
-    16: "~2.4 m/px — wide area overview",
-    17: "~1.2 m/px — aircraft visible",
-    18: "~0.6 m/px — aircraft detail",
-  };
-
   return (
     <div>
-      <h3>High-Resolution Imagery</h3>
-      <p style={{ fontSize: 13, color: "#8b949e", marginBottom: 12 }}>
-        Fetches satellite tiles at high zoom. Best for aircraft detection.
-      </p>
-
-      <div style={{ display: "flex", gap: 8, marginBottom: 16 }}>
-        {[16, 17, 18].map((z) => (
-          <button
-            key={z}
-            onClick={() => setZoom(z)}
-            className={zoom === z ? "mode-btn active" : "mode-btn"}
-            style={{ flexDirection: "column", padding: "8px 16px" }}
-          >
-            <div>Zoom {z}</div>
-            <div style={{ fontSize: 11, opacity: 0.7 }}>{zoomInfo[z]}</div>
-          </button>
-        ))}
+      <h3>High-Resolution Capture</h3>
+      <div style={{
+        display: "flex", gap: 12, alignItems: "center", marginBottom: 14,
+        fontFamily: "'JetBrains Mono', monospace", fontSize: 10, color: "#4a5a70",
+      }}>
+        <span>Z{zoom}</span>
+        <span>{radius}km radius</span>
+        <span>{zoom === 16 ? "~2.4" : zoom === 17 ? "~1.2" : "~0.6"}m/px</span>
+        <span style={{ color: "#7a8ba0" }}>Configure in Settings tab</span>
       </div>
 
       <button
@@ -60,40 +48,57 @@ export default function HighResCapture({ airbaseId, onObservationCreated }) {
         disabled={fetching}
         style={{
           padding: "10px 24px",
-          background: fetching ? "#333" : "#1a6dd4",
+          background: fetching ? "#1b2535" : "#2d7dd2",
           color: "white",
           border: "none",
-          borderRadius: 6,
+          borderRadius: 3,
           cursor: fetching ? "wait" : "pointer",
+          fontFamily: "'JetBrains Mono', monospace",
           fontWeight: 600,
-          fontSize: 14,
+          fontSize: 11,
+          textTransform: "uppercase",
+          letterSpacing: "1px",
         }}
       >
-        {fetching ? "Fetching High-Res Image..." : `Capture at Zoom ${zoom}`}
+        {fetching ? "Capturing..." : "Capture Image"}
       </button>
 
-      {error && <p style={{ color: "#e74c3c", marginTop: 12 }}>{error}</p>}
+      {error && <p style={{ color: "#c0392b", marginTop: 10, fontSize: 12 }}>{error}</p>}
 
       {result && (
-        <div style={{ marginTop: 16 }}>
-          <div style={{ padding: 12, background: "#21262d", borderRadius: "6px 6px 0 0" }}>
-            <p style={{ color: "#2ecc71", marginBottom: 4 }}>
-              Captured at zoom {result.zoom} — {result.aircraft_count} aircraft detected
-            </p>
-            {result.aircraft_count > 0 && (
-              <p style={{ fontSize: 13, color: "#8b949e" }}>
-                {result.detections.map((d) => `${d.type} (${(d.confidence * 100).toFixed(0)}%)`).join(", ")}
-              </p>
-            )}
+        <div style={{ marginTop: 14 }}>
+          <div style={{
+            padding: 10, background: "#0d1118", borderRadius: "4px 4px 0 0",
+            border: "1px solid #1b2535", borderBottom: "none",
+            fontFamily: "'JetBrains Mono', monospace", fontSize: 11,
+          }}>
+            <span style={{ color: "#27ae60" }}>
+              {result.zones?.length || 1} zone{(result.zones?.length || 1) > 1 ? "s" : ""} captured
+            </span>
+            <span style={{ color: "#4a5a70", marginLeft: 12 }}>
+              {result.total_aircraft} aircraft detected
+            </span>
           </div>
-          {result.image_url && (
-            <div style={{ borderRadius: "0 0 4px 4px", overflow: "hidden" }}>
-              <DetectionOverlay
-                imageUrl={`http://localhost:8000${result.image_url}`}
-                detections={result.detections_full || []}
-              />
+          {(result.zones || [result]).map((zone, i) => (
+            <div key={i} style={{ marginBottom: 2 }}>
+              {zone.zone && (
+                <div style={{
+                  padding: "4px 10px", background: "#131a24",
+                  fontFamily: "'JetBrains Mono', monospace", fontSize: 9,
+                  color: "#4a5a70", textTransform: "uppercase", letterSpacing: "1px",
+                  borderLeft: "1px solid #1b2535", borderRight: "1px solid #1b2535",
+                }}>
+                  Zone: {zone.zone}
+                </div>
+              )}
+              <div style={{ borderRadius: i === (result.zones || [result]).length - 1 ? "0 0 4px 4px" : 0, overflow: "hidden" }}>
+                <DetectionOverlay
+                  imageUrl={`http://localhost:8000${zone.image_url}`}
+                  detections={zone.detections_full || []}
+                />
+              </div>
             </div>
-          )}
+          ))}
         </div>
       )}
     </div>

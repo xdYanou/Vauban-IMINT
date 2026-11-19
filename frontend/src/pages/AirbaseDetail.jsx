@@ -123,7 +123,7 @@ export default function AirbaseDetail() {
         {activeTab === "capture" && (
           <div className="tab-grid">
             <div className="card">
-              <HighResCapture airbaseId={airbase.id} onObservationCreated={handleNewObservation} />
+              <HighResCapture airbaseId={airbase.id} airbase={airbase} onObservationCreated={handleNewObservation} />
             </div>
             <div className="card">
               <SentinelSearch airbaseId={airbase.id} onObservationCreated={handleNewObservation} />
