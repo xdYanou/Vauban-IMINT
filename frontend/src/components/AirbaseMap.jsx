@@ -7,11 +7,13 @@ import L from "leaflet";
 const COUNTRY_FLAGS = {
   Russia: "\u{1F1F7}\u{1F1FA}",
   Iran: "\u{1F1EE}\u{1F1F7}",
+  NATO: "\u{1F310}",
 };
 
 const COUNTRY_COLORS = {
   Russia: "#2d7dd2",
   Iran: "#27ae60",
+  NATO: "#e67e22",
 };
 
 function createFlagIcon(country) {

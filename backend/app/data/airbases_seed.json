@@ -343,5 +343,35 @@
     "region": "South Khorasan",
     "military_district": "East",
     "known_units": "IRGC Aerospace Force, UAV operations (Shahed, Mohajer)"
+  },
+  {
+    "name": "Ramstein",
+    "icao_code": "ETAR",
+    "latitude": 49.4369,
+    "longitude": 7.6003,
+    "country": "NATO",
+    "region": "Rhineland-Palatinate, Germany",
+    "military_district": "USAFE",
+    "known_units": "86th Airlift Wing (C-130J, C-21), HQ USAFE-AFAFRICA"
+  },
+  {
+    "name": "RAF Lakenheath",
+    "icao_code": "EGUL",
+    "latitude": 52.4093,
+    "longitude": 0.5610,
+    "country": "NATO",
+    "region": "Suffolk, United Kingdom",
+    "military_district": "USAFE",
+    "known_units": "48th Fighter Wing (F-15E Strike Eagle, F-35A Lightning II)"
+  },
+  {
+    "name": "Al Udeid",
+    "icao_code": "OTBH",
+    "latitude": 25.1174,
+    "longitude": 51.3150,
+    "country": "NATO",
+    "region": "Qatar",
+    "military_district": "CENTCOM",
+    "known_units": "379th AEW (KC-135, B-52, F-15E, C-17, E-8, RQ-4)"
   }
 ]

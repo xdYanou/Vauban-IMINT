@@ -5,9 +5,10 @@ import { fetchAirbases, fetchOverview } from "../utils/api";
 import api from "../utils/api";
 
 const COUNTRIES = {
-  all: { label: "All Countries", flag: null },
+  all: { label: "All", flag: null },
   Russia: { label: "Russia", flag: "\u{1F1F7}\u{1F1FA}" },
   Iran: { label: "Iran", flag: "\u{1F1EE}\u{1F1F7}" },
+  NATO: { label: "NATO", flag: "\u{1F310}" },
 };
 
 export default function Dashboard() {
