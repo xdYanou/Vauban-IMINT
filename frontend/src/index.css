@@ -724,6 +724,109 @@ body::before {
   border-bottom: none;
 }
 
+/* ============ ANALYTICS ============ */
+.analytics-stats-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.analytics-stat-card {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 16px;
+  text-align: center;
+  position: relative;
+}
+
+.analytics-stat-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: var(--border-light);
+  border-radius: 4px 4px 0 0;
+}
+
+.analytics-stat-card.accent::before {
+  background: var(--accent);
+}
+
+.analytics-stat-value {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1;
+}
+
+.analytics-stat-card.accent .analytics-stat-value {
+  color: var(--accent-glow);
+}
+
+.analytics-stat-label {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--text-muted);
+  margin-top: 6px;
+}
+
+.analytics-charts-row {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+
+.analytics-latest-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.analytics-latest-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 10px;
+  background: var(--bg-primary);
+  border-radius: 3px;
+  border: 1px solid var(--border);
+  overflow: hidden;
+}
+
+.analytics-latest-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  opacity: 0.15;
+  border-radius: 3px;
+  transition: width 0.3s ease;
+}
+
+.analytics-latest-type {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-primary);
+  position: relative;
+  z-index: 1;
+}
+
+.analytics-latest-count {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--accent-glow);
+  position: relative;
+  z-index: 1;
+}
+
 /* ============ GALLERY ============ */
 .gallery-grid {
   display: grid;

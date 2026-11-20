@@ -5,6 +5,7 @@ import ObservationTimeline from "../components/ObservationTimeline";
 import HighResCapture from "../components/HighResCapture";
 import ObservationGallery from "../components/ObservationGallery";
 import CoordsEditor from "../components/CoordsEditor";
+import AnalyticsTab from "../components/AnalyticsTab";
 import AircraftIntel from "../components/AircraftIntel";
 
 export default function AirbaseDetail() {
@@ -155,38 +156,7 @@ export default function AirbaseDetail() {
         )}
 
         {activeTab === "analytics" && (
-          <div>
-            <div className="card">
-              <h3>Aircraft Count Over Time</h3>
-              <ObservationTimeline observations={timeline.map((t) => ({
-                observation_date: t.date,
-                aircraft_count: t.total_aircraft,
-                aircraft_types: t.aircraft_types,
-              }))} />
-            </div>
-            {timeline.length > 0 && (
-              <div className="card">
-                <h3>Detection Breakdown</h3>
-                <div className="breakdown-grid">
-                  {Object.entries(
-                    timeline.reduce((acc, obs) => {
-                      Object.entries(obs.aircraft_types).forEach(([type, count]) => {
-                        acc[type] = (acc[type] || 0) + count;
-                      });
-                      return acc;
-                    }, {})
-                  )
-                    .sort((a, b) => b[1] - a[1])
-                    .map(([type, count]) => (
-                      <div key={type} className="breakdown-item">
-                        <span className={`type-badge type-${type}`}>{type}</span>
-                        <span className="breakdown-count">{count}</span>
-                      </div>
-                    ))}
-                </div>
-              </div>
-            )}
-          </div>
+          <AnalyticsTab timeline={timeline} />
         )}
       </div>
     </div>

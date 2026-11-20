@@ -1,0 +1,173 @@
+{
+  "_comment": "Maps shape categories from YOLO detections to actual aircraft types at each base. Shape categories: fighter, strike, heavy_bomber, swing_bomber, medium_bomber, medium_transport, heavy_transport, tanker, awacs, patrol, unknown",
+
+  "Engels-2": {
+    "heavy_bomber": "Tu-95MS",
+    "swing_bomber": "Tu-160",
+    "medium_bomber": "Tu-22M3",
+    "fighter": "Su-27SM",
+    "strike": "Su-24M",
+    "heavy_transport": "Il-76",
+    "medium_transport": "An-26",
+    "tanker": "Il-78",
+    "awacs": "A-50",
+    "patrol": "Il-20"
+  },
+  "Dyagilevo": {
+    "heavy_bomber": "Tu-95MS",
+    "medium_bomber": "Tu-22M3",
+    "tanker": "Il-78",
+    "heavy_transport": "Il-76"
+  },
+  "Shaykovka": {
+    "medium_bomber": "Tu-22M3",
+    "strike": "Tu-22M3",
+    "heavy_transport": "Il-76"
+  },
+  "Mozdok": {
+    "heavy_bomber": "Tu-95MS",
+    "swing_bomber": "Tu-160",
+    "medium_bomber": "Tu-22M3",
+    "fighter": "Su-27",
+    "heavy_transport": "Il-76"
+  },
+  "Krymsk": {
+    "fighter": "Su-30SM",
+    "strike": "Su-27SM"
+  },
+  "Kushchyovskaya": {
+    "fighter": "Su-25SM",
+    "strike": "Su-34"
+  },
+  "Lipetsk": {
+    "fighter": "Su-35S",
+    "strike": "Su-34",
+    "heavy_transport": "Il-76"
+  },
+  "Kubinka": {
+    "fighter": "Su-35S",
+    "strike": "MiG-29",
+    "heavy_transport": "Il-76",
+    "medium_transport": "An-26"
+  },
+  "Akhtubinsk": {
+    "fighter": "Su-57",
+    "strike": "Su-34",
+    "heavy_bomber": "Tu-95MS",
+    "medium_bomber": "Tu-22M3",
+    "heavy_transport": "Il-76"
+  },
+  "Domna": {
+    "fighter": "Su-30SM",
+    "strike": "Su-24M"
+  },
+  "Ukrainka": {
+    "heavy_bomber": "Tu-95MS",
+    "heavy_transport": "Il-76",
+    "tanker": "Il-78"
+  },
+  "Tsentralnaya Uglovaya": {
+    "fighter": "Su-35S",
+    "strike": "Su-24M"
+  },
+  "Chelyabinsk-Shagol": {
+    "fighter": "MiG-31BM",
+    "heavy_transport": "Il-76"
+  },
+  "Perm-Bolshoye Savino": {
+    "fighter": "MiG-31BM"
+  },
+  "Monchegorsk": {
+    "fighter": "Su-33",
+    "strike": "MiG-29K"
+  },
+  "Severomorsk-3": {
+    "fighter": "Su-33",
+    "strike": "MiG-29K"
+  },
+  "Besovets": {
+    "fighter": "Su-35S"
+  },
+  "Khalino": {
+    "fighter": "MiG-29SMT"
+  },
+  "Voronezh-Baltimor": {
+    "fighter": "Su-34",
+    "strike": "Su-34"
+  },
+  "Marinovka": {
+    "strike": "Su-24M",
+    "fighter": "Su-24M"
+  },
+  "Erebuni": {
+    "fighter": "MiG-29"
+  },
+  "Hmeimim": {
+    "fighter": "Su-35S",
+    "strike": "Su-34",
+    "medium_bomber": "Su-24M",
+    "heavy_transport": "Il-76",
+    "awacs": "A-50"
+  },
+  "Belbek": {
+    "fighter": "Su-30SM",
+    "strike": "Su-27SM"
+  },
+  "Saki-Novofyodorovka": {
+    "fighter": "Su-30SM",
+    "strike": "Su-24M"
+  },
+  "Gvardeyskoye": {
+    "strike": "Su-24M",
+    "fighter": "Su-25"
+  },
+
+  "Isfahan (Khatami)": {
+    "fighter": "F-14A Tomcat",
+    "strike": "F-14A Tomcat"
+  },
+  "Mehrabad (TFB.1)": {
+    "strike": "Su-24MK",
+    "heavy_transport": "Il-76",
+    "medium_transport": "C-130"
+  },
+  "Tabriz (TFB.2)": {
+    "fighter": "MiG-29A",
+    "strike": "F-5E Tiger II"
+  },
+  "Nojeh (Hamadan)": {
+    "strike": "Su-24MK",
+    "fighter": "F-7"
+  },
+  "Shiraz (TFB.6)": {
+    "fighter": "F-4E Phantom",
+    "strike": "Saeqeh"
+  },
+  "Bushehr (TFB.7)": {
+    "fighter": "F-4E Phantom",
+    "strike": "F-4E Phantom"
+  },
+  "Bandar Abbas (TFB.9)": {
+    "fighter": "F-14A Tomcat",
+    "strike": "F-14A Tomcat"
+  },
+  "Chahbahar (TFB.10)": {
+    "fighter": "F-4E Phantom"
+  },
+  "Dezful (TFB.3)": {
+    "fighter": "Kowsar",
+    "patrol": "RF-4E"
+  },
+  "Omidiyeh (TFB.4)": {
+    "fighter": "F-4E Phantom",
+    "strike": "F-5E Tiger II"
+  },
+  "Mashhad (TFB.12)": {
+    "fighter": "MiG-29A",
+    "strike": "F-5E Tiger II"
+  },
+  "Birjand": {
+    "patrol": "Shahed-129 UAV",
+    "fighter": "Mohajer UAV"
+  }
+}

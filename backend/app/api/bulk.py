@@ -65,7 +65,7 @@ async def bulk_capture(
                 db.flush()
 
                 try:
-                    detections = detection_service.detect(str(image_path))
+                    detections = detection_service.detect(str(image_path), airbase_name=airbase.name, known_units=airbase.known_units)
                 except Exception:
                     detections = []
 
