@@ -2,7 +2,7 @@
   <h1 align="center">VAUBAN</h1>
   <p align="center">
     <strong>IMINT & Military Intelligence Platform</strong><br>
-    Satellite imagery analysis for Russian airbase monitoring
+    Satellite imagery analysis for military airbase monitoring
   </p>
 </p>
 
