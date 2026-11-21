@@ -488,8 +488,8 @@
   {"name": "CFB Bagotville", "icao_code": "CYBG", "latitude": 48.3306, "longitude": -70.9964, "country": "Canada", "region": "Quebec", "military_district": "RCAF", "known_units": "3 Wing (CF-18 Hornet) — NORAD QRA East, bilingual ops"},
   {"name": "CFB Trenton", "icao_code": "CYTR", "latitude": 44.1189, "longitude": -77.5281, "country": "Canada", "region": "Ontario", "military_district": "RCAF", "known_units": "8 Wing (CC-177 Globemaster, CC-130J Hercules) — airlift hub"},
 
-  {"name": "Camp Lemonnier", "icao_code": "HDAM", "latitude": 11.5467, "longitude": 43.1489, "country": "Djibouti", "region": "Djibouti City", "military_district": "AFRICOM", "known_units": "US CJTF-HOA (P-3C, MQ-9, F-15E rotational), only permanent US base in Africa"},
-  {"name": "BA 188 (French - Djibouti)", "icao_code": "HDAM", "latitude": 11.5533, "longitude": 43.1583, "country": "Djibouti", "region": "Djibouti City", "military_district": "FFDJT", "known_units": "French Forces Djibouti (Mirage 2000-5, SA342 Gazelle, C-160)"},
+  {"name": "Camp Lemonnier", "icao_code": "HDAM", "latitude": 11.5467, "longitude": 43.1489, "country": "USA", "region": "Djibouti City, Djibouti", "military_district": "AFRICOM", "known_units": "US CJTF-HOA (P-3C, MQ-9, F-15E rotational), only permanent US base in Africa"},
+  {"name": "BA 188 (French - Djibouti)", "icao_code": "HDAM", "latitude": 11.5533, "longitude": 43.1583, "country": "France", "region": "Djibouti City, Djibouti", "military_district": "FFDJT", "known_units": "French Forces Djibouti (Mirage 2000-5, SA342 Gazelle, C-160)"},
   {"name": "PLA Support Base Djibouti", "icao_code": null, "latitude": 11.5892, "longitude": 43.0458, "country": "China", "region": "Doraleh, Djibouti", "military_district": "PLA", "known_units": "China's first overseas military base — logistics, naval, helo ops"},
   {"name": "JSDF Base Djibouti", "icao_code": null, "latitude": 11.5525, "longitude": 43.1575, "country": "Japan", "region": "Djibouti City", "military_district": "JSDF", "known_units": "JMSDF P-3C Orion — anti-piracy patrols, Japan's only foreign base"},
 
@@ -508,5 +508,23 @@
   {"name": "Hualien AFB", "icao_code": "RCYU", "latitude": 24.0269, "longitude": 121.6186, "country": "Taiwan", "region": "Hualien County", "military_district": "ROCAF", "known_units": "F-16V Viper (upgraded Block 70), mountain-carved hardened shelters"},
   {"name": "Taitung (Chihhang) AFB", "icao_code": "RCFN", "latitude": 22.7931, "longitude": 121.1817, "country": "Taiwan", "region": "Taitung County", "military_district": "ROCAF", "known_units": "F-5E/F Tiger II, cave hangar base — east coast defense"},
   {"name": "Chiayi AFB", "icao_code": "RCKU", "latitude": 23.4617, "longitude": 120.3928, "country": "Taiwan", "region": "Chiayi County", "military_district": "ROCAF", "known_units": "F-16A/B (upgrading to F-16V), SAM defense"},
-  {"name": "Hsinchu AFB", "icao_code": "RCSS", "latitude": 24.8181, "longitude": 120.9394, "country": "Taiwan", "region": "Hsinchu", "military_district": "ROCAF", "known_units": "Mirage 2000-5, E-2K Hawkeye AWACS — Taiwan Strait front-line"}
+  {"name": "Hsinchu AFB", "icao_code": "RCSS", "latitude": 24.8181, "longitude": 120.9394, "country": "Taiwan", "region": "Hsinchu", "military_district": "ROCAF", "known_units": "Mirage 2000-5, E-2K Hawkeye AWACS — Taiwan Strait front-line"},
+
+  {"name": "Cairo West AB", "icao_code": "HEOW", "latitude": 30.1164, "longitude": 30.9153, "country": "Egypt", "region": "Giza", "military_district": "EAF", "known_units": "F-16C/D Block 40/52, Mirage 2000 — EAF's primary fighter base"},
+  {"name": "Gebel El Basur AB", "icao_code": null, "latitude": 30.3978, "longitude": 30.1414, "country": "Egypt", "region": "Giza", "military_district": "EAF", "known_units": "MiG-29M/M2 — Russia's latest export fighters to Egypt"},
+  {"name": "Berenice Military Base", "icao_code": null, "latitude": 23.9683, "longitude": 35.4683, "country": "Egypt", "region": "Red Sea Coast", "military_district": "EAF", "known_units": "Rafale DM, Su-35SE — Egypt's newest multi-billion dollar base"},
+  {"name": "Mersa Matruh AB", "icao_code": "HEMM", "latitude": 31.3253, "longitude": 27.2217, "country": "Egypt", "region": "Matrouh", "military_district": "EAF", "known_units": "Rafale DM, F-16 — western border defense"},
+
+  {"name": "Muwaffaq Salti AB", "icao_code": "OJMF", "latitude": 31.8256, "longitude": 36.7822, "country": "Jordan", "region": "Azraq", "military_district": "RJAF/USAF", "known_units": "RJAF F-16AM/BM, US F-15E rotational, anti-ISIS coalition hub"},
+  {"name": "King Abdullah II AB (Marka)", "icao_code": "OJAM", "latitude": 31.9722, "longitude": 35.9933, "country": "Jordan", "region": "Amman", "military_district": "RJAF", "known_units": "RJAF HQ, F-5E/F, UH-60, AH-1 Cobra"},
+
+  {"name": "Al Dhafra AB", "icao_code": "OMAM", "latitude": 24.2481, "longitude": 54.5472, "country": "UAE", "region": "Abu Dhabi", "military_district": "UAEAF/USAF", "known_units": "UAEAF Mirage 2000-9, F-16E/F Block 60; USAF F-35A, F-22, KC-10, RQ-4"},
+  {"name": "Al Minhad AB", "icao_code": "OMDM", "latitude": 25.0268, "longitude": 55.3658, "country": "UAE", "region": "Dubai", "military_district": "UAEAF", "known_units": "Australian, Canadian, NZ forces hub; UAEAF transport wing"},
+  {"name": "Al Ain AB", "icao_code": "OMAA", "latitude": 24.2617, "longitude": 55.6092, "country": "UAE", "region": "Abu Dhabi/Al Ain", "military_district": "UAEAF", "known_units": "Hawk Mk.102 trainers, PC-21, Pilatus — pilot training center"},
+
+  {"name": "King Abdulaziz AB (Dhahran)", "icao_code": "OEDR", "latitude": 26.2654, "longitude": 50.1522, "country": "Saudi Arabia", "region": "Eastern Province", "military_district": "RSAF", "known_units": "F-15SA Strike Eagle, E-3A AWACS — eastern air defense"},
+  {"name": "King Faisal AB (Tabuk)", "icao_code": "OETB", "latitude": 28.3654, "longitude": 36.6189, "country": "Saudi Arabia", "region": "Tabuk", "military_district": "RSAF", "known_units": "F-15C/D Eagle — northwestern border, Red Sea/Israel coverage"},
+  {"name": "King Khalid AB (Khamis Mushait)", "icao_code": "OEKK", "latitude": 18.2978, "longitude": 42.8044, "country": "Saudi Arabia", "region": "Asir", "military_district": "RSAF", "known_units": "Tornado IDS, Eurofighter Typhoon — Yemen border, Houthi strikes"},
+  {"name": "King Fahd AB (Taif)", "icao_code": "OETF", "latitude": 21.4833, "longitude": 40.5433, "country": "Saudi Arabia", "region": "Mecca Province", "military_district": "RSAF", "known_units": "F-15SA, Eurofighter Typhoon — central strategic reserve"},
+  {"name": "Prince Sultan AB", "icao_code": "OEPS", "latitude": 24.0633, "longitude": 47.5806, "country": "Saudi Arabia", "region": "Al Kharj", "military_district": "RSAF/USAF", "known_units": "USAF F-15E, F-16, Patriot; RSAF F-15SA — CENTCOM forward hub"}
 ]
