@@ -106,6 +106,7 @@ export default function Dashboard() {
     <div style={{ height: "100vh", display: "flex", flexDirection: "column" }}>
       <header className="app-header">
         <div className="header-brand">
+          <img src="/logo.png" alt="" className="header-logo" />
           <h1>VAUBAN</h1>
           <span className="header-sub">IMINT Platform</span>
         </div>

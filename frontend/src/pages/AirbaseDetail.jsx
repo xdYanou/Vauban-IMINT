@@ -60,7 +60,8 @@ export default function AirbaseDetail() {
     <div style={{ minHeight: "100vh", display: "flex", flexDirection: "column", background: "#0d1117" }}>
       <header className="app-header">
         <div className="header-brand">
-          <Link to="/" style={{ color: "#e0e0e0", textDecoration: "none" }}>
+          <Link to="/" style={{ color: "#e0e0e0", textDecoration: "none", display: "flex", alignItems: "center", gap: 10 }}>
+            <img src="/logo.png" alt="" className="header-logo" />
             <h1>VAUBAN</h1>
           </Link>
           <span className="header-sub">Airbase Intelligence</span>

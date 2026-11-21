@@ -45,6 +45,208 @@ body::before {
   z-index: 0;
 }
 
+/* ============ LANDING ============ */
+.landing {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  background: var(--bg-primary);
+}
+
+.landing-grid {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image:
+    linear-gradient(rgba(45, 125, 210, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(45, 125, 210, 0.04) 1px, transparent 1px);
+  background-size: 60px 60px;
+  pointer-events: none;
+}
+
+.landing-content {
+  position: relative;
+  z-index: 1;
+  max-width: 720px;
+  width: 100%;
+  padding: 40px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.landing-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.landing-logo {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 20px;
+  opacity: 0.9;
+  filter: brightness(1.1);
+}
+
+.landing-title {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: 16px;
+  color: var(--accent);
+  margin-bottom: 8px;
+}
+
+.landing-subtitle {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: var(--text-muted);
+}
+
+.landing-tricolor {
+  width: 120px;
+  height: 2px;
+  margin-top: 16px;
+  background: linear-gradient(90deg, var(--tricolor-blue) 33%, #fff 33%, #fff 66%, var(--tricolor-red) 66%);
+  border-radius: 1px;
+}
+
+.landing-desc {
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  max-width: 540px;
+  margin-bottom: 40px;
+}
+
+.landing-stats {
+  display: flex;
+  gap: 32px;
+  margin-bottom: 48px;
+}
+
+.landing-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.landing-stat-value {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--accent-glow);
+  line-height: 1;
+}
+
+.landing-stat-label {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--text-muted);
+  margin-top: 6px;
+}
+
+.landing-capabilities {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 48px;
+  width: 100%;
+  text-align: left;
+}
+
+.landing-cap {
+  display: flex;
+  gap: 14px;
+  padding: 16px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  transition: border-color 0.2s;
+}
+
+.landing-cap:hover {
+  border-color: var(--accent-dim);
+}
+
+.landing-cap-icon {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--accent-dim);
+  min-width: 32px;
+  line-height: 1;
+}
+
+.landing-cap-title {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+
+.landing-cap-desc {
+  font-size: 11px;
+  line-height: 1.5;
+  color: var(--text-muted);
+}
+
+.landing-enter {
+  padding: 14px 48px;
+  background: var(--accent);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  transition: background 0.2s, box-shadow 0.2s;
+  margin-bottom: 48px;
+}
+
+.landing-enter:hover {
+  background: var(--accent-glow);
+  box-shadow: 0 0 30px rgba(45, 125, 210, 0.3);
+}
+
+.landing-footer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 9px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.landing-dot {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: var(--text-muted);
+}
+
+@media (max-width: 640px) {
+  .landing-title { font-size: 32px; letter-spacing: 8px; }
+  .landing-stats { gap: 16px; flex-wrap: wrap; }
+  .landing-capabilities { grid-template-columns: 1fr; }
+}
+
 /* ============ HEADER ============ */
 .app-header {
   display: flex;
@@ -71,6 +273,13 @@ body::before {
   display: flex;
   align-items: center;
   gap: 12px;
+}
+
+.header-logo {
+  height: 30px;
+  width: 30px;
+  object-fit: contain;
+  opacity: 0.85;
 }
 
 .header-brand h1 {
