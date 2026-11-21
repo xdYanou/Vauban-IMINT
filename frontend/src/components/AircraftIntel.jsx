@@ -67,8 +67,14 @@ export default function AircraftIntel({ detectionSummary }) {
             onClick={() => setExpanded(isExpanded ? null : type)}
             style={{ borderColor: isExpanded ? accent : undefined }}
           >
-            {/* Header with silhouette */}
+            {/* Header with image or silhouette */}
             <div className="aircraft-card-header" style={{ background: `linear-gradient(135deg, #0a0e14 0%, ${accent}15 100%)` }}>
+              <img
+                src={`http://localhost:8000/aircraft/${type.replace(/ /g, '_')}.jpg`}
+                alt=""
+                style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", objectFit: "cover", opacity: 0.7 }}
+                onError={(e) => { e.target.style.display = "none"; }}
+              />
               <div className="aircraft-silhouette" style={{ color: `${accent}40` }}>
                 {TYPE_SILHOUETTES[type] || type.toUpperCase()}
               </div>

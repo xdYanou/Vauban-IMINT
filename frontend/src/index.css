@@ -136,7 +136,12 @@ body::before {
   display: flex;
   gap: 0;
   border-bottom: 1px solid var(--border);
+  overflow-x: auto;
+  flex-shrink: 0;
 }
+
+.country-filter::-webkit-scrollbar { height: 3px; }
+.country-filter::-webkit-scrollbar-thumb { background: var(--border-light); }
 
 .country-btn {
   flex: 1;

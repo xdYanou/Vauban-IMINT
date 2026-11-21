@@ -4,11 +4,16 @@ import AirbaseMap from "../components/AirbaseMap";
 import { fetchAirbases, fetchOverview } from "../utils/api";
 import api from "../utils/api";
 
-const COUNTRIES = {
-  all: { label: "All", flag: null },
-  Russia: { label: "Russia", flag: "\u{1F1F7}\u{1F1FA}" },
-  Iran: { label: "Iran", flag: "\u{1F1EE}\u{1F1F7}" },
-  NATO: { label: "NATO", flag: "\u{1F310}" },
+const COUNTRY_FLAGS = {
+  Russia: "\u{1F1F7}\u{1F1FA}", USA: "\u{1F1FA}\u{1F1F8}", UK: "\u{1F1EC}\u{1F1E7}",
+  France: "\u{1F1EB}\u{1F1F7}", Germany: "\u{1F1E9}\u{1F1EA}", Italy: "\u{1F1EE}\u{1F1F9}",
+  Iran: "\u{1F1EE}\u{1F1F7}", NATO: "\u{1F310}", Japan: "\u{1F1EF}\u{1F1F5}",
+  "South Korea": "\u{1F1F0}\u{1F1F7}", Norway: "\u{1F1F3}\u{1F1F4}",
+  Netherlands: "\u{1F1F3}\u{1F1F1}", Belgium: "\u{1F1E7}\u{1F1EA}",
+  Poland: "\u{1F1F5}\u{1F1F1}", Turkey: "\u{1F1F9}\u{1F1F7}",
+  "Czech Republic": "\u{1F1E8}\u{1F1FF}", Lithuania: "\u{1F1F1}\u{1F1F9}",
+  Estonia: "\u{1F1EA}\u{1F1EA}", Bulgaria: "\u{1F1E7}\u{1F1EC}",
+  Romania: "\u{1F1F7}\u{1F1F4}",
 };
 
 export default function Dashboard() {
@@ -133,19 +138,23 @@ export default function Dashboard() {
         <aside className="sidebar">
           {/* Country filter */}
           <div className="country-filter">
-            {Object.entries(COUNTRIES).map(([key, { label, flag }]) => (
+            <button
+              className={`country-btn ${country === "all" ? "active" : ""}`}
+              onClick={() => setCountry("all")}
+            >
+              All
+            </button>
+            {[...new Set(airbases.map((b) => b.country))].sort().map((c) => (
               <button
-                key={key}
-                className={`country-btn ${country === key ? "active" : ""}`}
-                onClick={() => setCountry(key)}
+                key={c}
+                className={`country-btn ${country === c ? "active" : ""}`}
+                onClick={() => setCountry(c)}
               >
-                {flag && <span className="country-flag">{flag}</span>}
-                {label}
-                {key !== "all" && (
-                  <span className="country-count">
-                    {airbases.filter((b) => b.country === key).length}
-                  </span>
-                )}
+                {COUNTRY_FLAGS[c] && <span className="country-flag">{COUNTRY_FLAGS[c]}</span>}
+                {c}
+                <span className="country-count">
+                  {airbases.filter((b) => b.country === c).length}
+                </span>
               </button>
             ))}
           </div>

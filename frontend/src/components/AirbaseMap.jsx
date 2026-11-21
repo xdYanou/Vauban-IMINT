@@ -8,12 +8,36 @@ const COUNTRY_FLAGS = {
   Russia: "\u{1F1F7}\u{1F1FA}",
   Iran: "\u{1F1EE}\u{1F1F7}",
   NATO: "\u{1F310}",
+  USA: "\u{1F1FA}\u{1F1F8}",
+  UK: "\u{1F1EC}\u{1F1E7}",
+  France: "\u{1F1EB}\u{1F1F7}",
+  Germany: "\u{1F1E9}\u{1F1EA}",
+  Italy: "\u{1F1EE}\u{1F1F9}",
+  Japan: "\u{1F1EF}\u{1F1F5}",
+  "South Korea": "\u{1F1F0}\u{1F1F7}",
+  Norway: "\u{1F1F3}\u{1F1F4}",
+  Netherlands: "\u{1F1F3}\u{1F1F1}",
+  Belgium: "\u{1F1E7}\u{1F1EA}",
+  Poland: "\u{1F1F5}\u{1F1F1}",
+  Turkey: "\u{1F1F9}\u{1F1F7}",
+  "Czech Republic": "\u{1F1E8}\u{1F1FF}",
+  Lithuania: "\u{1F1F1}\u{1F1F9}",
+  Estonia: "\u{1F1EA}\u{1F1EA}",
+  Bulgaria: "\u{1F1E7}\u{1F1EC}",
+  Romania: "\u{1F1F7}\u{1F1F4}",
 };
 
 const COUNTRY_COLORS = {
   Russia: "#2d7dd2",
   Iran: "#27ae60",
   NATO: "#e67e22",
+  USA: "#3498db",
+  UK: "#e74c3c",
+  France: "#2d7dd2",
+  Germany: "#f1c40f",
+  Italy: "#27ae60",
+  Japan: "#e74c3c",
+  "South Korea": "#3498db",
 };
 
 function createFlagIcon(country) {

@@ -85,6 +85,11 @@ app.include_router(aircraft.router)
 Path(settings.image_storage_path).mkdir(parents=True, exist_ok=True)
 app.mount("/images", StaticFiles(directory=settings.image_storage_path), name="images")
 
+# Serve aircraft reference photos
+aircraft_img_dir = Path(settings.image_storage_path).parent / "aircraft_images"
+aircraft_img_dir.mkdir(parents=True, exist_ok=True)
+app.mount("/aircraft", StaticFiles(directory=str(aircraft_img_dir)), name="aircraft")
+
 
 @app.get("/")
 def root():
