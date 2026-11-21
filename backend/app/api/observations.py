@@ -120,7 +120,7 @@ async def upload_observation(
     db.flush()
 
     # Run two-stage detection pipeline
-    detections = detection_service.detect(str(image_path), airbase_name=airbase.name, known_units=airbase.known_units)
+    detections = detection_service.detect(str(image_path), airbase_name=airbase.name, country=airbase.country, known_units=airbase.known_units)
     for det in detections:
         db.add(
             Detection(

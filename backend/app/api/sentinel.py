@@ -67,7 +67,7 @@ async def fetch_and_analyze(
 
     # Run two-stage detection pipeline
     try:
-        detections = detection_service.detect(str(image_path), airbase_name=airbase.name, known_units=airbase.known_units)
+        detections = detection_service.detect(str(image_path), airbase_name=airbase.name, country=airbase.country, known_units=airbase.known_units)
     except Exception as e:
         logger.exception(f"Detection failed: {e}")
         detections = []
