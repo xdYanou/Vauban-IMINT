@@ -14,6 +14,19 @@ const COUNTRY_FLAGS = {
   "Czech Republic": "\u{1F1E8}\u{1F1FF}", Lithuania: "\u{1F1F1}\u{1F1F9}",
   Estonia: "\u{1F1EA}\u{1F1EA}", Bulgaria: "\u{1F1E7}\u{1F1EC}",
   Romania: "\u{1F1F7}\u{1F1F4}",
+  Spain: "\u{1F1EA}\u{1F1F8}",
+  Portugal: "\u{1F1F5}\u{1F1F9}",
+  Brazil: "\u{1F1E7}\u{1F1F7}",
+  India: "\u{1F1EE}\u{1F1F3}",
+  Pakistan: "\u{1F1F5}\u{1F1F0}",
+  Australia: "\u{1F1E6}\u{1F1FA}",
+  Argentina: "\u{1F1E6}\u{1F1F7}",
+  Mexico: "\u{1F1F2}\u{1F1FD}",
+  Canada: "\u{1F1E8}\u{1F1E6}",
+  Djibouti: "\u{1F1E9}\u{1F1EF}",
+  Israel: "\u{1F1EE}\u{1F1F1}",
+  China: "\u{1F1E8}\u{1F1F3}",
+  Taiwan: "\u{1F1F9}\u{1F1FC}",
 };
 
 export default function Dashboard() {
@@ -32,11 +45,10 @@ export default function Dashboard() {
       .then(([bases, ov]) => {
         setAirbases(bases);
         setOverview(ov);
-        // Auto-expand all countries
-        const countries = [...new Set(bases.map((b) => b.country))];
-        const expanded = {};
-        countries.forEach((c) => (expanded[c] = true));
-        setExpandedCountries(expanded);
+        // Start collapsed
+        if (Object.keys(expandedCountries).length === 0) {
+          setExpandedCountries({});
+        }
       });
   }
 
@@ -181,7 +193,7 @@ export default function Dashboard() {
                     onClick={() => toggleCountry(countryName)}
                   >
                     <span className="country-flag">
-                      {COUNTRIES[countryName]?.flag || ""}
+                      {COUNTRY_FLAGS[countryName] || ""}
                     </span>
                     <span>{countryName}</span>
                     <span className="country-group-count">{bases.length}</span>

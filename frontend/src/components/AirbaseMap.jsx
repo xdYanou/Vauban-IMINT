@@ -25,6 +25,19 @@ const COUNTRY_FLAGS = {
   Estonia: "\u{1F1EA}\u{1F1EA}",
   Bulgaria: "\u{1F1E7}\u{1F1EC}",
   Romania: "\u{1F1F7}\u{1F1F4}",
+  Spain: "\u{1F1EA}\u{1F1F8}",
+  Portugal: "\u{1F1F5}\u{1F1F9}",
+  Brazil: "\u{1F1E7}\u{1F1F7}",
+  India: "\u{1F1EE}\u{1F1F3}",
+  Pakistan: "\u{1F1F5}\u{1F1F0}",
+  Australia: "\u{1F1E6}\u{1F1FA}",
+  Argentina: "\u{1F1E6}\u{1F1F7}",
+  Mexico: "\u{1F1F2}\u{1F1FD}",
+  Canada: "\u{1F1E8}\u{1F1E6}",
+  Djibouti: "\u{1F1E9}\u{1F1EF}",
+  Israel: "\u{1F1EE}\u{1F1F1}",
+  China: "\u{1F1E8}\u{1F1F3}",
+  Taiwan: "\u{1F1F9}\u{1F1FC}",
 };
 
 const COUNTRY_COLORS = {
