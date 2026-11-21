@@ -111,7 +111,7 @@ class DetectionService:
 
         model_dir = Path(settings.model_storage_path)
 
-        for name in ["vauban_detect_v2.pt", "vauban_detect_v1.pt"]:
+        for name in ["vauban_detect_v3.pt", "vauban_detect_v2.pt", "vauban_detect_v1.pt"]:
             path = model_dir / name
             if path.exists():
                 self.model = YOLO(str(path))
@@ -130,7 +130,7 @@ class DetectionService:
         if self.model is None:
             self.load_model()
 
-        results = self.model(image_path, conf=settings.detection_confidence_threshold, imgsz=1280)
+        results = self.model(image_path, conf=settings.detection_confidence_threshold, imgsz=1280, augment=True)
         detections = []
 
         for result in results:

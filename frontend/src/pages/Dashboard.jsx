@@ -27,6 +27,10 @@ const COUNTRY_FLAGS = {
   Israel: "\u{1F1EE}\u{1F1F1}",
   China: "\u{1F1E8}\u{1F1F3}",
   Taiwan: "\u{1F1F9}\u{1F1FC}",
+  Egypt: "\u{1F1EA}\u{1F1EC}",
+  Jordan: "\u{1F1EF}\u{1F1F4}",
+  UAE: "\u{1F1E6}\u{1F1EA}",
+  "Saudi Arabia": "\u{1F1F8}\u{1F1E6}",
 };
 
 export default function Dashboard() {
