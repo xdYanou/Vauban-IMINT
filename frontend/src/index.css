@@ -59,11 +59,10 @@ body::before {
 .landing-grid {
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background-image:
-    linear-gradient(rgba(45, 125, 210, 0.04) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(45, 125, 210, 0.04) 1px, transparent 1px);
-  background-size: 60px 60px;
   pointer-events: none;
+  overflow: hidden;
+  background: url('/topo-bg.png') center/cover no-repeat;
+  opacity: 0.6;
 }
 
 .landing-content {
@@ -86,10 +85,10 @@ body::before {
 }
 
 .landing-logo {
-  width: 80px;
-  height: 80px;
+  width: 130px;
+  height: 130px;
   object-fit: contain;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
   opacity: 0.9;
   filter: brightness(1.1);
 }
@@ -936,6 +935,87 @@ body::before {
 
 .aircraft-weapons li:last-child {
   border-bottom: none;
+}
+
+/* ============ REPORTS ============ */
+.reports-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 12px;
+}
+
+.report-card {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 16px;
+  position: relative;
+  transition: border-color 0.2s;
+}
+
+.report-card:hover { border-color: var(--accent-dim); }
+
+.report-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.report-card-badge {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 10px;
+  font-weight: 700;
+  color: #c0392b;
+  background: rgba(192, 57, 43, 0.1);
+  border: 1px solid rgba(192, 57, 43, 0.2);
+  padding: 2px 8px;
+  border-radius: 2px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.report-card-date {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 10px;
+  color: var(--text-muted);
+}
+
+.report-card-title {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 6px;
+}
+
+.report-card-stats {
+  display: flex;
+  gap: 16px;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 10px;
+  color: var(--text-muted);
+}
+
+.report-download {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 6px 16px;
+  background: var(--accent-dim);
+  color: var(--accent-glow);
+  border: 1px solid rgba(45, 125, 210, 0.2);
+  border-radius: 3px;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  transition: background 0.15s;
+}
+
+.report-download:hover {
+  background: rgba(45, 125, 210, 0.2);
 }
 
 /* ============ ANALYTICS ============ */

@@ -6,6 +6,7 @@ import HighResCapture from "../components/HighResCapture";
 import ObservationGallery from "../components/ObservationGallery";
 import CoordsEditor from "../components/CoordsEditor";
 import AnalyticsTab from "../components/AnalyticsTab";
+import ReportsTab from "../components/ReportsTab";
 import AircraftIntel from "../components/AircraftIntel";
 
 export default function AirbaseDetail() {
@@ -53,6 +54,7 @@ export default function AirbaseDetail() {
     { id: "intel", label: "Aircraft Intel" },
     { id: "history", label: `History (${timeline.length})` },
     { id: "analytics", label: "Analytics" },
+    { id: "reports", label: "Reports" },
     { id: "settings", label: "Settings" },
   ];
 
@@ -144,6 +146,12 @@ export default function AirbaseDetail() {
           <div className="card">
             <h3>Detected Aircraft — Threat Assessment</h3>
             <AircraftIntel detectionSummary={allDetections} />
+          </div>
+        )}
+
+        {activeTab === "reports" && (
+          <div className="card">
+            <ReportsTab airbaseId={airbase.id} airbaseName={airbase.name} />
           </div>
         )}
 

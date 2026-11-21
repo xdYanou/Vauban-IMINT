@@ -8,6 +8,7 @@ export default function Landing() {
       {/* Grid background */}
       <div className="landing-grid" />
 
+
       {/* Content */}
       <div className="landing-content">
         {/* Logo + Title */}
