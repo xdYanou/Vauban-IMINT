@@ -101,9 +101,9 @@ COUNTRY_SHAPE_DEFAULTS = {
     "Poland": {"fighter": "F-16C", "medium_transport": "C-130E"},
     "Turkey": {"fighter": "F-16C", "medium_transport": "C-130", "tanker": "KC-135", "awacs": "E-7"},
     "Israel": {"fighter": "F-35I Adir", "strike": "F-15I Ra'am", "medium_transport": "C-130J", "tanker": "Boeing 707", "awacs": "G550 CAEW"},
-    "Japan": {"fighter": "F-35A", "strike": "F-2A", "medium_transport": "C-130", "heavy_transport": "C-2", "awacs": "E-767", "patrol": "P-1"},
-    "South Korea": {"fighter": "KF-21", "strike": "F-15K", "medium_transport": "C-130", "awacs": "E-737"},
-    "Taiwan": {"fighter": "F-16V", "strike": "Mirage 2000-5", "medium_transport": "C-130", "awacs": "E-2K"},
+    "Japan": {"fighter": "F-35A", "strike": "F-2A", "medium_transport": "C-130", "heavy_transport": "C-2", "awacs": "E-767", "patrol": "P-1", "tanker": "KC-767"},
+    "South Korea": {"fighter": "KF-21", "strike": "F-15K", "medium_transport": "C-130", "heavy_transport": "C-17", "awacs": "E-737", "tanker": "KC-330", "patrol": "P-3C"},
+    "Taiwan": {"fighter": "F-16V", "strike": "Mirage 2000-5", "medium_transport": "C-130", "awacs": "E-2K", "patrol": "P-3C"},
     "Saudi Arabia": {"fighter": "F-15SA", "strike": "Typhoon", "medium_transport": "C-130", "awacs": "E-3A", "tanker": "KC-130"},
     "UAE": {"fighter": "F-16E Block 60", "strike": "Mirage 2000-9", "medium_transport": "C-130", "heavy_transport": "C-17"},
     "Egypt": {"fighter": "Rafale DM", "strike": "MiG-29M2", "medium_transport": "C-130", "heavy_transport": "C-17"},
@@ -161,16 +161,16 @@ def reclassify_for_base(detections: list, airbase_name: str, country: str = "", 
             if det.aircraft_type in plausible:
                 # Raw type is plausible for this country — keep it
                 reclassified.append(det)
-            elif country_defaults and shape in country_defaults:
-                # Implausible type — remap to country default for this shape
+            elif country_defaults:
+                # Implausible type — remap via shape, fallback to fighter default
+                new_type = country_defaults.get(shape) or country_defaults.get("fighter", det.aircraft_type)
                 reclassified.append(DetectionResult(
-                    aircraft_type=country_defaults[shape],
+                    aircraft_type=new_type,
                     confidence=det.confidence,
                     bbox_x=det.bbox_x, bbox_y=det.bbox_y,
                     bbox_w=det.bbox_w, bbox_h=det.bbox_h,
                 ))
             else:
-                # No mapping available — keep raw but it's likely wrong
                 reclassified.append(det)
         else:
             # No country info — keep raw
@@ -209,7 +209,13 @@ class DetectionService:
         if self.model is None:
             self.load_model()
 
-        results = self.model(image_path, conf=settings.detection_confidence_threshold, imgsz=1280, augment=True)
+        results = self.model(
+            image_path,
+            conf=settings.detection_confidence_threshold,
+            imgsz=1280,
+            augment=True,
+            iou=0.4,  # Stricter NMS to remove duplicate boxes on same aircraft
+        )
         detections = []
 
         for result in results:

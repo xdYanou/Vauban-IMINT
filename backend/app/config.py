@@ -18,7 +18,7 @@ class Settings(BaseSettings):
     model_storage_path: str = str(Path(__file__).parent.parent / "ml" / "models")
 
     # Detection
-    detection_confidence_threshold: float = 0.25
+    detection_confidence_threshold: float = 0.30
     detection_model_name: str = "yolov8n.pt"
 
     model_config = {"env_file": ".env", "env_file_encoding": "utf-8", "extra": "ignore"}
