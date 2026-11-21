@@ -1031,6 +1031,29 @@ body::before {
   border-color: rgba(45, 125, 210, 0.3);
 }
 
+/* ============ CAPTURE BUTTONS ============ */
+.capture-btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  fontFamily: "'JetBrains Mono', monospace";
+  font-weight: 600;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: white;
+  transition: opacity 0.15s;
+}
+.capture-btn:disabled { opacity: 0.4; cursor: wait; }
+.capture-btn.esri { background: #2d7dd2; }
+.capture-btn.google { background: #27ae60; }
+.capture-btn.bing { background: #e67e22; }
+.capture-btn.multi {
+  background: linear-gradient(135deg, #2d7dd2, #27ae60, #e67e22);
+  padding: 8px 20px;
+}
+
 /* ============ BULK ============ */
 .bulk-btn {
   padding: 7px 16px;
