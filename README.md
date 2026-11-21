@@ -2,7 +2,7 @@
   <h1 align="center">VAUBAN</h1>
   <p align="center">
     <strong>IMINT & Military Intelligence Platform</strong><br>
-    Satellite imagery analysis for military airbase monitoring
+    Satellite imagery analysis for global military airbase monitoring
   </p>
 </p>
 
@@ -10,18 +10,20 @@
 
 ## Overview
 
-Vauban is a defence-oriented proof of work IMINT (Imagery Intelligence) platform that uses satellite imagery and computer vision to monitor Russian military airbases. The system detects, classifies, and tracks military aircraft deployments over time.
+Vauban is a defence-oriented IMINT (Imagery Intelligence) platform that uses satellite imagery and computer vision to monitor military airbases worldwide. The system detects, classifies, and tracks military aircraft deployments across **159 airbases in 35 countries**.
 
 Named after [Sebastien Le Prestre de Vauban](https://en.wikipedia.org/wiki/Vauban), the French military engineer and Marshal of France.
 
 ### What it does
 
-- **Monitors 25 Russian military airbases** including Engels-2, Hmeimim, Kubinka, and Crimean bases
-- **Fetches satellite imagery** from multiple sources (Sentinel-2, Esri World Imagery tiles)
-- **Detects aircraft** using a two-stage ML pipeline (YOLOv8 + EfficientNet)
-- **Classifies aircraft types** — Su-34, Tu-95, MiG-31, Ka-52, Il-76, and 30+ more
+- **Monitors 159 military airbases** across Russia, USA, UK, France, Germany, China, Iran, Israel, and 27 more countries
+- **Fetches high-resolution satellite imagery** from Esri World Imagery tiles (~0.6-1.2m/px)
+- **Detects aircraft** using YOLOv8 trained on satellite imagery (20 aircraft types)
+- **Intelligent classification** — country-aware filtering maps detections to locally plausible types (Typhoon for UK, Rafale for France, J-20 for China, etc.)
 - **Tracks changes over time** — observation history, aircraft counts, type distribution analytics
-- **Bulk capture** all monitored airbases in a single operation
+- **Multi-zone capture** — define custom capture rectangles per base to cover entire facilities
+- **Aircraft intelligence encyclopedia** — specs, weapons, role, and operational context for every detected type
+- **Bulk capture** — image all monitored airbases in a single operation
 
 ## Architecture
 
@@ -36,52 +38,70 @@ Named after [Sebastien Le Prestre de Vauban](https://en.wikipedia.org/wiki/Vauba
                     |   FastAPI Backend |
                     |                  |
                     |  +------------+  |
-                    |  | Sentinel-2 |  |  Copernicus Data Space
-                    |  | Service    |  |  (10m resolution, free)
-                    |  +------------+  |
-                    |                  |
-                    |  +------------+  |
                     |  | Tile       |  |  Esri World Imagery
-                    |  | Service    |  |  (0.5-1.2m resolution)
+                    |  | Service    |  |  (0.6-1.2m resolution)
                     |  +------------+  |
                     |                  |
                     |  +------------+  |
-                    |  | Detection  |  |  Two-Stage Pipeline
-                    |  | Service    |  |
+                    |  | Sentinel-2 |  |  Copernicus Data Space
+                    |  | Service    |  |  (10m, change detection)
+                    |  +------------+  |
+                    |                  |
+                    |  +------------+  |
+                    |  | Detection  |  |
+                    |  | Pipeline   |  |
                     |  +------+-----+  |
                     +---------|--------+
                               |
-                 +------------+------------+
-                 |                         |
-          +------+------+          +------+------+
-          | Stage 1     |          | Stage 2     |
-          | YOLOv8      |          | EfficientNet|
-          | Detection   |   --->   | Classifier  |
-          | (7 classes) |          | (35 types)  |
-          +-------------+          +-------------+
+              +---------------+---------------+
+              |                               |
+       +------+------+               +-------+-------+
+       | YOLOv8      |               | Country-Aware |
+       | Detection   |      --->     | Reclassifier  |
+       | (20 types)  |               | (35 countries)|
+       +-------------+               +---------------+
 ```
 
-### Two-Stage Detection Pipeline
+### Detection Pipeline
 
-**Stage 1 — Detection (YOLOv8)**
-- Finds aircraft in satellite imagery and draws bounding boxes
-- Classifies into broad categories: fighter, bomber, transport, tanker, surveillance, rotary, trainer
-- Trained on MAR20 dataset (3,842 satellite images, 22,000+ annotations)
+**Stage 1 — YOLOv8 Detection**
+- Detects aircraft in satellite imagery with bounding boxes
+- Classifies into 20 types trained on MAR20 satellite dataset
+- YOLOv8s model, trained at 960px with augmented oversampling
 
-**Stage 2 — Classification (EfficientNet-B0)**
-- Crops each detected aircraft and classifies the specific type
-- 35 aircraft classes including Russian types (Su-24/25/34/57, MiG-29/31, Tu-95/160/22M, Il-76, Ka-52, Mi-8/24/28)
-- Trained on 22,000+ cropped aircraft images
+**Stage 2 — Intelligent Reclassification**
+- **Base-specific context**: Known order of battle per base (Engels-2 → Tu-95MS, Tu-160)
+- **Country-level filtering**: Removes implausible detections (no Su-35 at US bases)
+- **Country defaults**: Maps shapes to local types (UK fighter → Typhoon, France → Rafale, China → J-20)
+
+### Aircraft Types
+
+**20 YOLO-detected types:** Su-35, Su-34, Su-24, Tu-95, Tu-160, Tu-22M, F-15, F-16, F-22, F/A-18, B-52, B-1B, C-130, C-17, C-5, KC-135, KC-10, E-3, E-8, P-3C
+
+**Country reclassification adds:** Typhoon, Rafale, Tornado, Gripen, J-20, J-16, H-6K, F-35, Mirage 2000, MiG-29, MiG-31, F-14 Tomcat, and 30+ more regional types
+
+## Monitored Countries
+
+| Region | Countries | Bases |
+|--------|-----------|-------|
+| **Russia** | Russia | 25 |
+| **North America** | USA, Canada, Mexico | 24 |
+| **Europe** | UK, France, Germany, Italy, Spain, Portugal, Norway, Netherlands, Belgium, Poland, Czech Republic, Lithuania, Estonia, Bulgaria, Romania | 33 |
+| **Middle East** | Iran, Israel, Saudi Arabia, UAE, Egypt, Jordan, Turkey | 29 |
+| **Asia-Pacific** | China, Taiwan, Japan, South Korea, India, Pakistan, Australia | 28 |
+| **South America** | Brazil, Argentina | 6 |
+| **Africa** | Djibouti (US, France, China, Japan bases) | 4 |
+| **NATO** | Multi-national (Baltic Air Policing, Al Udeid) | 3 |
+| | **Total** | **159** |
 
 ## Tech Stack
 
 | Layer | Technology |
 |-------|-----------|
 | Frontend | React, Vite, Leaflet, Recharts |
-| Backend | Python, FastAPI, SQLAlchemy |
-| Database | SQLite (local MVP) |
-| ML/CV | PyTorch, YOLOv8 (ultralytics), EfficientNet |
-| Satellite | Copernicus/Sentinel-2, Esri World Imagery |
+| Backend | Python, FastAPI, SQLAlchemy, SQLite |
+| ML/CV | PyTorch, YOLOv8 (ultralytics) |
+| Satellite | Esri World Imagery tiles, Copernicus/Sentinel-2 |
 | Training | Google Colab (GPU) |
 
 ## Project Structure
@@ -90,20 +110,22 @@ Named after [Sebastien Le Prestre de Vauban](https://en.wikipedia.org/wiki/Vauba
 Vauban/
   backend/
     app/
-      api/            # REST endpoints (airbases, observations, sentinel, tiles, analytics, bulk)
-      models/          # SQLAlchemy models (Airbase, Observation, Detection)
-      services/        # Business logic (detection pipeline, sentinel, tile fetcher)
-      data/            # Seed data (25 airbase coordinates)
-    .env.example       # Environment variable template
-    requirements.txt
+      api/            # REST endpoints
+      models/          # SQLAlchemy models (Airbase, CaptureZone, Observation, Detection)
+      services/        # Detection pipeline, tile fetcher, sentinel service
+      data/            # Seed data, aircraft specs, base context, zone backups
+    storage/
+      images/          # Captured satellite imagery
+      aircraft_images/ # Reference photos for aircraft intel cards
   frontend/
     src/
-      components/      # Map, gallery, detection overlay, charts, capture UI
+      components/      # Map, gallery, detection overlay, analytics, zone editor
       pages/           # Dashboard, AirbaseDetail
-      utils/           # API client
   ml/
     scripts/           # Dataset prep, training scripts
-    Vauban_Training.ipynb  # Colab notebook for GPU training
+    models/            # Trained .pt model files
+    metrics/           # Training curves, confusion matrices
+    Vauban_Training_v3.ipynb  # Latest training notebook
 ```
 
 ## Setup
@@ -112,7 +134,7 @@ Vauban/
 
 - Python 3.10+
 - Node.js 18+
-- Copernicus Data Space account (free) — [Register here](https://dataspace.copernicus.eu/)
+- Copernicus Data Space account (free, optional) — [Register here](https://dataspace.copernicus.eu/)
 
 ### Backend
 
@@ -124,7 +146,7 @@ pip install -r requirements.txt
 
 # Configure credentials
 cp .env.example .env
-# Edit .env with your Copernicus credentials
+# Edit .env with your Copernicus credentials (optional)
 
 # Run
 uvicorn app.main:app --reload --reload-dir app --port 8000
@@ -142,41 +164,56 @@ Open `http://localhost:5173`
 
 ### Training Models (Google Colab)
 
-1. Upload `ml/mar20_yolo.zip` and `ml/aircraft_classifier.zip` to Colab
-2. Open `ml/Vauban_Training.ipynb`
-3. Run all cells (use GPU runtime)
-4. Download `vauban_detect_v1.pt` and `vauban_classifier_v1.pt`
-5. Place both in `ml/models/`
+1. Open `ml/Vauban_Training_v3.ipynb` in Colab (free T4 GPU)
+2. Run all cells — downloads dataset via Kaggle API
+3. Download `vauban_detect_v3.pt`
+4. Place in `backend/ml/models/`
+5. Restart backend — model loads automatically
 
-The detection pipeline automatically uses the trained models when present.
+## Key Features
 
-## Monitored Airbases
+### Multi-Zone Capture
+Each base supports multiple capture zones with configurable zoom levels. Zones are placed visually on a satellite map with drag-and-drop positioning. Covers entire facilities including dispersal areas, hardened shelters, and secondary aprons.
 
-| Base | Region | Known Aircraft |
-|------|--------|---------------|
-| Engels-2 | Saratov | Tu-160, Tu-95MS |
-| Hmeimim | Syria | Su-35S, Su-34, Su-24M |
-| Kubinka | Moscow | Su-35S, MiG-29 |
-| Belbek | Crimea | Su-27SM, Su-30SM |
-| Saki | Crimea | Su-30SM, Su-24M |
-| Lipetsk | Lipetsk | Su-35S, Su-34, Su-57 |
-| Besovets | Karelia | Su-35S |
-| Mozdok | N. Ossetia | Staging base |
-| + 17 more | | |
+### Country-Aware Intelligence
+The system knows what aircraft each country operates. A "fighter" detection at a French base becomes "Rafale", at a UK base becomes "Typhoon", at a Chinese base becomes "J-20". Base-specific overrides provide even finer granularity (Engels-2 → Tu-95MS/Tu-160).
+
+### Aircraft Encyclopedia
+Every detected type links to a detailed intel card with:
+- Reference photo
+- Role, generation, country of origin
+- Performance specs (speed, range, ceiling, payload)
+- Full weapons loadout
+- Operational context and combat history
+
+### Analytics Dashboard
+- Detection timeline with per-type stacked charts
+- Type distribution pie charts
+- Capture-aggregated statistics
+- Per-base aircraft count tracking over time
 
 ## API Endpoints
 
 | Method | Endpoint | Description |
 |--------|----------|-------------|
-| GET | `/api/airbases/` | List all monitored airbases |
-| GET | `/api/airbases/{id}` | Get airbase details |
-| PATCH | `/api/airbases/{id}/coords` | Update airbase coordinates |
-| POST | `/api/tiles/fetch/{id}` | Capture high-res imagery |
-| POST | `/api/sentinel/fetch/{id}` | Fetch Sentinel-2 imagery |
-| POST | `/api/bulk/capture` | Bulk capture all airbases |
-| GET | `/api/analytics/overview` | Platform statistics |
+| GET | `/api/airbases/` | List all 159 monitored airbases |
+| GET | `/api/airbases/{id}` | Airbase details with capture zones |
+| PATCH | `/api/airbases/{id}/coords` | Update coordinates |
+| POST | `/api/airbases/{id}/zones` | Add capture zone |
+| DELETE | `/api/airbases/{id}/zones/{zid}` | Remove capture zone |
+| POST | `/api/tiles/fetch/{id}` | Capture all zones for a base |
+| POST | `/api/bulk/capture` | Bulk capture all bases |
+| GET | `/api/analytics/overview` | Platform-wide statistics |
 | GET | `/api/analytics/airbase/{id}/timeline` | Observation history |
-| POST | `/api/observations/upload/{id}` | Manual image upload |
+| GET | `/api/aircraft/specs` | Aircraft encyclopedia data |
+
+## Model Versions
+
+| Version | Architecture | imgsz | Classes | Status |
+|---------|-------------|-------|---------|--------|
+| v1 | YOLOv8n (3M) | 640 | 7 broad categories | Retired |
+| v2 | YOLOv8n (3M) | 640→1280 | 20 specific types | Previous |
+| v3 | YOLOv8s (11M) | 960 | 20 types + oversampling | **Current** |
 
 ## License
 
