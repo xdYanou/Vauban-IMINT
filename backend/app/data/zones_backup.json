@@ -798,5 +798,117 @@
     "longitude": 152.71826886814134,
     "zoom": 18,
     "grid_size": 6
+  },
+  {
+    "airbase_id": 79,
+    "label": "zone-1",
+    "latitude": 41.540176749223825,
+    "longitude": 15.725834369659426,
+    "zoom": 18,
+    "grid_size": 6
+  },
+  {
+    "airbase_id": 79,
+    "label": "zone-2",
+    "latitude": 41.54488241357424,
+    "longitude": 15.702810287475588,
+    "zoom": 18,
+    "grid_size": 6
+  },
+  {
+    "airbase_id": 79,
+    "label": "zone-3",
+    "latitude": 41.54398306392237,
+    "longitude": 15.711436271667482,
+    "zoom": 18,
+    "grid_size": 6
+  },
+  {
+    "airbase_id": 79,
+    "label": "zone-4",
+    "latitude": 41.540321296912474,
+    "longitude": 15.717616081237795,
+    "zoom": 18,
+    "grid_size": 6
+  },
+  {
+    "airbase_id": 79,
+    "label": "zone-5",
+    "latitude": 41.53421789111595,
+    "longitude": 15.725855827331545,
+    "zoom": 18,
+    "grid_size": 6
+  },
+  {
+    "airbase_id": 79,
+    "label": "zone-6",
+    "latitude": 41.53399301779635,
+    "longitude": 15.717444419860842,
+    "zoom": 18,
+    "grid_size": 6
+  },
+  {
+    "airbase_id": 79,
+    "label": "zone-7",
+    "latitude": 41.53868307085593,
+    "longitude": 15.709333419799806,
+    "zoom": 18,
+    "grid_size": 6
+  },
+  {
+    "airbase_id": 70,
+    "label": "zone-1",
+    "latitude": 52.46020648255309,
+    "longitude": 9.418373107910158,
+    "zoom": 18,
+    "grid_size": 6
+  },
+  {
+    "airbase_id": 70,
+    "label": "zone-2",
+    "latitude": 52.46040259846574,
+    "longitude": 9.426763057708742,
+    "zoom": 18,
+    "grid_size": 6
+  },
+  {
+    "airbase_id": 70,
+    "label": "zone-3",
+    "latitude": 52.455120238129616,
+    "longitude": 9.441118240356447,
+    "zoom": 18,
+    "grid_size": 6
+  },
+  {
+    "airbase_id": 70,
+    "label": "zone-4",
+    "latitude": 52.45532945257099,
+    "longitude": 9.416656494140627,
+    "zoom": 18,
+    "grid_size": 6
+  },
+  {
+    "airbase_id": 70,
+    "label": "zone-5",
+    "latitude": 52.44685547261542,
+    "longitude": 9.428844451904297,
+    "zoom": 18,
+    "grid_size": 6
+  },
+  {
+    "airbase_id": 70,
+    "label": "zone-6",
+    "latitude": 52.46040259846574,
+    "longitude": 9.43528175354004,
+    "zoom": 18,
+    "grid_size": 6
+  },
+  {
+    "airbase_id": 70,
+    "label": "zone-7",
+    "latitude": 52.45998421679598,
+    "longitude": 9.446096420288088,
+    "zoom": 18,
+    "grid_size": 6
   }
 ]

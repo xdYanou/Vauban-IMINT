@@ -763,6 +763,81 @@ body::before {
 .type-trainer { background: rgba(149,165,166,0.08); color: #95a5a6; border: 1px solid rgba(149,165,166,0.15); }
 .type-unknown { background: rgba(100,100,100,0.08); color: var(--text-muted); border: 1px solid var(--border); }
 
+/* ============ HEATMAP TABLE ============ */
+.heatmap-table {
+  display: flex;
+  flex-direction: column;
+  min-width: fit-content;
+}
+
+.heatmap-row {
+  display: flex;
+  border-bottom: 1px solid var(--border);
+}
+
+.heatmap-row:hover { background: rgba(45, 125, 210, 0.03); }
+.heatmap-header { border-bottom: 2px solid var(--border-light); }
+.heatmap-header:hover { background: none; }
+.heatmap-footer { border-top: 2px solid var(--border-light); border-bottom: none; }
+.heatmap-footer:hover { background: none; }
+
+.heatmap-label {
+  min-width: 140px;
+  max-width: 140px;
+  padding: 6px 10px;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 11px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  border-right: 1px solid var(--border);
+}
+
+.heatmap-role {
+  font-size: 8px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.heatmap-cell {
+  min-width: 70px;
+  padding: 6px 8px;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 11px;
+  text-align: center;
+  color: var(--text-secondary);
+  border-right: 1px solid rgba(27, 37, 53, 0.3);
+}
+
+.heatmap-date {
+  font-size: 9px;
+  color: var(--text-muted);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.heatmap-total {
+  font-weight: 700;
+  color: var(--text-primary);
+  border-left: 1px solid var(--border-light);
+}
+
+.heatmap-total-header {
+  font-size: 9px;
+  font-weight: 700;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  border-left: 1px solid var(--border-light);
+}
+
+.heatmap-trend {
+  font-weight: 700;
+  font-size: 11px;
+  min-width: 60px;
+}
+
 /* ============ AIRCRAFT INTEL ============ */
 .aircraft-intel-grid {
   display: grid;

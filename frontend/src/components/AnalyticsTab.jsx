@@ -300,6 +300,86 @@ export default function AnalyticsTab({ timeline }) {
           </div>
         </div>
       </div>
+
+      {/* Row 4: Detection Heatmap — types x captures */}
+      {timeline.length > 0 && sortedTypes.length > 0 && (
+        <div className="card">
+          <h3>Detection Matrix — Type x Capture</h3>
+          <div style={{ overflowX: "auto" }}>
+            <div className="heatmap-table">
+              {/* Header row: dates */}
+              <div className="heatmap-row heatmap-header">
+                <div className="heatmap-label">Type</div>
+                {timeline.map((cap, i) => (
+                  <div key={i} className="heatmap-cell heatmap-date">
+                    {new Date(cap.date).toLocaleDateString(undefined, { month: "short", day: "numeric" })}
+                  </div>
+                ))}
+                <div className="heatmap-cell heatmap-total-header">Total</div>
+                <div className="heatmap-cell heatmap-total-header">Trend</div>
+              </div>
+
+              {/* One row per type */}
+              {sortedTypes.map(([type]) => {
+                const counts = timeline.map((cap) => (cap.aircraft_types || {})[type] || 0);
+                const maxCount = Math.max(...counts, 1);
+                const total = counts.reduce((a, b) => a + b, 0);
+                const trend = counts.length >= 2 ? counts[counts.length - 1] - counts[counts.length - 2] : 0;
+
+                return (
+                  <div key={type} className="heatmap-row">
+                    <div className="heatmap-label">
+                      <span style={{ color: getColor(type) }}>{type}</span>
+                      <span className="heatmap-role">{getRole(type)}</span>
+                    </div>
+                    {counts.map((count, i) => {
+                      const intensity = count / maxCount;
+                      return (
+                        <div
+                          key={i}
+                          className="heatmap-cell"
+                          style={{
+                            background: count > 0
+                              ? `rgba(45, 125, 210, ${0.1 + intensity * 0.5})`
+                              : "transparent",
+                          }}
+                        >
+                          {count > 0 ? count : "—"}
+                        </div>
+                      );
+                    })}
+                    <div className="heatmap-cell heatmap-total">{total}</div>
+                    <div className="heatmap-cell heatmap-trend" style={{
+                      color: trend > 0 ? "#27ae60" : trend < 0 ? "#e74c3c" : "#4a5a70",
+                    }}>
+                      {trend > 0 ? `▲${trend}` : trend < 0 ? `▼${Math.abs(trend)}` : "—"}
+                    </div>
+                  </div>
+                );
+              })}
+
+              {/* Total row */}
+              <div className="heatmap-row heatmap-footer">
+                <div className="heatmap-label" style={{ fontWeight: 700 }}>TOTAL</div>
+                {timeline.map((cap, i) => (
+                  <div key={i} className="heatmap-cell" style={{ fontWeight: 700, color: "#2d7dd2" }}>
+                    {cap.total_aircraft}
+                  </div>
+                ))}
+                <div className="heatmap-cell heatmap-total" style={{ fontWeight: 700, color: "#2d7dd2" }}>
+                  {grandTotal}
+                </div>
+                <div className="heatmap-cell heatmap-trend" style={{
+                  fontWeight: 700,
+                  color: delta > 0 ? "#27ae60" : delta < 0 ? "#e74c3c" : "#4a5a70",
+                }}>
+                  {delta > 0 ? `▲${delta}` : delta < 0 ? `▼${Math.abs(delta)}` : "—"}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
