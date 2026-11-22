@@ -222,7 +222,7 @@ class DetectionService:
         slice_size = 640
         overlap = 128  # 20% overlap
         stride = slice_size - overlap
-        conf = settings.detection_confidence_threshold
+        conf = max(0.20, settings.detection_confidence_threshold - 0.05)  # Slightly lower for slices
 
         all_detections = []
 
@@ -238,8 +238,8 @@ class DetectionService:
                 crop = img.crop((x1, y1, x2, y2))
                 crop_arr = np.array(crop)
 
-                # Run inference on slice (no resize needed — already 640px)
-                results = self.model(crop_arr, conf=conf, imgsz=640, verbose=False)
+                # Run inference on slice at native resolution
+                results = self.model(crop_arr, conf=conf, imgsz=640, augment=True, verbose=False)
 
                 for result in results:
                     boxes = result.boxes
@@ -325,8 +325,37 @@ class DetectionService:
         if self.model is None:
             self.load_model()
 
-        # Use sliced inference for better small object detection
-        detections = self._slice_inference(image_path)
+        # Single-pass inference at high resolution with TTA
+        results = self.model(
+            image_path,
+            conf=settings.detection_confidence_threshold,
+            imgsz=1280,
+            augment=True,
+            iou=0.4,
+        )
+        detections = []
+        for result in results:
+            boxes = result.boxes
+            if boxes is None:
+                continue
+            for i in range(len(boxes)):
+                box = boxes[i]
+                cls_id = int(box.cls[0])
+                conf = float(box.conf[0])
+                cx, cy, w, h = box.xywh[0].tolist()
+
+                if self.model.names and cls_id in self.model.names:
+                    aircraft_type = self.model.names[cls_id]
+                elif cls_id == 4:
+                    aircraft_type = "aircraft"
+                else:
+                    continue
+
+                detections.append(DetectionResult(
+                    aircraft_type=aircraft_type,
+                    confidence=conf,
+                    bbox_x=cx, bbox_y=cy, bbox_w=w, bbox_h=h,
+                ))
 
         # Apply intelligent reclassification
         if airbase_name:
