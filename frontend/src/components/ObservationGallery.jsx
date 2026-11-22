@@ -1,8 +1,10 @@
 import { useState } from "react";
 import DetectionOverlay from "./DetectionOverlay";
+import api from "../utils/api";
 
-export default function ObservationGallery({ timeline }) {
+export default function ObservationGallery({ timeline, airbaseId, onDataChanged }) {
   const [selected, setSelected] = useState(null);
+  const [deleting, setDeleting] = useState(null);
 
   if (!timeline.length) {
     return (
@@ -12,6 +14,20 @@ export default function ObservationGallery({ timeline }) {
         </p>
       </div>
     );
+  }
+
+  async function handleDelete(captureDate, idx) {
+    if (!confirm("Delete this entire capture and all its detections?")) return;
+    setDeleting(idx);
+    try {
+      await api.delete(`/api/observations/capture/${airbaseId}/${captureDate}`);
+      if (selected === idx) setSelected(null);
+      onDataChanged();
+    } catch (err) {
+      alert(err.response?.data?.detail || "Failed to delete");
+    } finally {
+      setDeleting(null);
+    }
   }
 
   const capture = selected !== null ? timeline[selected] : null;
@@ -27,25 +43,35 @@ export default function ObservationGallery({ timeline }) {
             <div
               key={idx}
               className={`gallery-item ${selected === idx ? "selected" : ""}`}
-              onClick={() => setSelected(selected === idx ? null : idx)}
             >
-              {firstImage ? (
-                <img src={`http://localhost:8000${firstImage}`} alt={`Capture ${idx}`} />
-              ) : (
-                <div style={{ width: "100%", height: "100%", background: "#131a24", display: "flex", alignItems: "center", justifyContent: "center", color: "#4a5a70", fontSize: 11 }}>
-                  No image
-                </div>
-              )}
+              <div onClick={() => setSelected(selected === idx ? null : idx)} style={{ width: "100%", height: "100%" }}>
+                {firstImage ? (
+                  <img src={`http://localhost:8000${firstImage}`} alt={`Capture ${idx}`} />
+                ) : (
+                  <div style={{ width: "100%", height: "100%", background: "#131a24", display: "flex", alignItems: "center", justifyContent: "center", color: "#4a5a70", fontSize: 11 }}>
+                    No image
+                  </div>
+                )}
+              </div>
               <div className="gallery-item-overlay">
-                <div className="gallery-date">
-                  {new Date(item.date).toLocaleDateString()}
-                </div>
-                <div className="gallery-meta">
-                  <span className="gallery-source">{item.source}</span>
-                  <span className="gallery-source">{item.zones}z</span>
-                  {item.total_aircraft > 0 && (
-                    <span className="gallery-count">{item.total_aircraft} aircraft</span>
-                  )}
+                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                  <div>
+                    <div className="gallery-date">{new Date(item.date).toLocaleDateString()}</div>
+                    <div className="gallery-meta">
+                      <span className="gallery-source">{item.source}</span>
+                      <span className="gallery-source">{item.zones}z</span>
+                      {item.total_aircraft > 0 && (
+                        <span className="gallery-count">{item.total_aircraft} aircraft</span>
+                      )}
+                    </div>
+                  </div>
+                  <button
+                    onClick={(e) => { e.stopPropagation(); handleDelete(item.date, idx); }}
+                    disabled={deleting === idx}
+                    className="gallery-delete-btn"
+                  >
+                    {deleting === idx ? "..." : "x"}
+                  </button>
                 </div>
               </div>
             </div>
@@ -58,25 +84,33 @@ export default function ObservationGallery({ timeline }) {
         <div className="card" style={{ marginTop: 16 }}>
           <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 14 }}>
             <h3 style={{ margin: 0 }}>Capture — {new Date(capture.date).toLocaleString()}</h3>
-            <div style={{ display: "flex", gap: 12, fontFamily: "'JetBrains Mono', monospace", fontSize: 11 }}>
+            <div style={{ display: "flex", gap: 12, alignItems: "center", fontFamily: "'JetBrains Mono', monospace", fontSize: 11 }}>
               <span style={{ color: "#7a8ba0" }}>{capture.zones} zones</span>
               <span style={{ color: "#2d7dd2" }}>{capture.total_aircraft} aircraft</span>
               <span style={{ color: "#4a5a70" }}>{capture.source}</span>
+              <button
+                onClick={() => handleDelete(capture.date, selected)}
+                disabled={deleting === selected}
+                style={{
+                  padding: "4px 12px", background: "rgba(192,57,43,0.15)",
+                  color: "#c0392b", border: "1px solid rgba(192,57,43,0.3)",
+                  borderRadius: 3, cursor: "pointer", fontFamily: "'JetBrains Mono', monospace",
+                  fontSize: 10, fontWeight: 600, textTransform: "uppercase",
+                }}
+              >
+                Delete Capture
+              </button>
             </div>
           </div>
 
-          {/* Type summary */}
           {Object.keys(capture.aircraft_types || {}).length > 0 && (
             <div style={{ display: "flex", gap: 5, marginBottom: 14, flexWrap: "wrap" }}>
               {Object.entries(capture.aircraft_types).map(([type, count]) => (
-                <span key={type} className={`type-badge type-${type}`}>
-                  {type}: {count}
-                </span>
+                <span key={type} className={`type-badge type-${type}`}>{type}: {count}</span>
               ))}
             </div>
           )}
 
-          {/* Zone images with detections */}
           <div style={{ display: "grid", gridTemplateColumns: capture.images.length > 1 ? "repeat(auto-fit, minmax(400px, 1fr))" : "1fr", gap: 10 }}>
             {capture.images.map((img, i) => (
               <div key={i}>

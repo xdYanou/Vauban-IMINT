@@ -139,7 +139,7 @@ export default function AirbaseDetail() {
         )}
 
         {activeTab === "history" && (
-          <ObservationGallery timeline={timeline} />
+          <ObservationGallery timeline={timeline} airbaseId={airbase.id} onDataChanged={loadData} />
         )}
 
         {activeTab === "intel" && (

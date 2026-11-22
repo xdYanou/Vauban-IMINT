@@ -86,6 +86,40 @@ def get_observation(observation_id: int, db: Session = Depends(get_db)):
     return obs
 
 
+@router.delete("/capture/{airbase_id}/{capture_date}")
+def delete_capture(airbase_id: int, capture_date: str, db: Session = Depends(get_db)):
+    """Delete all observations in a capture session (within 60s of given timestamp)."""
+    from datetime import timedelta
+
+    try:
+        target = datetime.fromisoformat(capture_date)
+    except ValueError:
+        raise HTTPException(status_code=400, detail="Invalid date format")
+
+    observations = (
+        db.query(Observation)
+        .filter(
+            Observation.airbase_id == airbase_id,
+            Observation.observation_date >= target - timedelta(seconds=60),
+            Observation.observation_date <= target + timedelta(seconds=60),
+        )
+        .all()
+    )
+
+    if not observations:
+        raise HTTPException(status_code=404, detail="No observations found")
+
+    for obs in observations:
+        img_path = Path(obs.image_path)
+        if img_path.exists():
+            img_path.unlink(missing_ok=True)
+        db.query(Detection).filter(Detection.observation_id == obs.id).delete()
+        db.delete(obs)
+
+    db.commit()
+    return {"status": "deleted", "removed": len(observations)}
+
+
 @router.post("/upload/{airbase_id}", response_model=ObservationOut)
 async def upload_observation(
     airbase_id: int,
