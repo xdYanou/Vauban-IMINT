@@ -154,21 +154,15 @@ def _generate_report(airbase, observations, db) -> dict:
     elements.append(st)
     elements.append(Spacer(1, 3*mm))
 
-    # Generate charts
+    # Timeline chart
     if len(captures) > 1:
         timeline_chart = REPORTS_DIR / f"tmp_timeline_{report_id}.png"
         _generate_chart_image(captures, "timeline", str(timeline_chart))
         elements.append(Paragraph("SITUATION OVERVIEW", s['SH']))
-        elements.append(RLImage(str(timeline_chart), width=180*mm, height=60*mm))
-        elements.append(Spacer(1, 2*mm))
+        elements.append(RLImage(str(timeline_chart), width=185*mm, height=55*mm))
+        elements.append(Spacer(1, 3*mm))
 
-    if all_types:
-        types_chart = REPORTS_DIR / f"tmp_types_{report_id}.png"
-        _generate_chart_image(captures, "types", str(types_chart))
-        elements.append(RLImage(str(types_chart), width=180*mm, height=60*mm))
-        elements.append(Spacer(1, 2*mm))
-
-    # Detection table — compact
+    # Detection table
     if all_types:
         elements.append(Paragraph("DETECTION BREAKDOWN", s['SH']))
         specs_path = Path(__file__).parent.parent / "data" / "aircraft_specs.json"
@@ -200,21 +194,23 @@ def _generate_report(airbase, observations, db) -> dict:
     if obs_with_det:
         elements.append(Paragraph("KEY IMAGERY", s['SH']))
 
-        for obs, det_count in obs_with_det[:4]:
+        for obs, det_count in obs_with_det[:3]:
             img_path = Path(obs.image_path)
             if not img_path.exists():
                 continue
             try:
                 pil_img = Image.open(img_path)
-                ratio = min(400 / pil_img.width, 280 / pil_img.height)
-                new_w = int(pil_img.width * ratio)
-                new_h = int(pil_img.height * ratio)
-                pil_img = pil_img.resize((new_w, new_h), Image.LANCZOS)
+
+                # Scale to full page width
+                target_w = 185 * mm
+                ratio = target_w / (pil_img.width * 0.264583)  # px to mm
+                img_h_mm = pil_img.height * 0.264583 * ratio
+                img_h_mm = min(img_h_mm, 130 * mm)  # Cap height
 
                 tmp_path = REPORTS_DIR / f"tmp_img_{obs.id}_{report_id}.jpg"
-                pil_img.save(str(tmp_path), "JPEG", quality=80)
+                pil_img.save(str(tmp_path), "JPEG", quality=85)
 
-                rl_img = RLImage(str(tmp_path), width=min(180*mm, new_w * 0.26*mm), height=min(120*mm, new_h * 0.26*mm))
+                rl_img = RLImage(str(tmp_path), width=target_w, height=img_h_mm)
                 elements.append(rl_img)
 
                 type_counts = {}
@@ -223,8 +219,8 @@ def _generate_report(airbase, observations, db) -> dict:
                 type_str = ", ".join(f"{t}: {c}" for t, c in sorted(type_counts.items(), key=lambda x: -x[1]))
                 elements.append(Paragraph(
                     f"<i>{obs.observation_date.strftime('%d %b %Y %H:%M')} | {obs.source} | "
-                    f"Zone: {obs.zone_label or 'default'} | {type_str}</i>", s['BT']))
-                elements.append(Spacer(1, 2*mm))
+                    f"Zone: {obs.zone_label or 'default'} | Detections: {type_str}</i>", s['BT']))
+                elements.append(Spacer(1, 4*mm))
             except Exception as e:
                 logger.warning(f"Image {obs.id}: {e}")
 
