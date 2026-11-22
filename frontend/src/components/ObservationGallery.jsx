@@ -5,6 +5,9 @@ import api from "../utils/api";
 export default function ObservationGallery({ timeline, airbaseId, onDataChanged }) {
   const [selected, setSelected] = useState(null);
   const [deleting, setDeleting] = useState(null);
+  const [selectMode, setSelectMode] = useState(false);
+  const [checked, setChecked] = useState(new Set());
+  const [bulkDeleting, setBulkDeleting] = useState(false);
 
   if (!timeline.length) {
     return (
@@ -30,10 +33,68 @@ export default function ObservationGallery({ timeline, airbaseId, onDataChanged 
     }
   }
 
+  function toggleCheck(idx) {
+    const next = new Set(checked);
+    if (next.has(idx)) next.delete(idx);
+    else next.add(idx);
+    setChecked(next);
+  }
+
+  function selectAll() {
+    if (checked.size === timeline.length) setChecked(new Set());
+    else setChecked(new Set(timeline.map((_, i) => i)));
+  }
+
+  async function handleBulkDelete() {
+    if (!confirm(`Delete ${checked.size} capture(s) and all their detections?`)) return;
+    setBulkDeleting(true);
+    for (const idx of checked) {
+      try {
+        await api.delete(`/api/observations/capture/${airbaseId}/${timeline[idx].date}`);
+      } catch {}
+    }
+    setChecked(new Set());
+    setSelectMode(false);
+    setSelected(null);
+    setBulkDeleting(false);
+    onDataChanged();
+  }
+
   const capture = selected !== null ? timeline[selected] : null;
 
   return (
     <div>
+      {/* Toolbar */}
+      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 12 }}>
+        <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 10, color: "#4a5a70" }}>
+          {timeline.length} capture{timeline.length !== 1 ? "s" : ""}
+          {selectMode && checked.size > 0 && ` — ${checked.size} selected`}
+        </span>
+        <div style={{ display: "flex", gap: 6 }}>
+          {!selectMode ? (
+            <button onClick={() => { setSelectMode(true); setChecked(new Set()); }} className="gallery-toolbar-btn">
+              Select
+            </button>
+          ) : (
+            <>
+              <button onClick={selectAll} className="gallery-toolbar-btn">
+                {checked.size === timeline.length ? "Deselect All" : "Select All"}
+              </button>
+              <button
+                onClick={handleBulkDelete}
+                disabled={checked.size === 0 || bulkDeleting}
+                className="gallery-toolbar-btn delete"
+              >
+                {bulkDeleting ? "Deleting..." : `Delete (${checked.size})`}
+              </button>
+              <button onClick={() => { setSelectMode(false); setChecked(new Set()); }} className="gallery-toolbar-btn">
+                Cancel
+              </button>
+            </>
+          )}
+        </div>
+      </div>
+
       {/* Capture cards */}
       <div className="gallery-grid">
         {timeline.slice().reverse().map((item, reverseIdx) => {
@@ -42,9 +103,17 @@ export default function ObservationGallery({ timeline, airbaseId, onDataChanged 
           return (
             <div
               key={idx}
-              className={`gallery-item ${selected === idx ? "selected" : ""}`}
+              className={`gallery-item ${selected === idx ? "selected" : ""} ${checked.has(idx) ? "checked" : ""}`}
             >
-              <div onClick={() => setSelected(selected === idx ? null : idx)} style={{ width: "100%", height: "100%" }}>
+              {selectMode && (
+                <div
+                  className="gallery-checkbox"
+                  onClick={(e) => { e.stopPropagation(); toggleCheck(idx); }}
+                >
+                  {checked.has(idx) ? "✓" : ""}
+                </div>
+              )}
+              <div onClick={() => selectMode ? toggleCheck(idx) : setSelected(selected === idx ? null : idx)} style={{ width: "100%", height: "100%" }}>
                 {firstImage ? (
                   <img src={`http://localhost:8000${firstImage}`} alt={`Capture ${idx}`} />
                 ) : (
