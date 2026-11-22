@@ -10,6 +10,14 @@ export default function ReportsTab({ airbaseId, airbaseName }) {
     api.get(`/api/reports/list/${airbaseId}`).then(({ data }) => setReports(data)).catch(() => {});
   }
 
+  async function handleDelete(reportId) {
+    if (!confirm("Delete this report?")) return;
+    try {
+      await api.delete(`/api/reports/${reportId}`);
+      loadReports();
+    } catch {}
+  }
+
   useEffect(() => { loadReports(); }, [airbaseId]);
 
   async function handleGenerate() {
@@ -85,14 +93,27 @@ export default function ReportsTab({ airbaseId, airbaseName }) {
                   ))}
                 </div>
               )}
-              <a
-                href={`http://localhost:8000/api/reports/download/${report.filename}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="report-download"
-              >
-                Download PDF
-              </a>
+              <div style={{ display: "flex", gap: 8, marginTop: 12 }}>
+                <a
+                  href={`http://localhost:8000/api/reports/download/${report.filename}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="report-download"
+                >
+                  Download PDF
+                </a>
+                <button
+                  onClick={() => handleDelete(report.id)}
+                  style={{
+                    padding: "6px 12px", background: "rgba(192,57,43,0.1)",
+                    color: "#c0392b", border: "1px solid rgba(192,57,43,0.2)",
+                    borderRadius: 3, cursor: "pointer", fontFamily: "'JetBrains Mono', monospace",
+                    fontSize: 10, fontWeight: 600, textTransform: "uppercase",
+                  }}
+                >
+                  Delete
+                </button>
+              </div>
             </div>
           ))}
         </div>
