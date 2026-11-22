@@ -1,59 +1,2465 @@
 {
-  "Su-35": {"name": "Su-35S Flanker-E", "nato_name": "Flanker-E", "role": "Air superiority / multirole", "generation": "4++", "country": "Russia", "specs": {"crew": 1, "length_m": 21.9, "wingspan_m": 14.7, "max_speed_kmh": 2500, "combat_radius_km": 1600, "service_ceiling_m": 18000, "max_payload_kg": 8000}, "weapons": ["GSh-30-1 30mm cannon", "R-77-1 BVR AAM", "R-73M2 WVR AAM", "R-37M long-range AAM", "Kh-31 anti-ship", "KAB-500 guided bombs"], "description": "Russia's most capable in-service fighter. Super-maneuverable with thrust vectoring and Irbis-E PESA radar. The backbone of modern Russian air superiority forces, extensively deployed in Syria and Ukraine."},
-  "Su-35S": {"name": "Su-35S Flanker-E", "nato_name": "Flanker-E", "role": "Air superiority / multirole", "generation": "4++", "country": "Russia", "specs": {"crew": 1, "length_m": 21.9, "wingspan_m": 14.7, "max_speed_kmh": 2500, "combat_radius_km": 1600, "service_ceiling_m": 18000, "max_payload_kg": 8000}, "weapons": ["GSh-30-1 30mm cannon", "R-77-1 BVR AAM", "R-73M2 WVR AAM", "R-37M long-range AAM", "Kh-31 anti-ship", "KAB-500 guided bombs"], "description": "Russia's most capable in-service fighter. Super-maneuverable with thrust vectoring and Irbis-E PESA radar."},
-  "Su-30SM": {"name": "Su-30SM Flanker-H", "nato_name": "Flanker-H", "role": "Multirole fighter", "generation": "4+", "country": "Russia", "specs": {"crew": 2, "length_m": 21.9, "wingspan_m": 14.7, "max_speed_kmh": 2120, "combat_radius_km": 1500, "service_ceiling_m": 17300, "max_payload_kg": 8000}, "weapons": ["GSh-30-1 30mm cannon", "R-77 BVR AAM", "R-73 WVR AAM", "Kh-31A anti-ship", "KAB-500 guided bombs"], "description": "Two-seat multirole variant of the Flanker family. India's main air superiority fighter (as Su-30MKI). Russia operates ~130 for both air-to-air and strike missions."},
-  "Su-27": {"name": "Su-27 Flanker", "nato_name": "Flanker-B", "role": "Air superiority fighter", "generation": "4", "country": "Russia", "specs": {"crew": 1, "length_m": 21.9, "wingspan_m": 14.7, "max_speed_kmh": 2500, "combat_radius_km": 1340, "service_ceiling_m": 18500, "max_payload_kg": 6000}, "weapons": ["GSh-30-1 30mm cannon", "R-27 BVR AAM", "R-73 WVR AAM"], "description": "The original Flanker — designed to counter the F-15. Exceptional maneuverability and range. Being replaced by Su-35S but still widely used."},
-  "Su-27SM": {"name": "Su-27SM Flanker", "nato_name": "Flanker-B Mod", "role": "Air superiority fighter", "generation": "4+", "country": "Russia", "specs": {"crew": 1, "length_m": 21.9, "wingspan_m": 14.7, "max_speed_kmh": 2500, "combat_radius_km": 1340, "service_ceiling_m": 18500, "max_payload_kg": 6000}, "weapons": ["GSh-30-1 30mm cannon", "R-77 BVR AAM", "R-73 WVR AAM", "Kh-29 air-to-ground"], "description": "Modernized Su-27 with upgraded avionics, glass cockpit, and precision strike capability. Can carry guided weapons unlike the original."},
-  "Su-33": {"name": "Su-33 Flanker-D", "nato_name": "Flanker-D", "role": "Carrier-based fighter", "generation": "4", "country": "Russia", "specs": {"crew": 1, "length_m": 21.2, "wingspan_m": 14.7, "max_speed_kmh": 2300, "combat_radius_km": 1000, "service_ceiling_m": 17000, "max_payload_kg": 6500}, "weapons": ["GSh-30-1 30mm cannon", "R-27 BVR AAM", "R-73 WVR AAM"], "description": "Navalized Flanker for Admiral Kuznetsov carrier. Folding wings, reinforced landing gear, canards. Only ~20 in service."},
-  "Su-34": {"name": "Su-34 Fullback", "nato_name": "Fullback", "role": "Fighter-bomber / strike", "generation": "4+", "country": "Russia", "specs": {"crew": 2, "length_m": 23.3, "wingspan_m": 14.7, "max_speed_kmh": 1900, "combat_radius_km": 1100, "service_ceiling_m": 15000, "max_payload_kg": 8000}, "weapons": ["GSh-30-1 30mm cannon", "Kh-31 anti-ship", "Kh-29 air-to-ground", "Kh-59 cruise missile", "KAB-500 guided bombs", "R-77/R-73 AAM"], "description": "Modern strike fighter replacing the Su-24. Distinctive flat nose with side-by-side cockpit. Russia's primary precision strike platform in Ukraine. ~150 in service."},
-  "Su-24": {"name": "Su-24M Fencer", "nato_name": "Fencer-D", "role": "All-weather attack / interdictor", "generation": "3+", "country": "Russia", "specs": {"crew": 2, "length_m": 24.6, "wingspan_m": 17.6, "max_speed_kmh": 1700, "combat_radius_km": 560, "service_ceiling_m": 11000, "max_payload_kg": 8000}, "weapons": ["Kh-29 air-to-ground", "Kh-58 ARM", "Kh-31 anti-ship", "KAB-500/1500 guided bombs", "R-60 AAM"], "description": "Variable-sweep wing strike aircraft. Primary Russian tactical bomber, used extensively in Syria and Ukraine. Being replaced by Su-34."},
-  "Su-24M": {"name": "Su-24M Fencer", "nato_name": "Fencer-D", "role": "All-weather attack / interdictor", "generation": "3+", "country": "Russia", "specs": {"crew": 2, "length_m": 24.6, "wingspan_m": 17.6, "max_speed_kmh": 1700, "combat_radius_km": 560, "service_ceiling_m": 11000, "max_payload_kg": 8000}, "weapons": ["Kh-29 air-to-ground", "Kh-58 ARM", "Kh-31 anti-ship", "KAB-500/1500 guided bombs"], "description": "Variable-sweep wing strike aircraft. Being replaced by Su-34 but still widely deployed."},
-  "Su-24MK": {"name": "Su-24MK Fencer (Export)", "nato_name": "Fencer-D", "role": "Strike / interdictor", "generation": "3+", "country": "Iran", "specs": {"crew": 2, "length_m": 24.6, "wingspan_m": 17.6, "max_speed_kmh": 1700, "combat_radius_km": 560, "service_ceiling_m": 11000, "max_payload_kg": 8000}, "weapons": ["Kh-29 air-to-ground", "FAB bombs", "R-60 AAM"], "description": "Export variant operated by Iran. Iran's most capable strike aircraft, acquired from the Soviet Union."},
-  "Su-25": {"name": "Su-25 Grach", "nato_name": "Frogfoot", "role": "Close air support", "generation": "3", "country": "Russia", "specs": {"crew": 1, "length_m": 15.4, "wingspan_m": 14.4, "max_speed_kmh": 950, "combat_radius_km": 375, "service_ceiling_m": 7000, "max_payload_kg": 4400}, "weapons": ["GSh-30-2 30mm cannon", "S-8/S-13 rockets", "Kh-25ML missiles", "FAB bombs", "R-60 AAM"], "description": "Russia's equivalent to the A-10. Heavily armored with titanium cockpit bathtub. Heavy losses in Ukraine due to MANPADS."},
-  "Su-25SM": {"name": "Su-25SM Grach", "nato_name": "Frogfoot", "role": "Close air support (modernized)", "generation": "3+", "country": "Russia", "specs": {"crew": 1, "length_m": 15.4, "wingspan_m": 14.4, "max_speed_kmh": 950, "combat_radius_km": 375, "service_ceiling_m": 7000, "max_payload_kg": 4400}, "weapons": ["GSh-30-2 30mm cannon", "S-8/S-13 rockets", "Kh-25ML missiles", "KAB-500 guided bombs"], "description": "Modernized Frogfoot with glass cockpit, GPS, and precision munitions capability."},
-  "Su-57": {"name": "Su-57 Felon", "nato_name": "Felon", "role": "Stealth air superiority", "generation": "5", "country": "Russia", "specs": {"crew": 1, "length_m": 20.1, "wingspan_m": 14.1, "max_speed_kmh": 2600, "combat_radius_km": 1500, "service_ceiling_m": 20000, "max_payload_kg": 10000}, "weapons": ["GSh-30-1 30mm cannon", "R-77M BVR AAM (internal)", "R-74M2 WVR AAM", "Kh-59MK2 cruise missile"], "description": "Russia's 5th gen stealth fighter. Only ~10 delivered. Internal weapons bays, supercruise. Limited use in Ukraine for standoff strikes."},
-  "MiG-29": {"name": "MiG-29 Fulcrum", "nato_name": "Fulcrum", "role": "Air superiority fighter", "generation": "4", "country": "Russia", "specs": {"crew": 1, "length_m": 17.4, "wingspan_m": 11.4, "max_speed_kmh": 2400, "combat_radius_km": 710, "service_ceiling_m": 18000, "max_payload_kg": 3500}, "weapons": ["GSh-30-1 30mm cannon", "R-77 BVR AAM", "R-73 WVR AAM", "bombs and rockets"], "description": "Lightweight air superiority fighter designed to counter the F-16. Exceptional close-combat maneuverability with helmet-mounted sight."},
-  "MiG-29A": {"name": "MiG-29A Fulcrum", "nato_name": "Fulcrum-A", "role": "Air superiority fighter", "generation": "4", "country": "Iran", "specs": {"crew": 1, "length_m": 17.4, "wingspan_m": 11.4, "max_speed_kmh": 2400, "combat_radius_km": 710, "service_ceiling_m": 18000, "max_payload_kg": 3500}, "weapons": ["GSh-30-1 30mm cannon", "R-27 BVR AAM", "R-73 WVR AAM"], "description": "Early export variant operated by Iran. Limited numbers (~25) but Iran's most modern fighter."},
-  "MiG-29K": {"name": "MiG-29K Fulcrum-D", "nato_name": "Fulcrum-D", "role": "Carrier-based multirole", "generation": "4+", "country": "Russia", "specs": {"crew": 1, "length_m": 17.3, "wingspan_m": 11.9, "max_speed_kmh": 2200, "combat_radius_km": 850, "service_ceiling_m": 17500, "max_payload_kg": 4500}, "weapons": ["GSh-30-1 30mm cannon", "R-77 BVR AAM", "R-73 WVR AAM", "Kh-31/35 anti-ship"], "description": "Navalized MiG-29 for carrier operations. Folding wings, arresting hook. Replacing Su-33 on Admiral Kuznetsov."},
-  "MiG-29SMT": {"name": "MiG-29SMT Fulcrum-E", "nato_name": "Fulcrum-E", "role": "Multirole fighter", "generation": "4+", "country": "Russia", "specs": {"crew": 1, "length_m": 17.4, "wingspan_m": 11.4, "max_speed_kmh": 2400, "combat_radius_km": 1000, "service_ceiling_m": 18000, "max_payload_kg": 4500}, "weapons": ["GSh-30-1 30mm cannon", "R-77 BVR AAM", "R-73 WVR AAM", "Kh-29/31 guided missiles", "KAB-500 bombs"], "description": "Deep modernization with enlarged fuel tank spine, Zhuk-ME radar, and precision strike capability."},
-  "MiG-31BM": {"name": "MiG-31BM Foxhound", "nato_name": "Foxhound", "role": "Long-range interceptor", "generation": "4", "country": "Russia", "specs": {"crew": 2, "length_m": 22.7, "wingspan_m": 13.5, "max_speed_kmh": 3000, "combat_radius_km": 720, "service_ceiling_m": 20600, "max_payload_kg": 9000}, "weapons": ["R-33 long-range AAM", "R-37M 300km range AAM", "R-77 BVR AAM", "Kh-47M2 Kinzhal hypersonic missile"], "description": "World's fastest combat aircraft in service. MiG-31K variant carries the Kinzhal hypersonic missile. Four aircraft can control 800km of airspace."},
-  "Tu-95": {"name": "Tu-95MS Bear", "nato_name": "Bear-H", "role": "Strategic cruise missile carrier", "generation": "2+", "country": "Russia", "specs": {"crew": 7, "length_m": 49.1, "wingspan_m": 50.1, "max_speed_kmh": 920, "combat_radius_km": 6500, "service_ceiling_m": 12000, "max_payload_kg": 15000}, "weapons": ["Kh-101/102 stealth cruise missile (8+6)", "Kh-55SM ALCM"], "description": "Iconic strategic bomber with contra-rotating turboprops. Loudest aircraft ever built. Regularly launches Kh-101 strikes against Ukraine from Caspian standoff range. ~60 in service."},
-  "Tu-95MS": {"name": "Tu-95MS Bear", "nato_name": "Bear-H", "role": "Strategic cruise missile carrier", "generation": "2+", "country": "Russia", "specs": {"crew": 7, "length_m": 49.1, "wingspan_m": 50.1, "max_speed_kmh": 920, "combat_radius_km": 6500, "service_ceiling_m": 12000, "max_payload_kg": 15000}, "weapons": ["Kh-101/102 stealth cruise missile (8+6)", "Kh-55SM ALCM"], "description": "Modernized Bear. Primary Russian cruise missile carrier. Regular strikes on Ukraine from standoff positions."},
-  "Tu-160": {"name": "Tu-160 White Swan", "nato_name": "Blackjack", "role": "Strategic bomber", "generation": "4", "country": "Russia", "specs": {"crew": 4, "length_m": 54.1, "wingspan_m": 55.7, "max_speed_kmh": 2220, "combat_radius_km": 7300, "service_ceiling_m": 15000, "max_payload_kg": 40000}, "weapons": ["Kh-101/102 stealth cruise missile (12 internal)", "Kh-55SM ALCM"], "description": "Largest and heaviest combat aircraft ever built. Variable-sweep supersonic strategic bomber. Only ~17 in service at Engels-2. Used to launch cruise missiles at Ukraine."},
-  "Tu-22M": {"name": "Tu-22M3 Backfire", "nato_name": "Backfire-C", "role": "Long-range strike bomber", "generation": "3+", "country": "Russia", "specs": {"crew": 4, "length_m": 42.5, "wingspan_m": 34.3, "max_speed_kmh": 2300, "combat_radius_km": 2200, "service_ceiling_m": 13300, "max_payload_kg": 24000}, "weapons": ["Kh-22 anti-ship missile", "Kh-32 supersonic cruise missile", "FAB-250/500/1500/3000 bombs"], "description": "Variable-sweep supersonic bomber for maritime strike. Used for carpet bombing in Syria and Ukraine with unguided FABs. ~60 in service."},
-  "Tu-22M3": {"name": "Tu-22M3 Backfire", "nato_name": "Backfire-C", "role": "Long-range strike bomber", "generation": "3+", "country": "Russia", "specs": {"crew": 4, "length_m": 42.5, "wingspan_m": 34.3, "max_speed_kmh": 2300, "combat_radius_km": 2200, "service_ceiling_m": 13300, "max_payload_kg": 24000}, "weapons": ["Kh-22 anti-ship missile", "Kh-32 supersonic cruise missile", "FAB-250/500/1500/3000 bombs"], "description": "Variable-sweep supersonic bomber. Carpet bombing with unguided FABs in Ukraine. ~60 in service."},
-  "Il-76": {"name": "Il-76 Candid", "nato_name": "Candid", "role": "Strategic airlifter", "generation": "3", "country": "Russia", "specs": {"crew": 5, "length_m": 46.6, "wingspan_m": 50.5, "max_speed_kmh": 900, "combat_radius_km": 4000, "service_ceiling_m": 12100, "max_payload_kg": 48000}, "weapons": ["Unarmed"], "description": "Soviet heavy transport workhorse. Can carry tanks, troops, and heavy equipment. High activity indicates troop/equipment movements."},
-  "Il-78": {"name": "Il-78 Midas", "nato_name": "Midas", "role": "Aerial refueling tanker", "generation": "3", "country": "Russia", "specs": {"crew": 6, "length_m": 46.6, "wingspan_m": 50.5, "max_speed_kmh": 850, "combat_radius_km": 4000, "service_ceiling_m": 12000, "max_payload_kg": 65000}, "weapons": ["Unarmed"], "description": "Il-76 based tanker. Extends range of Russian combat aircraft. Critical enabler for long-range bomber operations."},
-  "A-50": {"name": "A-50 Mainstay", "nato_name": "Mainstay", "role": "AWACS / airborne early warning", "generation": "3", "country": "Russia", "specs": {"crew": 15, "length_m": 46.6, "wingspan_m": 50.5, "max_speed_kmh": 850, "combat_radius_km": 1000, "service_ceiling_m": 12000, "max_payload_kg": null}, "weapons": ["Unarmed"], "description": "Russia's primary AWACS platform based on Il-76. Shmel radar dome. Only ~10 in service. Loss of even one is strategically significant."},
-  "An-26": {"name": "An-26 Curl", "nato_name": "Curl", "role": "Light tactical transport", "generation": "2", "country": "Russia", "specs": {"crew": 5, "length_m": 23.8, "wingspan_m": 29.2, "max_speed_kmh": 540, "combat_radius_km": 1100, "service_ceiling_m": 7500, "max_payload_kg": 5500}, "weapons": ["Unarmed"], "description": "Light tactical transport for cargo and paratroopers. Workhorse of Soviet-era transport aviation."},
-  "An-124": {"name": "An-124 Ruslan", "nato_name": "Condor", "role": "Strategic heavy airlift", "generation": "3", "country": "Russia", "specs": {"crew": 6, "length_m": 69.1, "wingspan_m": 73.3, "max_speed_kmh": 865, "combat_radius_km": 4800, "service_ceiling_m": 12000, "max_payload_kg": 150000}, "weapons": ["Unarmed"], "description": "One of world's largest aircraft. Can carry tanks and S-400 systems. ~10 in Russian military service."},
-  "Il-20": {"name": "Il-20 Coot-A", "nato_name": "Coot-A", "role": "SIGINT / ELINT reconnaissance", "generation": "2", "country": "Russia", "specs": {"crew": 13, "length_m": 37.4, "wingspan_m": 37.4, "max_speed_kmh": 625, "combat_radius_km": 3600, "service_ceiling_m": 10000, "max_payload_kg": null}, "weapons": ["Unarmed"], "description": "Electronic intelligence aircraft based on Il-18 airliner. Used for signals intelligence gathering along NATO borders."},
-  "Ka-52": {"name": "Ka-52 Alligator", "nato_name": "Hokum-B", "role": "Attack helicopter", "generation": "4", "country": "Russia", "specs": {"crew": 2, "length_m": 16.0, "max_speed_kmh": 300, "combat_radius_km": 460, "service_ceiling_m": 5500, "max_payload_kg": 2000}, "weapons": ["2A42 30mm cannon", "Vikhr-1 ATGM", "9K121 Ataka ATGM", "S-8/S-13 rockets"], "description": "Russia's most advanced attack helicopter with coaxial rotors. Side-by-side cockpit with ejection seats. Extensive combat use in Ukraine."},
-  "Mi-8": {"name": "Mi-8/17 Hip", "nato_name": "Hip", "role": "Transport helicopter", "generation": "3", "country": "Russia", "specs": {"crew": 3, "length_m": 18.2, "max_speed_kmh": 260, "combat_radius_km": 465, "service_ceiling_m": 6000, "max_payload_kg": 4000}, "weapons": ["Door guns", "S-8 rockets (armed variants)"], "description": "Most produced helicopter ever (17,000+). Backbone of Russian rotary-wing ops."},
-
-  "F-15": {"name": "F-15 Eagle / Strike Eagle", "nato_name": null, "role": "Air superiority / dual-role fighter", "generation": "4", "country": "USA", "specs": {"crew": "1-2", "length_m": 19.4, "wingspan_m": 13.1, "max_speed_kmh": 2660, "combat_radius_km": 1270, "service_ceiling_m": 20000, "max_payload_kg": 10400}, "weapons": ["M61A1 20mm Vulcan", "AIM-120 AMRAAM", "AIM-9 Sidewinder", "JDAM", "SDB", "AGM-130"], "description": "Undefeated in air combat (104-0). F-15E Strike Eagle variant is a dual-role fighter-bomber. 48th FW at RAF Lakenheath."},
-  "F-16": {"name": "F-16 Fighting Falcon", "nato_name": null, "role": "Multirole fighter", "generation": "4", "country": "USA", "specs": {"crew": 1, "length_m": 15.1, "wingspan_m": 9.96, "max_speed_kmh": 2120, "combat_radius_km": 550, "service_ceiling_m": 15200, "max_payload_kg": 7700}, "weapons": ["M61A1 20mm Vulcan", "AIM-120 AMRAAM", "AIM-9 Sidewinder", "JDAM", "AGM-65 Maverick", "HARM"], "description": "Most produced Western fighter (4,600+). Lightweight, affordable, highly maneuverable. Being supplied to Ukraine as F-16AM/BM."},
-  "F-22": {"name": "F-22 Raptor", "nato_name": null, "role": "Stealth air superiority", "generation": "5", "country": "USA", "specs": {"crew": 1, "length_m": 18.9, "wingspan_m": 13.6, "max_speed_kmh": 2410, "combat_radius_km": 760, "service_ceiling_m": 20000, "max_payload_kg": 10000}, "weapons": ["M61A2 20mm Vulcan", "AIM-120 AMRAAM (internal)", "AIM-9 Sidewinder (internal)", "GBU-32 JDAM"], "description": "World's first operational 5th gen fighter. Stealth, supercruise, supermaneuverability. Only 187 built. Never exported."},
-  "FA-18": {"name": "F/A-18E/F Super Hornet", "nato_name": null, "role": "Carrier-based multirole", "generation": "4+", "country": "USA", "specs": {"crew": "1-2", "length_m": 18.3, "wingspan_m": 13.6, "max_speed_kmh": 1915, "combat_radius_km": 722, "service_ceiling_m": 15000, "max_payload_kg": 8050}, "weapons": ["M61A2 20mm Vulcan", "AIM-120 AMRAAM", "AIM-9 Sidewinder", "AGM-84 Harpoon", "JDAM", "JSOW"], "description": "US Navy's primary carrier-based fighter. Replaced F-14 Tomcat. E model is single-seat, F model is two-seat."},
-  "B-52": {"name": "B-52H Stratofortress", "nato_name": null, "role": "Strategic bomber", "generation": "2+", "country": "USA", "specs": {"crew": 5, "length_m": 48.5, "wingspan_m": 56.4, "max_speed_kmh": 1000, "combat_radius_km": 7210, "service_ceiling_m": 15200, "max_payload_kg": 32000}, "weapons": ["AGM-86B ALCM", "AGM-158 JASSM", "JDAM", "Mk82/84 bombs", "mines"], "description": "In service since 1955, expected to fly until 2050s. 76 in active service. Can carry 70,000 lbs of ordnance."},
-  "B-1B": {"name": "B-1B Lancer", "nato_name": null, "role": "Strategic/conventional bomber", "generation": "4", "country": "USA", "specs": {"crew": 4, "length_m": 44.5, "wingspan_m": 41.8, "max_speed_kmh": 1448, "combat_radius_km": 5543, "service_ceiling_m": 18290, "max_payload_kg": 34000}, "weapons": ["JDAM", "JSOW", "AGM-158 JASSM", "Mk82/84 bombs", "CBU cluster munitions"], "description": "Variable-sweep supersonic bomber. Largest internal payload of any US bomber. Used extensively in Afghanistan and Iraq."},
-  "C-130": {"name": "C-130 Hercules / Super Hercules", "nato_name": null, "role": "Tactical airlifter", "generation": "3", "country": "USA", "specs": {"crew": 5, "length_m": 29.8, "wingspan_m": 40.4, "max_speed_kmh": 671, "combat_radius_km": 3334, "service_ceiling_m": 10060, "max_payload_kg": 20400}, "weapons": ["Unarmed (AC-130 gunship variant armed)"], "description": "Most versatile military transport ever built. 2,500+ produced. Can land on dirt strips. Variants: tanker, gunship, ISR, weather."},
-  "C-17": {"name": "C-17 Globemaster III", "nato_name": null, "role": "Strategic/tactical airlifter", "generation": "4", "country": "USA", "specs": {"crew": 3, "length_m": 53.0, "wingspan_m": 51.7, "max_speed_kmh": 830, "combat_radius_km": 4482, "service_ceiling_m": 13715, "max_payload_kg": 77519}, "weapons": ["Unarmed"], "description": "Can carry M1 Abrams tanks. Capable of short-field tactical landings. 275 built. The backbone of US strategic airlift."},
-  "C-5": {"name": "C-5M Super Galaxy", "nato_name": null, "role": "Strategic heavy airlift", "generation": "3+", "country": "USA", "specs": {"crew": 7, "length_m": 75.3, "wingspan_m": 67.9, "max_speed_kmh": 919, "combat_radius_km": 4440, "service_ceiling_m": 10895, "max_payload_kg": 129274}, "weapons": ["Unarmed"], "description": "One of the largest military aircraft in the world. Can carry 2 M1 Abrams tanks or 6 Apache helicopters."},
-  "KC-135": {"name": "KC-135 Stratotanker", "nato_name": null, "role": "Aerial refueling tanker", "generation": "2+", "country": "USA", "specs": {"crew": 3, "length_m": 41.5, "wingspan_m": 39.9, "max_speed_kmh": 933, "combat_radius_km": 2419, "service_ceiling_m": 15200, "max_payload_kg": 68039}, "weapons": ["Unarmed"], "description": "USAF's primary tanker since 1957. Can refuel any NATO aircraft. 396 still in service. Being replaced by KC-46."},
-  "KC-10": {"name": "KC-10 Extender", "nato_name": null, "role": "Aerial refueling / transport", "generation": "3", "country": "USA", "specs": {"crew": 4, "length_m": 54.4, "wingspan_m": 50.4, "max_speed_kmh": 982, "combat_radius_km": 7033, "service_ceiling_m": 12727, "max_payload_kg": 76843}, "weapons": ["Unarmed"], "description": "DC-10 based tanker/cargo aircraft. Larger than KC-135. Can refuel and carry cargo simultaneously. Being retired."},
-  "E-3": {"name": "E-3 Sentry AWACS", "nato_name": null, "role": "Airborne early warning & control", "generation": "3", "country": "USA", "specs": {"crew": 19, "length_m": 46.6, "wingspan_m": 44.4, "max_speed_kmh": 855, "combat_radius_km": 1610, "service_ceiling_m": 12200, "max_payload_kg": null}, "weapons": ["Unarmed"], "description": "Flying command center with 30ft rotodome radar. Can track 600 targets at 400km range. The backbone of NATO air defense."},
-  "E-8": {"name": "E-8 Joint STARS", "nato_name": null, "role": "Ground surveillance / battle management", "generation": "3", "country": "USA", "specs": {"crew": 21, "length_m": 46.6, "wingspan_m": 44.4, "max_speed_kmh": 973, "combat_radius_km": 1600, "service_ceiling_m": 12802, "max_payload_kg": null}, "weapons": ["Unarmed"], "description": "Ground surveillance radar aircraft. Tracks moving vehicles and troops. Used in every US conflict since Desert Storm."},
-  "P-3C": {"name": "P-3C Orion", "nato_name": null, "role": "Maritime patrol / ASW", "generation": "2+", "country": "USA", "specs": {"crew": 11, "length_m": 35.6, "wingspan_m": 30.4, "max_speed_kmh": 761, "combat_radius_km": 3835, "service_ceiling_m": 8625, "max_payload_kg": 9071}, "weapons": ["Mk46/54 torpedoes", "Harpoon anti-ship missiles", "mines", "sonobuoys"], "description": "Maritime patrol and anti-submarine warfare aircraft. Being replaced by P-8A Poseidon."},
-
-  "F-14A Tomcat": {"name": "F-14A Tomcat", "nato_name": null, "role": "Fleet air defense fighter", "generation": "4", "country": "Iran", "specs": {"crew": 2, "length_m": 19.1, "wingspan_m": 19.5, "max_speed_kmh": 2485, "combat_radius_km": 926, "service_ceiling_m": 16150, "max_payload_kg": 6577}, "weapons": ["M61A1 20mm Vulcan", "AIM-54 Phoenix (limited)", "AIM-7 Sparrow", "AIM-9 Sidewinder"], "description": "Iran is the only country still operating the F-14. ~40 airworthy. Used for long-range fleet defense with Phoenix missiles. Iconic variable-sweep fighter from Top Gun."},
-  "F-4E Phantom": {"name": "F-4E Phantom II", "nato_name": null, "role": "Multirole fighter", "generation": "3", "country": "Iran", "specs": {"crew": 2, "length_m": 19.2, "wingspan_m": 11.7, "max_speed_kmh": 2370, "combat_radius_km": 680, "service_ceiling_m": 18975, "max_payload_kg": 8480}, "weapons": ["M61A1 20mm Vulcan", "AIM-7 Sparrow", "AIM-9 Sidewinder", "AGM-65 Maverick", "bombs"], "description": "Vietnam-era fighter still operated by Iran. ~60 in service. Battle-proven in Iran-Iraq War. Iran's workhorse strike fighter."},
-  "F-5E Tiger II": {"name": "F-5E Tiger II", "nato_name": null, "role": "Light tactical fighter", "generation": "3", "country": "Iran", "specs": {"crew": 1, "length_m": 14.7, "wingspan_m": 8.1, "max_speed_kmh": 1700, "combat_radius_km": 890, "service_ceiling_m": 15790, "max_payload_kg": 3175}, "weapons": ["M39A2 20mm cannons (2)", "AIM-9 Sidewinder", "bombs", "rockets"], "description": "Lightweight export fighter. Iran operates ~60. Basis for Iran's domestic Saeqeh and Kowsar fighters."},
-  "Saeqeh": {"name": "HESA Saeqeh", "nato_name": null, "role": "Light fighter (domestic)", "generation": "3", "country": "Iran", "specs": {"crew": 1, "length_m": 14.7, "wingspan_m": 8.1, "max_speed_kmh": 1700, "combat_radius_km": 850, "service_ceiling_m": 15000, "max_payload_kg": 3000}, "weapons": ["M39 20mm cannons", "AIM-9 copies", "bombs", "rockets"], "description": "Iranian domestic fighter based on F-5 with twin vertical stabilizers. Propaganda claims of 'advanced' capability disputed by Western analysts."},
-  "Kowsar": {"name": "HESA Kowsar", "nato_name": null, "role": "Light fighter (domestic)", "generation": "3", "country": "Iran", "specs": {"crew": 1, "length_m": 14.7, "wingspan_m": 8.1, "max_speed_kmh": 1700, "combat_radius_km": 850, "service_ceiling_m": 15000, "max_payload_kg": 3000}, "weapons": ["20mm cannons", "air-to-air missiles", "bombs"], "description": "Iran's 'indigenous' fighter — essentially an F-5 with a new avionics suite and HUD. Limited production."},
-
-  "fighter": {"name": "Unidentified Fighter", "role": "Fighter aircraft", "generation": "Unknown", "country": "Unknown", "specs": {}, "weapons": [], "description": "Fighter-class aircraft detected. Specific type not classified."},
-  "bomber": {"name": "Unidentified Bomber", "role": "Bomber aircraft", "generation": "Unknown", "country": "Unknown", "specs": {}, "weapons": [], "description": "Bomber-class aircraft detected."},
-  "transport": {"name": "Unidentified Transport", "role": "Transport aircraft", "generation": "Unknown", "country": "Unknown", "specs": {}, "weapons": [], "description": "Transport-class aircraft detected."},
-  "aircraft": {"name": "Unidentified Aircraft", "role": "Unknown", "generation": "Unknown", "country": "Unknown", "specs": {}, "weapons": [], "description": "Aircraft detected but type not classified."}
+  "Su-35": {
+    "name": "Su-35S Flanker-E",
+    "nato_name": "Flanker-E",
+    "role": "Air superiority / multirole",
+    "generation": "4++",
+    "country": "Russia",
+    "specs": {
+      "crew": 1,
+      "length_m": 21.9,
+      "wingspan_m": 14.7,
+      "max_speed_kmh": 2500,
+      "combat_radius_km": 1600,
+      "service_ceiling_m": 18000,
+      "max_payload_kg": 8000
+    },
+    "weapons": [
+      "GSh-30-1 30mm cannon",
+      "R-77-1 BVR AAM",
+      "R-73M2 WVR AAM",
+      "R-37M long-range AAM",
+      "Kh-31 anti-ship",
+      "KAB-500 guided bombs"
+    ],
+    "description": "Russia's most capable in-service fighter. Super-maneuverable with thrust vectoring and Irbis-E PESA radar. The backbone of modern Russian air superiority forces, extensively deployed in Syria and Ukraine."
+  },
+  "Su-35S": {
+    "name": "Su-35S Flanker-E",
+    "nato_name": "Flanker-E",
+    "role": "Air superiority / multirole",
+    "generation": "4++",
+    "country": "Russia",
+    "specs": {
+      "crew": 1,
+      "length_m": 21.9,
+      "wingspan_m": 14.7,
+      "max_speed_kmh": 2500,
+      "combat_radius_km": 1600,
+      "service_ceiling_m": 18000,
+      "max_payload_kg": 8000
+    },
+    "weapons": [
+      "GSh-30-1 30mm cannon",
+      "R-77-1 BVR AAM",
+      "R-73M2 WVR AAM",
+      "R-37M long-range AAM",
+      "Kh-31 anti-ship",
+      "KAB-500 guided bombs"
+    ],
+    "description": "Russia's most capable in-service fighter. Super-maneuverable with thrust vectoring and Irbis-E PESA radar."
+  },
+  "Su-30SM": {
+    "name": "Su-30SM Flanker-H",
+    "nato_name": "Flanker-H",
+    "role": "Multirole fighter",
+    "generation": "4+",
+    "country": "Russia",
+    "specs": {
+      "crew": 2,
+      "length_m": 21.9,
+      "wingspan_m": 14.7,
+      "max_speed_kmh": 2120,
+      "combat_radius_km": 1500,
+      "service_ceiling_m": 17300,
+      "max_payload_kg": 8000
+    },
+    "weapons": [
+      "GSh-30-1 30mm cannon",
+      "R-77 BVR AAM",
+      "R-73 WVR AAM",
+      "Kh-31A anti-ship",
+      "KAB-500 guided bombs"
+    ],
+    "description": "Two-seat multirole variant of the Flanker family. India's main air superiority fighter (as Su-30MKI). Russia operates ~130 for both air-to-air and strike missions."
+  },
+  "Su-27": {
+    "name": "Su-27 Flanker",
+    "nato_name": "Flanker-B",
+    "role": "Air superiority fighter",
+    "generation": "4",
+    "country": "Russia",
+    "specs": {
+      "crew": 1,
+      "length_m": 21.9,
+      "wingspan_m": 14.7,
+      "max_speed_kmh": 2500,
+      "combat_radius_km": 1340,
+      "service_ceiling_m": 18500,
+      "max_payload_kg": 6000
+    },
+    "weapons": [
+      "GSh-30-1 30mm cannon",
+      "R-27 BVR AAM",
+      "R-73 WVR AAM"
+    ],
+    "description": "The original Flanker — designed to counter the F-15. Exceptional maneuverability and range. Being replaced by Su-35S but still widely used."
+  },
+  "Su-27SM": {
+    "name": "Su-27SM Flanker",
+    "nato_name": "Flanker-B Mod",
+    "role": "Air superiority fighter",
+    "generation": "4+",
+    "country": "Russia",
+    "specs": {
+      "crew": 1,
+      "length_m": 21.9,
+      "wingspan_m": 14.7,
+      "max_speed_kmh": 2500,
+      "combat_radius_km": 1340,
+      "service_ceiling_m": 18500,
+      "max_payload_kg": 6000
+    },
+    "weapons": [
+      "GSh-30-1 30mm cannon",
+      "R-77 BVR AAM",
+      "R-73 WVR AAM",
+      "Kh-29 air-to-ground"
+    ],
+    "description": "Modernized Su-27 with upgraded avionics, glass cockpit, and precision strike capability. Can carry guided weapons unlike the original."
+  },
+  "Su-33": {
+    "name": "Su-33 Flanker-D",
+    "nato_name": "Flanker-D",
+    "role": "Carrier-based fighter",
+    "generation": "4",
+    "country": "Russia",
+    "specs": {
+      "crew": 1,
+      "length_m": 21.2,
+      "wingspan_m": 14.7,
+      "max_speed_kmh": 2300,
+      "combat_radius_km": 1000,
+      "service_ceiling_m": 17000,
+      "max_payload_kg": 6500
+    },
+    "weapons": [
+      "GSh-30-1 30mm cannon",
+      "R-27 BVR AAM",
+      "R-73 WVR AAM"
+    ],
+    "description": "Navalized Flanker for Admiral Kuznetsov carrier. Folding wings, reinforced landing gear, canards. Only ~20 in service."
+  },
+  "Su-34": {
+    "name": "Su-34 Fullback",
+    "nato_name": "Fullback",
+    "role": "Fighter-bomber / strike",
+    "generation": "4+",
+    "country": "Russia",
+    "specs": {
+      "crew": 2,
+      "length_m": 23.3,
+      "wingspan_m": 14.7,
+      "max_speed_kmh": 1900,
+      "combat_radius_km": 1100,
+      "service_ceiling_m": 15000,
+      "max_payload_kg": 8000
+    },
+    "weapons": [
+      "GSh-30-1 30mm cannon",
+      "Kh-31 anti-ship",
+      "Kh-29 air-to-ground",
+      "Kh-59 cruise missile",
+      "KAB-500 guided bombs",
+      "R-77/R-73 AAM"
+    ],
+    "description": "Modern strike fighter replacing the Su-24. Distinctive flat nose with side-by-side cockpit. Russia's primary precision strike platform in Ukraine. ~150 in service."
+  },
+  "Su-24": {
+    "name": "Su-24M Fencer",
+    "nato_name": "Fencer-D",
+    "role": "All-weather attack / interdictor",
+    "generation": "3+",
+    "country": "Russia",
+    "specs": {
+      "crew": 2,
+      "length_m": 24.6,
+      "wingspan_m": 17.6,
+      "max_speed_kmh": 1700,
+      "combat_radius_km": 560,
+      "service_ceiling_m": 11000,
+      "max_payload_kg": 8000
+    },
+    "weapons": [
+      "Kh-29 air-to-ground",
+      "Kh-58 ARM",
+      "Kh-31 anti-ship",
+      "KAB-500/1500 guided bombs",
+      "R-60 AAM"
+    ],
+    "description": "Variable-sweep wing strike aircraft. Primary Russian tactical bomber, used extensively in Syria and Ukraine. Being replaced by Su-34."
+  },
+  "Su-24M": {
+    "name": "Su-24M Fencer",
+    "nato_name": "Fencer-D",
+    "role": "All-weather attack / interdictor",
+    "generation": "3+",
+    "country": "Russia",
+    "specs": {
+      "crew": 2,
+      "length_m": 24.6,
+      "wingspan_m": 17.6,
+      "max_speed_kmh": 1700,
+      "combat_radius_km": 560,
+      "service_ceiling_m": 11000,
+      "max_payload_kg": 8000
+    },
+    "weapons": [
+      "Kh-29 air-to-ground",
+      "Kh-58 ARM",
+      "Kh-31 anti-ship",
+      "KAB-500/1500 guided bombs"
+    ],
+    "description": "Variable-sweep wing strike aircraft. Being replaced by Su-34 but still widely deployed."
+  },
+  "Su-24MK": {
+    "name": "Su-24MK Fencer (Export)",
+    "nato_name": "Fencer-D",
+    "role": "Strike / interdictor",
+    "generation": "3+",
+    "country": "Iran",
+    "specs": {
+      "crew": 2,
+      "length_m": 24.6,
+      "wingspan_m": 17.6,
+      "max_speed_kmh": 1700,
+      "combat_radius_km": 560,
+      "service_ceiling_m": 11000,
+      "max_payload_kg": 8000
+    },
+    "weapons": [
+      "Kh-29 air-to-ground",
+      "FAB bombs",
+      "R-60 AAM"
+    ],
+    "description": "Export variant operated by Iran. Iran's most capable strike aircraft, acquired from the Soviet Union."
+  },
+  "Su-25": {
+    "name": "Su-25 Grach",
+    "nato_name": "Frogfoot",
+    "role": "Close air support",
+    "generation": "3",
+    "country": "Russia",
+    "specs": {
+      "crew": 1,
+      "length_m": 15.4,
+      "wingspan_m": 14.4,
+      "max_speed_kmh": 950,
+      "combat_radius_km": 375,
+      "service_ceiling_m": 7000,
+      "max_payload_kg": 4400
+    },
+    "weapons": [
+      "GSh-30-2 30mm cannon",
+      "S-8/S-13 rockets",
+      "Kh-25ML missiles",
+      "FAB bombs",
+      "R-60 AAM"
+    ],
+    "description": "Russia's equivalent to the A-10. Heavily armored with titanium cockpit bathtub. Heavy losses in Ukraine due to MANPADS."
+  },
+  "Su-25SM": {
+    "name": "Su-25SM Grach",
+    "nato_name": "Frogfoot",
+    "role": "Close air support (modernized)",
+    "generation": "3+",
+    "country": "Russia",
+    "specs": {
+      "crew": 1,
+      "length_m": 15.4,
+      "wingspan_m": 14.4,
+      "max_speed_kmh": 950,
+      "combat_radius_km": 375,
+      "service_ceiling_m": 7000,
+      "max_payload_kg": 4400
+    },
+    "weapons": [
+      "GSh-30-2 30mm cannon",
+      "S-8/S-13 rockets",
+      "Kh-25ML missiles",
+      "KAB-500 guided bombs"
+    ],
+    "description": "Modernized Frogfoot with glass cockpit, GPS, and precision munitions capability."
+  },
+  "Su-57": {
+    "name": "Su-57 Felon",
+    "nato_name": "Felon",
+    "role": "Stealth air superiority",
+    "generation": "5",
+    "country": "Russia",
+    "specs": {
+      "crew": 1,
+      "length_m": 20.1,
+      "wingspan_m": 14.1,
+      "max_speed_kmh": 2600,
+      "combat_radius_km": 1500,
+      "service_ceiling_m": 20000,
+      "max_payload_kg": 10000
+    },
+    "weapons": [
+      "GSh-30-1 30mm cannon",
+      "R-77M BVR AAM (internal)",
+      "R-74M2 WVR AAM",
+      "Kh-59MK2 cruise missile"
+    ],
+    "description": "Russia's 5th gen stealth fighter. Only ~10 delivered. Internal weapons bays, supercruise. Limited use in Ukraine for standoff strikes."
+  },
+  "MiG-29": {
+    "name": "MiG-29 Fulcrum",
+    "nato_name": "Fulcrum",
+    "role": "Air superiority fighter",
+    "generation": "4",
+    "country": "Russia",
+    "specs": {
+      "crew": 1,
+      "length_m": 17.4,
+      "wingspan_m": 11.4,
+      "max_speed_kmh": 2400,
+      "combat_radius_km": 710,
+      "service_ceiling_m": 18000,
+      "max_payload_kg": 3500
+    },
+    "weapons": [
+      "GSh-30-1 30mm cannon",
+      "R-77 BVR AAM",
+      "R-73 WVR AAM",
+      "bombs and rockets"
+    ],
+    "description": "Lightweight air superiority fighter designed to counter the F-16. Exceptional close-combat maneuverability with helmet-mounted sight."
+  },
+  "MiG-29A": {
+    "name": "MiG-29A Fulcrum",
+    "nato_name": "Fulcrum-A",
+    "role": "Air superiority fighter",
+    "generation": "4",
+    "country": "Iran",
+    "specs": {
+      "crew": 1,
+      "length_m": 17.4,
+      "wingspan_m": 11.4,
+      "max_speed_kmh": 2400,
+      "combat_radius_km": 710,
+      "service_ceiling_m": 18000,
+      "max_payload_kg": 3500
+    },
+    "weapons": [
+      "GSh-30-1 30mm cannon",
+      "R-27 BVR AAM",
+      "R-73 WVR AAM"
+    ],
+    "description": "Early export variant operated by Iran. Limited numbers (~25) but Iran's most modern fighter."
+  },
+  "MiG-29K": {
+    "name": "MiG-29K Fulcrum-D",
+    "nato_name": "Fulcrum-D",
+    "role": "Carrier-based multirole",
+    "generation": "4+",
+    "country": "Russia",
+    "specs": {
+      "crew": 1,
+      "length_m": 17.3,
+      "wingspan_m": 11.9,
+      "max_speed_kmh": 2200,
+      "combat_radius_km": 850,
+      "service_ceiling_m": 17500,
+      "max_payload_kg": 4500
+    },
+    "weapons": [
+      "GSh-30-1 30mm cannon",
+      "R-77 BVR AAM",
+      "R-73 WVR AAM",
+      "Kh-31/35 anti-ship"
+    ],
+    "description": "Navalized MiG-29 for carrier operations. Folding wings, arresting hook. Replacing Su-33 on Admiral Kuznetsov."
+  },
+  "MiG-29SMT": {
+    "name": "MiG-29SMT Fulcrum-E",
+    "nato_name": "Fulcrum-E",
+    "role": "Multirole fighter",
+    "generation": "4+",
+    "country": "Russia",
+    "specs": {
+      "crew": 1,
+      "length_m": 17.4,
+      "wingspan_m": 11.4,
+      "max_speed_kmh": 2400,
+      "combat_radius_km": 1000,
+      "service_ceiling_m": 18000,
+      "max_payload_kg": 4500
+    },
+    "weapons": [
+      "GSh-30-1 30mm cannon",
+      "R-77 BVR AAM",
+      "R-73 WVR AAM",
+      "Kh-29/31 guided missiles",
+      "KAB-500 bombs"
+    ],
+    "description": "Deep modernization with enlarged fuel tank spine, Zhuk-ME radar, and precision strike capability."
+  },
+  "MiG-31BM": {
+    "name": "MiG-31BM Foxhound",
+    "nato_name": "Foxhound",
+    "role": "Long-range interceptor",
+    "generation": "4",
+    "country": "Russia",
+    "specs": {
+      "crew": 2,
+      "length_m": 22.7,
+      "wingspan_m": 13.5,
+      "max_speed_kmh": 3000,
+      "combat_radius_km": 720,
+      "service_ceiling_m": 20600,
+      "max_payload_kg": 9000
+    },
+    "weapons": [
+      "R-33 long-range AAM",
+      "R-37M 300km range AAM",
+      "R-77 BVR AAM",
+      "Kh-47M2 Kinzhal hypersonic missile"
+    ],
+    "description": "World's fastest combat aircraft in service. MiG-31K variant carries the Kinzhal hypersonic missile. Four aircraft can control 800km of airspace."
+  },
+  "Tu-95": {
+    "name": "Tu-95MS Bear",
+    "nato_name": "Bear-H",
+    "role": "Strategic cruise missile carrier",
+    "generation": "2+",
+    "country": "Russia",
+    "specs": {
+      "crew": 7,
+      "length_m": 49.1,
+      "wingspan_m": 50.1,
+      "max_speed_kmh": 920,
+      "combat_radius_km": 6500,
+      "service_ceiling_m": 12000,
+      "max_payload_kg": 15000
+    },
+    "weapons": [
+      "Kh-101/102 stealth cruise missile (8+6)",
+      "Kh-55SM ALCM"
+    ],
+    "description": "Iconic strategic bomber with contra-rotating turboprops. Loudest aircraft ever built. Regularly launches Kh-101 strikes against Ukraine from Caspian standoff range. ~60 in service."
+  },
+  "Tu-95MS": {
+    "name": "Tu-95MS Bear",
+    "nato_name": "Bear-H",
+    "role": "Strategic cruise missile carrier",
+    "generation": "2+",
+    "country": "Russia",
+    "specs": {
+      "crew": 7,
+      "length_m": 49.1,
+      "wingspan_m": 50.1,
+      "max_speed_kmh": 920,
+      "combat_radius_km": 6500,
+      "service_ceiling_m": 12000,
+      "max_payload_kg": 15000
+    },
+    "weapons": [
+      "Kh-101/102 stealth cruise missile (8+6)",
+      "Kh-55SM ALCM"
+    ],
+    "description": "Modernized Bear. Primary Russian cruise missile carrier. Regular strikes on Ukraine from standoff positions."
+  },
+  "Tu-160": {
+    "name": "Tu-160 White Swan",
+    "nato_name": "Blackjack",
+    "role": "Strategic bomber",
+    "generation": "4",
+    "country": "Russia",
+    "specs": {
+      "crew": 4,
+      "length_m": 54.1,
+      "wingspan_m": 55.7,
+      "max_speed_kmh": 2220,
+      "combat_radius_km": 7300,
+      "service_ceiling_m": 15000,
+      "max_payload_kg": 40000
+    },
+    "weapons": [
+      "Kh-101/102 stealth cruise missile (12 internal)",
+      "Kh-55SM ALCM"
+    ],
+    "description": "Largest and heaviest combat aircraft ever built. Variable-sweep supersonic strategic bomber. Only ~17 in service at Engels-2. Used to launch cruise missiles at Ukraine."
+  },
+  "Tu-22M": {
+    "name": "Tu-22M3 Backfire",
+    "nato_name": "Backfire-C",
+    "role": "Long-range strike bomber",
+    "generation": "3+",
+    "country": "Russia",
+    "specs": {
+      "crew": 4,
+      "length_m": 42.5,
+      "wingspan_m": 34.3,
+      "max_speed_kmh": 2300,
+      "combat_radius_km": 2200,
+      "service_ceiling_m": 13300,
+      "max_payload_kg": 24000
+    },
+    "weapons": [
+      "Kh-22 anti-ship missile",
+      "Kh-32 supersonic cruise missile",
+      "FAB-250/500/1500/3000 bombs"
+    ],
+    "description": "Variable-sweep supersonic bomber for maritime strike. Used for carpet bombing in Syria and Ukraine with unguided FABs. ~60 in service."
+  },
+  "Tu-22M3": {
+    "name": "Tu-22M3 Backfire",
+    "nato_name": "Backfire-C",
+    "role": "Long-range strike bomber",
+    "generation": "3+",
+    "country": "Russia",
+    "specs": {
+      "crew": 4,
+      "length_m": 42.5,
+      "wingspan_m": 34.3,
+      "max_speed_kmh": 2300,
+      "combat_radius_km": 2200,
+      "service_ceiling_m": 13300,
+      "max_payload_kg": 24000
+    },
+    "weapons": [
+      "Kh-22 anti-ship missile",
+      "Kh-32 supersonic cruise missile",
+      "FAB-250/500/1500/3000 bombs"
+    ],
+    "description": "Variable-sweep supersonic bomber. Carpet bombing with unguided FABs in Ukraine. ~60 in service."
+  },
+  "Il-76": {
+    "name": "Il-76 Candid",
+    "nato_name": "Candid",
+    "role": "Strategic airlifter",
+    "generation": "3",
+    "country": "Russia",
+    "specs": {
+      "crew": 5,
+      "length_m": 46.6,
+      "wingspan_m": 50.5,
+      "max_speed_kmh": 900,
+      "combat_radius_km": 4000,
+      "service_ceiling_m": 12100,
+      "max_payload_kg": 48000
+    },
+    "weapons": [
+      "Unarmed"
+    ],
+    "description": "Soviet heavy transport workhorse. Can carry tanks, troops, and heavy equipment. High activity indicates troop/equipment movements."
+  },
+  "Il-78": {
+    "name": "Il-78 Midas",
+    "nato_name": "Midas",
+    "role": "Aerial refueling tanker",
+    "generation": "3",
+    "country": "Russia",
+    "specs": {
+      "crew": 6,
+      "length_m": 46.6,
+      "wingspan_m": 50.5,
+      "max_speed_kmh": 850,
+      "combat_radius_km": 4000,
+      "service_ceiling_m": 12000,
+      "max_payload_kg": 65000
+    },
+    "weapons": [
+      "Unarmed"
+    ],
+    "description": "Il-76 based tanker. Extends range of Russian combat aircraft. Critical enabler for long-range bomber operations."
+  },
+  "A-50": {
+    "name": "A-50 Mainstay",
+    "nato_name": "Mainstay",
+    "role": "AWACS / airborne early warning",
+    "generation": "3",
+    "country": "Russia",
+    "specs": {
+      "crew": 15,
+      "length_m": 46.6,
+      "wingspan_m": 50.5,
+      "max_speed_kmh": 850,
+      "combat_radius_km": 1000,
+      "service_ceiling_m": 12000,
+      "max_payload_kg": null
+    },
+    "weapons": [
+      "Unarmed"
+    ],
+    "description": "Russia's primary AWACS platform based on Il-76. Shmel radar dome. Only ~10 in service. Loss of even one is strategically significant."
+  },
+  "An-26": {
+    "name": "An-26 Curl",
+    "nato_name": "Curl",
+    "role": "Light tactical transport",
+    "generation": "2",
+    "country": "Russia",
+    "specs": {
+      "crew": 5,
+      "length_m": 23.8,
+      "wingspan_m": 29.2,
+      "max_speed_kmh": 540,
+      "combat_radius_km": 1100,
+      "service_ceiling_m": 7500,
+      "max_payload_kg": 5500
+    },
+    "weapons": [
+      "Unarmed"
+    ],
+    "description": "Light tactical transport for cargo and paratroopers. Workhorse of Soviet-era transport aviation."
+  },
+  "An-124": {
+    "name": "An-124 Ruslan",
+    "nato_name": "Condor",
+    "role": "Strategic heavy airlift",
+    "generation": "3",
+    "country": "Russia",
+    "specs": {
+      "crew": 6,
+      "length_m": 69.1,
+      "wingspan_m": 73.3,
+      "max_speed_kmh": 865,
+      "combat_radius_km": 4800,
+      "service_ceiling_m": 12000,
+      "max_payload_kg": 150000
+    },
+    "weapons": [
+      "Unarmed"
+    ],
+    "description": "One of world's largest aircraft. Can carry tanks and S-400 systems. ~10 in Russian military service."
+  },
+  "Il-20": {
+    "name": "Il-20 Coot-A",
+    "nato_name": "Coot-A",
+    "role": "SIGINT / ELINT reconnaissance",
+    "generation": "2",
+    "country": "Russia",
+    "specs": {
+      "crew": 13,
+      "length_m": 37.4,
+      "wingspan_m": 37.4,
+      "max_speed_kmh": 625,
+      "combat_radius_km": 3600,
+      "service_ceiling_m": 10000,
+      "max_payload_kg": null
+    },
+    "weapons": [
+      "Unarmed"
+    ],
+    "description": "Electronic intelligence aircraft based on Il-18 airliner. Used for signals intelligence gathering along NATO borders."
+  },
+  "Ka-52": {
+    "name": "Ka-52 Alligator",
+    "nato_name": "Hokum-B",
+    "role": "Attack helicopter",
+    "generation": "4",
+    "country": "Russia",
+    "specs": {
+      "crew": 2,
+      "length_m": 16.0,
+      "max_speed_kmh": 300,
+      "combat_radius_km": 460,
+      "service_ceiling_m": 5500,
+      "max_payload_kg": 2000
+    },
+    "weapons": [
+      "2A42 30mm cannon",
+      "Vikhr-1 ATGM",
+      "9K121 Ataka ATGM",
+      "S-8/S-13 rockets"
+    ],
+    "description": "Russia's most advanced attack helicopter with coaxial rotors. Side-by-side cockpit with ejection seats. Extensive combat use in Ukraine."
+  },
+  "Mi-8": {
+    "name": "Mi-8/17 Hip",
+    "nato_name": "Hip",
+    "role": "Transport helicopter",
+    "generation": "3",
+    "country": "Russia",
+    "specs": {
+      "crew": 3,
+      "length_m": 18.2,
+      "max_speed_kmh": 260,
+      "combat_radius_km": 465,
+      "service_ceiling_m": 6000,
+      "max_payload_kg": 4000
+    },
+    "weapons": [
+      "Door guns",
+      "S-8 rockets (armed variants)"
+    ],
+    "description": "Most produced helicopter ever (17,000+). Backbone of Russian rotary-wing ops."
+  },
+  "F-15": {
+    "name": "F-15 Eagle / Strike Eagle",
+    "nato_name": null,
+    "role": "Air superiority / dual-role fighter",
+    "generation": "4",
+    "country": "USA",
+    "specs": {
+      "crew": "1-2",
+      "length_m": 19.4,
+      "wingspan_m": 13.1,
+      "max_speed_kmh": 2660,
+      "combat_radius_km": 1270,
+      "service_ceiling_m": 20000,
+      "max_payload_kg": 10400
+    },
+    "weapons": [
+      "M61A1 20mm Vulcan",
+      "AIM-120 AMRAAM",
+      "AIM-9 Sidewinder",
+      "JDAM",
+      "SDB",
+      "AGM-130"
+    ],
+    "description": "Undefeated in air combat (104-0). F-15E Strike Eagle variant is a dual-role fighter-bomber. 48th FW at RAF Lakenheath."
+  },
+  "F-16": {
+    "name": "F-16 Fighting Falcon",
+    "nato_name": null,
+    "role": "Multirole fighter",
+    "generation": "4",
+    "country": "USA",
+    "specs": {
+      "crew": 1,
+      "length_m": 15.1,
+      "wingspan_m": 9.96,
+      "max_speed_kmh": 2120,
+      "combat_radius_km": 550,
+      "service_ceiling_m": 15200,
+      "max_payload_kg": 7700
+    },
+    "weapons": [
+      "M61A1 20mm Vulcan",
+      "AIM-120 AMRAAM",
+      "AIM-9 Sidewinder",
+      "JDAM",
+      "AGM-65 Maverick",
+      "HARM"
+    ],
+    "description": "Most produced Western fighter (4,600+). Lightweight, affordable, highly maneuverable. Being supplied to Ukraine as F-16AM/BM."
+  },
+  "F-22": {
+    "name": "F-22 Raptor",
+    "nato_name": null,
+    "role": "Stealth air superiority",
+    "generation": "5",
+    "country": "USA",
+    "specs": {
+      "crew": 1,
+      "length_m": 18.9,
+      "wingspan_m": 13.6,
+      "max_speed_kmh": 2410,
+      "combat_radius_km": 760,
+      "service_ceiling_m": 20000,
+      "max_payload_kg": 10000
+    },
+    "weapons": [
+      "M61A2 20mm Vulcan",
+      "AIM-120 AMRAAM (internal)",
+      "AIM-9 Sidewinder (internal)",
+      "GBU-32 JDAM"
+    ],
+    "description": "World's first operational 5th gen fighter. Stealth, supercruise, supermaneuverability. Only 187 built. Never exported."
+  },
+  "FA-18": {
+    "name": "F/A-18E/F Super Hornet",
+    "nato_name": null,
+    "role": "Carrier-based multirole",
+    "generation": "4+",
+    "country": "USA",
+    "specs": {
+      "crew": "1-2",
+      "length_m": 18.3,
+      "wingspan_m": 13.6,
+      "max_speed_kmh": 1915,
+      "combat_radius_km": 722,
+      "service_ceiling_m": 15000,
+      "max_payload_kg": 8050
+    },
+    "weapons": [
+      "M61A2 20mm Vulcan",
+      "AIM-120 AMRAAM",
+      "AIM-9 Sidewinder",
+      "AGM-84 Harpoon",
+      "JDAM",
+      "JSOW"
+    ],
+    "description": "US Navy's primary carrier-based fighter. Replaced F-14 Tomcat. E model is single-seat, F model is two-seat."
+  },
+  "B-52": {
+    "name": "B-52H Stratofortress",
+    "nato_name": null,
+    "role": "Strategic bomber",
+    "generation": "2+",
+    "country": "USA",
+    "specs": {
+      "crew": 5,
+      "length_m": 48.5,
+      "wingspan_m": 56.4,
+      "max_speed_kmh": 1000,
+      "combat_radius_km": 7210,
+      "service_ceiling_m": 15200,
+      "max_payload_kg": 32000
+    },
+    "weapons": [
+      "AGM-86B ALCM",
+      "AGM-158 JASSM",
+      "JDAM",
+      "Mk82/84 bombs",
+      "mines"
+    ],
+    "description": "In service since 1955, expected to fly until 2050s. 76 in active service. Can carry 70,000 lbs of ordnance."
+  },
+  "B-1B": {
+    "name": "B-1B Lancer",
+    "nato_name": null,
+    "role": "Strategic/conventional bomber",
+    "generation": "4",
+    "country": "USA",
+    "specs": {
+      "crew": 4,
+      "length_m": 44.5,
+      "wingspan_m": 41.8,
+      "max_speed_kmh": 1448,
+      "combat_radius_km": 5543,
+      "service_ceiling_m": 18290,
+      "max_payload_kg": 34000
+    },
+    "weapons": [
+      "JDAM",
+      "JSOW",
+      "AGM-158 JASSM",
+      "Mk82/84 bombs",
+      "CBU cluster munitions"
+    ],
+    "description": "Variable-sweep supersonic bomber. Largest internal payload of any US bomber. Used extensively in Afghanistan and Iraq."
+  },
+  "C-130": {
+    "name": "C-130 Hercules / Super Hercules",
+    "nato_name": null,
+    "role": "Tactical airlifter",
+    "generation": "3",
+    "country": "USA",
+    "specs": {
+      "crew": 5,
+      "length_m": 29.8,
+      "wingspan_m": 40.4,
+      "max_speed_kmh": 671,
+      "combat_radius_km": 3334,
+      "service_ceiling_m": 10060,
+      "max_payload_kg": 20400
+    },
+    "weapons": [
+      "Unarmed (AC-130 gunship variant armed)"
+    ],
+    "description": "Most versatile military transport ever built. 2,500+ produced. Can land on dirt strips. Variants: tanker, gunship, ISR, weather."
+  },
+  "C-17": {
+    "name": "C-17 Globemaster III",
+    "nato_name": null,
+    "role": "Strategic/tactical airlifter",
+    "generation": "4",
+    "country": "USA",
+    "specs": {
+      "crew": 3,
+      "length_m": 53.0,
+      "wingspan_m": 51.7,
+      "max_speed_kmh": 830,
+      "combat_radius_km": 4482,
+      "service_ceiling_m": 13715,
+      "max_payload_kg": 77519
+    },
+    "weapons": [
+      "Unarmed"
+    ],
+    "description": "Can carry M1 Abrams tanks. Capable of short-field tactical landings. 275 built. The backbone of US strategic airlift."
+  },
+  "C-5": {
+    "name": "C-5M Super Galaxy",
+    "nato_name": null,
+    "role": "Strategic heavy airlift",
+    "generation": "3+",
+    "country": "USA",
+    "specs": {
+      "crew": 7,
+      "length_m": 75.3,
+      "wingspan_m": 67.9,
+      "max_speed_kmh": 919,
+      "combat_radius_km": 4440,
+      "service_ceiling_m": 10895,
+      "max_payload_kg": 129274
+    },
+    "weapons": [
+      "Unarmed"
+    ],
+    "description": "One of the largest military aircraft in the world. Can carry 2 M1 Abrams tanks or 6 Apache helicopters."
+  },
+  "KC-135": {
+    "name": "KC-135 Stratotanker",
+    "nato_name": null,
+    "role": "Aerial refueling tanker",
+    "generation": "2+",
+    "country": "USA",
+    "specs": {
+      "crew": 3,
+      "length_m": 41.5,
+      "wingspan_m": 39.9,
+      "max_speed_kmh": 933,
+      "combat_radius_km": 2419,
+      "service_ceiling_m": 15200,
+      "max_payload_kg": 68039
+    },
+    "weapons": [
+      "Unarmed"
+    ],
+    "description": "USAF's primary tanker since 1957. Can refuel any NATO aircraft. 396 still in service. Being replaced by KC-46."
+  },
+  "KC-10": {
+    "name": "KC-10 Extender",
+    "nato_name": null,
+    "role": "Aerial refueling / transport",
+    "generation": "3",
+    "country": "USA",
+    "specs": {
+      "crew": 4,
+      "length_m": 54.4,
+      "wingspan_m": 50.4,
+      "max_speed_kmh": 982,
+      "combat_radius_km": 7033,
+      "service_ceiling_m": 12727,
+      "max_payload_kg": 76843
+    },
+    "weapons": [
+      "Unarmed"
+    ],
+    "description": "DC-10 based tanker/cargo aircraft. Larger than KC-135. Can refuel and carry cargo simultaneously. Being retired."
+  },
+  "E-3": {
+    "name": "E-3 Sentry AWACS",
+    "nato_name": null,
+    "role": "Airborne early warning & control",
+    "generation": "3",
+    "country": "USA",
+    "specs": {
+      "crew": 19,
+      "length_m": 46.6,
+      "wingspan_m": 44.4,
+      "max_speed_kmh": 855,
+      "combat_radius_km": 1610,
+      "service_ceiling_m": 12200,
+      "max_payload_kg": null
+    },
+    "weapons": [
+      "Unarmed"
+    ],
+    "description": "Flying command center with 30ft rotodome radar. Can track 600 targets at 400km range. The backbone of NATO air defense."
+  },
+  "E-8": {
+    "name": "E-8 Joint STARS",
+    "nato_name": null,
+    "role": "Ground surveillance / battle management",
+    "generation": "3",
+    "country": "USA",
+    "specs": {
+      "crew": 21,
+      "length_m": 46.6,
+      "wingspan_m": 44.4,
+      "max_speed_kmh": 973,
+      "combat_radius_km": 1600,
+      "service_ceiling_m": 12802,
+      "max_payload_kg": null
+    },
+    "weapons": [
+      "Unarmed"
+    ],
+    "description": "Ground surveillance radar aircraft. Tracks moving vehicles and troops. Used in every US conflict since Desert Storm."
+  },
+  "P-3C": {
+    "name": "P-3C Orion",
+    "nato_name": null,
+    "role": "Maritime patrol / ASW",
+    "generation": "2+",
+    "country": "USA",
+    "specs": {
+      "crew": 11,
+      "length_m": 35.6,
+      "wingspan_m": 30.4,
+      "max_speed_kmh": 761,
+      "combat_radius_km": 3835,
+      "service_ceiling_m": 8625,
+      "max_payload_kg": 9071
+    },
+    "weapons": [
+      "Mk46/54 torpedoes",
+      "Harpoon anti-ship missiles",
+      "mines",
+      "sonobuoys"
+    ],
+    "description": "Maritime patrol and anti-submarine warfare aircraft. Being replaced by P-8A Poseidon."
+  },
+  "F-14A Tomcat": {
+    "name": "F-14A Tomcat",
+    "nato_name": null,
+    "role": "Fleet air defense fighter",
+    "generation": "4",
+    "country": "Iran",
+    "specs": {
+      "crew": 2,
+      "length_m": 19.1,
+      "wingspan_m": 19.5,
+      "max_speed_kmh": 2485,
+      "combat_radius_km": 926,
+      "service_ceiling_m": 16150,
+      "max_payload_kg": 6577
+    },
+    "weapons": [
+      "M61A1 20mm Vulcan",
+      "AIM-54 Phoenix (limited)",
+      "AIM-7 Sparrow",
+      "AIM-9 Sidewinder"
+    ],
+    "description": "Iran is the only country still operating the F-14. ~40 airworthy. Used for long-range fleet defense with Phoenix missiles. Iconic variable-sweep fighter from Top Gun."
+  },
+  "F-4E Phantom": {
+    "name": "F-4E Phantom II",
+    "nato_name": null,
+    "role": "Multirole fighter",
+    "generation": "3",
+    "country": "Iran",
+    "specs": {
+      "crew": 2,
+      "length_m": 19.2,
+      "wingspan_m": 11.7,
+      "max_speed_kmh": 2370,
+      "combat_radius_km": 680,
+      "service_ceiling_m": 18975,
+      "max_payload_kg": 8480
+    },
+    "weapons": [
+      "M61A1 20mm Vulcan",
+      "AIM-7 Sparrow",
+      "AIM-9 Sidewinder",
+      "AGM-65 Maverick",
+      "bombs"
+    ],
+    "description": "Vietnam-era fighter still operated by Iran. ~60 in service. Battle-proven in Iran-Iraq War. Iran's workhorse strike fighter."
+  },
+  "F-5E Tiger II": {
+    "name": "F-5E Tiger II",
+    "nato_name": null,
+    "role": "Light tactical fighter",
+    "generation": "3",
+    "country": "Iran",
+    "specs": {
+      "crew": 1,
+      "length_m": 14.7,
+      "wingspan_m": 8.1,
+      "max_speed_kmh": 1700,
+      "combat_radius_km": 890,
+      "service_ceiling_m": 15790,
+      "max_payload_kg": 3175
+    },
+    "weapons": [
+      "M39A2 20mm cannons (2)",
+      "AIM-9 Sidewinder",
+      "bombs",
+      "rockets"
+    ],
+    "description": "Lightweight export fighter. Iran operates ~60. Basis for Iran's domestic Saeqeh and Kowsar fighters."
+  },
+  "Saeqeh": {
+    "name": "HESA Saeqeh",
+    "nato_name": null,
+    "role": "Light fighter (domestic)",
+    "generation": "3",
+    "country": "Iran",
+    "specs": {
+      "crew": 1,
+      "length_m": 14.7,
+      "wingspan_m": 8.1,
+      "max_speed_kmh": 1700,
+      "combat_radius_km": 850,
+      "service_ceiling_m": 15000,
+      "max_payload_kg": 3000
+    },
+    "weapons": [
+      "M39 20mm cannons",
+      "AIM-9 copies",
+      "bombs",
+      "rockets"
+    ],
+    "description": "Iranian domestic fighter based on F-5 with twin vertical stabilizers. Propaganda claims of 'advanced' capability disputed by Western analysts."
+  },
+  "Kowsar": {
+    "name": "HESA Kowsar",
+    "nato_name": null,
+    "role": "Light fighter (domestic)",
+    "generation": "3",
+    "country": "Iran",
+    "specs": {
+      "crew": 1,
+      "length_m": 14.7,
+      "wingspan_m": 8.1,
+      "max_speed_kmh": 1700,
+      "combat_radius_km": 850,
+      "service_ceiling_m": 15000,
+      "max_payload_kg": 3000
+    },
+    "weapons": [
+      "20mm cannons",
+      "air-to-air missiles",
+      "bombs"
+    ],
+    "description": "Iran's 'indigenous' fighter — essentially an F-5 with a new avionics suite and HUD. Limited production."
+  },
+  "fighter": {
+    "name": "Unidentified Fighter",
+    "role": "Fighter aircraft",
+    "generation": "Unknown",
+    "country": "Unknown",
+    "specs": {},
+    "weapons": [],
+    "description": "Fighter-class aircraft detected. Specific type not classified."
+  },
+  "bomber": {
+    "name": "Unidentified Bomber",
+    "role": "Bomber aircraft",
+    "generation": "Unknown",
+    "country": "Unknown",
+    "specs": {},
+    "weapons": [],
+    "description": "Bomber-class aircraft detected."
+  },
+  "transport": {
+    "name": "Unidentified Transport",
+    "role": "Transport aircraft",
+    "generation": "Unknown",
+    "country": "Unknown",
+    "specs": {},
+    "weapons": [],
+    "description": "Transport-class aircraft detected."
+  },
+  "aircraft": {
+    "name": "Unidentified Aircraft",
+    "role": "Unknown",
+    "generation": "Unknown",
+    "country": "Unknown",
+    "specs": {},
+    "weapons": [],
+    "description": "Aircraft detected but type not classified."
+  },
+  "J-20": {
+    "name": "Chengdu J-20 Mighty Dragon",
+    "role": "Stealth air superiority",
+    "generation": "5",
+    "country": "China",
+    "specs": {
+      "crew": 1,
+      "length_m": 20.4,
+      "wingspan_m": 13.0,
+      "max_speed_kmh": 2100,
+      "combat_radius_km": 1100,
+      "service_ceiling_m": 20000,
+      "max_payload_kg": 11000
+    },
+    "weapons": [
+      "PL-15 BVR AAM (internal)",
+      "PL-10 WVR AAM",
+      "PL-21 ramjet AAM"
+    ],
+    "description": "China's 5th-gen stealth fighter. Internal weapons bays, AESA radar, canard-delta configuration. ~200 in service. China's answer to F-22."
+  },
+  "J-16": {
+    "name": "Shenyang J-16",
+    "role": "Multirole strike fighter",
+    "generation": "4+",
+    "country": "China",
+    "specs": {
+      "crew": 2,
+      "length_m": 22.0,
+      "wingspan_m": 14.7,
+      "max_speed_kmh": 2400,
+      "combat_radius_km": 1500,
+      "service_ceiling_m": 17500,
+      "max_payload_kg": 12000
+    },
+    "weapons": [
+      "GSh-30-1 30mm cannon",
+      "PL-15 BVR AAM",
+      "PL-10 WVR AAM",
+      "YJ-83 anti-ship",
+      "LS-6 PGM"
+    ],
+    "description": "Chinese Flanker derivative for strike missions. AESA radar, advanced EW suite. ~300 in service."
+  },
+  "H-6K": {
+    "name": "Xian H-6K",
+    "role": "Strategic bomber / cruise missile carrier",
+    "generation": "2+",
+    "country": "China",
+    "specs": {
+      "crew": 4,
+      "length_m": 34.8,
+      "wingspan_m": 33.0,
+      "max_speed_kmh": 1050,
+      "combat_radius_km": 3500,
+      "service_ceiling_m": 13100,
+      "max_payload_kg": 12000
+    },
+    "weapons": [
+      "CJ-10K ALCM (6 external)",
+      "CJ-20 cruise missile",
+      "YJ-12 anti-ship missile"
+    ],
+    "description": "Modernized Tu-16 derivative. China's primary nuclear delivery platform and cruise missile carrier. Patrols South China Sea."
+  },
+  "Y-20": {
+    "name": "Xian Y-20 Kunpeng",
+    "role": "Strategic heavy airlift",
+    "generation": "4",
+    "country": "China",
+    "specs": {
+      "crew": 3,
+      "length_m": 47.0,
+      "wingspan_m": 50.0,
+      "max_speed_kmh": 920,
+      "combat_radius_km": 4500,
+      "service_ceiling_m": 13000,
+      "max_payload_kg": 66000
+    },
+    "weapons": [
+      "Unarmed"
+    ],
+    "description": "China's indigenous strategic airlifter. Can carry ZTQ-15 tanks, ballistic missiles. Tanker variant (YY-20) also in service."
+  },
+  "Y-9": {
+    "name": "Shaanxi Y-9",
+    "role": "Medium tactical transport / ISR",
+    "generation": "3+",
+    "country": "China",
+    "specs": {
+      "crew": 4,
+      "length_m": 34.0,
+      "wingspan_m": 38.0,
+      "max_speed_kmh": 650,
+      "combat_radius_km": 2500,
+      "service_ceiling_m": 10400,
+      "max_payload_kg": 20000
+    },
+    "weapons": [
+      "Unarmed (transport variant)"
+    ],
+    "description": "Chinese C-130 equivalent. Variants include ELINT (Y-9JB), maritime patrol (Y-9Q), and AEW (KJ-500 platform)."
+  },
+  "KJ-500": {
+    "name": "KJ-500 AEW&C",
+    "role": "Airborne early warning & control",
+    "generation": "4",
+    "country": "China",
+    "specs": {
+      "crew": 12,
+      "length_m": 34.0,
+      "wingspan_m": 38.0,
+      "max_speed_kmh": 550,
+      "combat_radius_km": 2000,
+      "service_ceiling_m": 10000
+    },
+    "weapons": [
+      "Unarmed"
+    ],
+    "description": "China's latest AWACS based on Y-9. Triple AESA array in dorsal rotodome. Can track fighters at 450km range."
+  },
+  "Typhoon": {
+    "name": "Eurofighter Typhoon",
+    "role": "Air superiority / multirole",
+    "generation": "4.5",
+    "country": "Europe",
+    "specs": {
+      "crew": 1,
+      "length_m": 15.96,
+      "wingspan_m": 10.95,
+      "max_speed_kmh": 2495,
+      "combat_radius_km": 1389,
+      "service_ceiling_m": 19812,
+      "max_payload_kg": 7500
+    },
+    "weapons": [
+      "BK-27 27mm cannon",
+      "AIM-120 AMRAAM / Meteor BVRAAM",
+      "AIM-9/IRIS-T WVR",
+      "Storm Shadow/Taurus cruise missile",
+      "Paveway/JDAM"
+    ],
+    "description": "Europe's primary air superiority fighter. Canard-delta, supercruise capable. Operated by UK, Germany, Italy, Spain, Austria, Saudi Arabia, Qatar, Oman, Kuwait."
+  },
+  "Eurofighter": {
+    "name": "Eurofighter Typhoon",
+    "role": "Air superiority / multirole",
+    "generation": "4.5",
+    "country": "Europe",
+    "specs": {
+      "crew": 1,
+      "length_m": 15.96,
+      "wingspan_m": 10.95,
+      "max_speed_kmh": 2495,
+      "combat_radius_km": 1389,
+      "service_ceiling_m": 19812,
+      "max_payload_kg": 7500
+    },
+    "weapons": [
+      "BK-27 27mm cannon",
+      "Meteor BVRAAM",
+      "IRIS-T WVR",
+      "Storm Shadow cruise missile"
+    ],
+    "description": "Europe's primary air superiority fighter. Operated by UK, Germany, Italy, Spain."
+  },
+  "Rafale": {
+    "name": "Dassault Rafale",
+    "role": "Omnirole fighter",
+    "generation": "4.5",
+    "country": "France",
+    "specs": {
+      "crew": "1-2",
+      "length_m": 15.27,
+      "wingspan_m": 10.8,
+      "max_speed_kmh": 1912,
+      "combat_radius_km": 1850,
+      "service_ceiling_m": 15235,
+      "max_payload_kg": 9500
+    },
+    "weapons": [
+      "GIAT 30mm cannon",
+      "MICA IR/EM AAM",
+      "Meteor BVRAAM",
+      "SCALP/Storm Shadow cruise missile",
+      "ASMP-A nuclear missile",
+      "Exocet AM39"
+    ],
+    "description": "France's omnirole fighter. Carrier and land-based variants. Nuclear strike capable with ASMP-A. Exported to India, Egypt, Qatar, Greece, UAE, Indonesia."
+  },
+  "Rafale DM": {
+    "name": "Dassault Rafale DM (Egypt)",
+    "role": "Omnirole fighter (export)",
+    "generation": "4.5",
+    "country": "Egypt",
+    "specs": {
+      "crew": 2,
+      "length_m": 15.27,
+      "wingspan_m": 10.8,
+      "max_speed_kmh": 1912,
+      "combat_radius_km": 1850,
+      "service_ceiling_m": 15235,
+      "max_payload_kg": 9500
+    },
+    "weapons": [
+      "GIAT 30mm cannon",
+      "MICA AAM",
+      "Meteor BVRAAM",
+      "SCALP cruise missile"
+    ],
+    "description": "Egyptian export variant. 24 delivered. Egypt's most advanced fighter."
+  },
+  "Tornado": {
+    "name": "Panavia Tornado",
+    "role": "Strike / interdiction",
+    "generation": "3+",
+    "country": "Europe",
+    "specs": {
+      "crew": 2,
+      "length_m": 16.72,
+      "wingspan_m": 13.91,
+      "max_speed_kmh": 2400,
+      "combat_radius_km": 1390,
+      "service_ceiling_m": 15240,
+      "max_payload_kg": 9000
+    },
+    "weapons": [
+      "BK-27 27mm cannon",
+      "Storm Shadow cruise missile",
+      "Paveway LGB",
+      "ALARM ARM",
+      "Brimstone"
+    ],
+    "description": "Variable-sweep strike aircraft. IDS (interdictor) and ECR (SEAD) variants. Operated by Germany, Italy, Saudi Arabia. Being replaced by Typhoon/F-35."
+  },
+  "Gripen E": {
+    "name": "Saab Gripen E",
+    "role": "Lightweight multirole",
+    "generation": "4.5",
+    "country": "Sweden",
+    "specs": {
+      "crew": 1,
+      "length_m": 15.2,
+      "wingspan_m": 8.6,
+      "max_speed_kmh": 2204,
+      "combat_radius_km": 1300,
+      "service_ceiling_m": 15240,
+      "max_payload_kg": 5300
+    },
+    "weapons": [
+      "BK-27 27mm cannon",
+      "Meteor BVRAAM",
+      "IRIS-T WVR",
+      "RBS-15 anti-ship",
+      "GBU-12/49 PGM"
+    ],
+    "description": "Latest Gripen variant with AESA radar. Can operate from road bases. Exported to Brazil, South Africa, Czech Republic, Hungary, Thailand."
+  },
+  "F-35A": {
+    "name": "F-35A Lightning II",
+    "role": "Stealth multirole",
+    "generation": "5",
+    "country": "USA",
+    "specs": {
+      "crew": 1,
+      "length_m": 15.7,
+      "wingspan_m": 10.7,
+      "max_speed_kmh": 1960,
+      "combat_radius_km": 1093,
+      "service_ceiling_m": 15240,
+      "max_payload_kg": 8160
+    },
+    "weapons": [
+      "GAU-22/A 25mm cannon",
+      "AIM-120 AMRAAM (internal)",
+      "AIM-9X (internal)",
+      "GBU-31 JDAM",
+      "B61 nuclear bomb"
+    ],
+    "description": "5th-gen stealth fighter with sensor fusion. Three variants: A (CTOL), B (STOVL), C (carrier). 1000+ delivered to 17 nations."
+  },
+  "F-35I Adir": {
+    "name": "F-35I Adir",
+    "role": "Stealth multirole (Israeli)",
+    "generation": "5",
+    "country": "Israel",
+    "specs": {
+      "crew": 1,
+      "length_m": 15.7,
+      "wingspan_m": 10.7,
+      "max_speed_kmh": 1960,
+      "combat_radius_km": 1093,
+      "service_ceiling_m": 15240,
+      "max_payload_kg": 8160
+    },
+    "weapons": [
+      "GAU-22/A 25mm cannon",
+      "AIM-120 AMRAAM",
+      "Israeli EW/targeting pods",
+      "Spice PGM"
+    ],
+    "description": "Israeli F-35 with custom EW systems and C4I integration. Israel is the first country to use F-35 in combat."
+  },
+  "F-15E": {
+    "name": "F-15E Strike Eagle",
+    "role": "Dual-role strike fighter",
+    "generation": "4+",
+    "country": "USA",
+    "specs": {
+      "crew": 2,
+      "length_m": 19.4,
+      "wingspan_m": 13.1,
+      "max_speed_kmh": 2660,
+      "combat_radius_km": 1270,
+      "service_ceiling_m": 20000,
+      "max_payload_kg": 11000
+    },
+    "weapons": [
+      "M61A1 20mm Vulcan",
+      "AIM-120 AMRAAM",
+      "AIM-9X",
+      "JDAM",
+      "SDB",
+      "AGM-130",
+      "SLAM-ER"
+    ],
+    "description": "Air-to-ground optimized F-15. Conformal fuel tanks, LANTIRN/Sniper pods. The backbone of USAF precision strike."
+  },
+  "F-15I Ra'am": {
+    "name": "F-15I Ra'am (Thunder)",
+    "role": "Long-range strike",
+    "generation": "4+",
+    "country": "Israel",
+    "specs": {
+      "crew": 2,
+      "length_m": 19.4,
+      "wingspan_m": 13.1,
+      "max_speed_kmh": 2660,
+      "combat_radius_km": 1270,
+      "service_ceiling_m": 20000,
+      "max_payload_kg": 11000
+    },
+    "weapons": [
+      "M61A1 Vulcan",
+      "Python-5 AAM",
+      "Popeye cruise missile",
+      "Spice PGM"
+    ],
+    "description": "Israeli F-15E variant with indigenous weapons and EW. Can reach Iran without refueling. 25 in service."
+  },
+  "F-15K": {
+    "name": "F-15K Slam Eagle",
+    "role": "Dual-role strike",
+    "generation": "4+",
+    "country": "South Korea",
+    "specs": {
+      "crew": 2,
+      "length_m": 19.4,
+      "wingspan_m": 13.1,
+      "max_speed_kmh": 2660,
+      "combat_radius_km": 1270,
+      "service_ceiling_m": 20000,
+      "max_payload_kg": 11000
+    },
+    "weapons": [
+      "M61A1 Vulcan",
+      "AIM-120 AMRAAM",
+      "SLAM-ER",
+      "Harpoon",
+      "JDAM"
+    ],
+    "description": "South Korean F-15E variant. 61 in service. Primary deep-strike platform against North Korea."
+  },
+  "F-15SA": {
+    "name": "F-15SA Strike Eagle",
+    "role": "Advanced multirole",
+    "generation": "4++",
+    "country": "Saudi Arabia",
+    "specs": {
+      "crew": 2,
+      "length_m": 19.4,
+      "wingspan_m": 13.1,
+      "max_speed_kmh": 2660,
+      "combat_radius_km": 1270,
+      "service_ceiling_m": 20000,
+      "max_payload_kg": 13000
+    },
+    "weapons": [
+      "M61A1 Vulcan",
+      "AIM-120D AMRAAM",
+      "AIM-9X-2",
+      "JDAM",
+      "SDB II",
+      "Harpoon"
+    ],
+    "description": "Most advanced F-15 variant. Fly-by-wire, AESA radar, digital EW. 84 delivered to Saudi Arabia."
+  },
+  "F-16C": {
+    "name": "F-16C Fighting Falcon",
+    "role": "Multirole fighter",
+    "generation": "4",
+    "country": "USA",
+    "specs": {
+      "crew": 1,
+      "length_m": 15.1,
+      "wingspan_m": 9.96,
+      "max_speed_kmh": 2120,
+      "combat_radius_km": 550,
+      "service_ceiling_m": 15200,
+      "max_payload_kg": 7700
+    },
+    "weapons": [
+      "M61A1 20mm Vulcan",
+      "AIM-120 AMRAAM",
+      "AIM-9 Sidewinder",
+      "JDAM",
+      "AGM-65 Maverick"
+    ],
+    "description": "Block 50/52 variant with improved radar and engines."
+  },
+  "F-16AM": {
+    "name": "F-16AM Fighting Falcon (MLU)",
+    "role": "Multirole fighter",
+    "generation": "4",
+    "country": "NATO",
+    "specs": {
+      "crew": 1,
+      "length_m": 15.1,
+      "wingspan_m": 9.96,
+      "max_speed_kmh": 2120,
+      "combat_radius_km": 550,
+      "service_ceiling_m": 15200,
+      "max_payload_kg": 7700
+    },
+    "weapons": [
+      "M61A1 Vulcan",
+      "AIM-120 AMRAAM",
+      "AIM-9X",
+      "JDAM",
+      "HARM"
+    ],
+    "description": "Mid-Life Update F-16A/B with modern avionics. Operated by Belgium, Netherlands, Norway, Denmark, Portugal, Jordan."
+  },
+  "F-16V": {
+    "name": "F-16V Viper",
+    "role": "Multirole fighter (latest)",
+    "generation": "4+",
+    "country": "USA",
+    "specs": {
+      "crew": 1,
+      "length_m": 15.1,
+      "wingspan_m": 9.96,
+      "max_speed_kmh": 2120,
+      "combat_radius_km": 550,
+      "service_ceiling_m": 15200,
+      "max_payload_kg": 7700
+    },
+    "weapons": [
+      "M61A1 Vulcan",
+      "AIM-120C-7 AMRAAM",
+      "AIM-9X-2",
+      "JDAM",
+      "SDB"
+    ],
+    "description": "Latest F-16 with AESA radar, modern cockpit. Taiwan's primary fighter (upgraded + new-build)."
+  },
+  "F-16E Block 60": {
+    "name": "F-16E Block 60 Desert Falcon",
+    "role": "Advanced multirole",
+    "generation": "4+",
+    "country": "UAE",
+    "specs": {
+      "crew": 1,
+      "length_m": 15.1,
+      "wingspan_m": 10.0,
+      "max_speed_kmh": 2120,
+      "combat_radius_km": 650,
+      "service_ceiling_m": 15240,
+      "max_payload_kg": 7700
+    },
+    "weapons": [
+      "M61A1 Vulcan",
+      "AIM-120 AMRAAM",
+      "AIM-9X",
+      "AGM-84 SLAM-ER",
+      "JDAM"
+    ],
+    "description": "UAE-exclusive advanced F-16 with conformal fuel tanks and AESA radar. 80 in service."
+  },
+  "F-16C Block 52": {
+    "name": "F-16C Block 52+",
+    "role": "Multirole fighter",
+    "generation": "4",
+    "country": "Pakistan",
+    "specs": {
+      "crew": 1,
+      "length_m": 15.1,
+      "wingspan_m": 9.96,
+      "max_speed_kmh": 2120,
+      "combat_radius_km": 550,
+      "service_ceiling_m": 15200,
+      "max_payload_kg": 7700
+    },
+    "weapons": [
+      "M61A1 Vulcan",
+      "AIM-120C-5 AMRAAM",
+      "AIM-9M",
+      "JDAM"
+    ],
+    "description": "Pakistan operates 18 F-16C/D Block 52+ with advanced targeting pods."
+  },
+  "F-2A": {
+    "name": "Mitsubishi F-2",
+    "role": "Multirole fighter (anti-ship)",
+    "generation": "4",
+    "country": "Japan",
+    "specs": {
+      "crew": 1,
+      "length_m": 15.52,
+      "wingspan_m": 11.13,
+      "max_speed_kmh": 2124,
+      "combat_radius_km": 834,
+      "service_ceiling_m": 18000,
+      "max_payload_kg": 8085
+    },
+    "weapons": [
+      "JM61A1 20mm cannon",
+      "AAM-4 BVR AAM",
+      "AAM-5 WVR AAM",
+      "ASM-2 anti-ship missile",
+      "JDAM"
+    ],
+    "description": "Japanese F-16 derivative with larger wing and domestic weapons. Primary anti-ship strike role. 62 in service."
+  },
+  "CF-18": {
+    "name": "CF-188 Hornet",
+    "role": "Multirole fighter",
+    "generation": "4",
+    "country": "Canada",
+    "specs": {
+      "crew": 1,
+      "length_m": 17.1,
+      "wingspan_m": 11.4,
+      "max_speed_kmh": 1814,
+      "combat_radius_km": 722,
+      "service_ceiling_m": 15000,
+      "max_payload_kg": 7700
+    },
+    "weapons": [
+      "M61A1 Vulcan",
+      "AIM-120 AMRAAM",
+      "AIM-9X",
+      "JDAM",
+      "Harpoon"
+    ],
+    "description": "Canadian F/A-18A/B. 76 in service. Being replaced by F-35A. NORAD QRA duties."
+  },
+  "EF-18": {
+    "name": "EF-18 Hornet (Spain)",
+    "role": "Multirole fighter",
+    "generation": "4",
+    "country": "Spain",
+    "specs": {
+      "crew": 1,
+      "length_m": 17.1,
+      "wingspan_m": 11.4,
+      "max_speed_kmh": 1814,
+      "combat_radius_km": 722,
+      "service_ceiling_m": 15000,
+      "max_payload_kg": 7700
+    },
+    "weapons": [
+      "M61A1 Vulcan",
+      "AIM-120 AMRAAM",
+      "AIM-9",
+      "AGM-84 Harpoon",
+      "JDAM"
+    ],
+    "description": "Spanish F/A-18 Hornet. Being replaced by Eurofighter Typhoon."
+  },
+  "F/A-18F": {
+    "name": "F/A-18F Super Hornet",
+    "role": "Carrier-based multirole",
+    "generation": "4+",
+    "country": "Australia",
+    "specs": {
+      "crew": 2,
+      "length_m": 18.3,
+      "wingspan_m": 13.6,
+      "max_speed_kmh": 1915,
+      "combat_radius_km": 722,
+      "service_ceiling_m": 15000,
+      "max_payload_kg": 8050
+    },
+    "weapons": [
+      "M61A2 Vulcan",
+      "AIM-120 AMRAAM",
+      "AIM-9X",
+      "JDAM",
+      "Harpoon",
+      "JSOW"
+    ],
+    "description": "Two-seat Super Hornet. Australia operates 24 alongside F-35A."
+  },
+  "KF-21": {
+    "name": "KAI KF-21 Boramae",
+    "role": "Multirole fighter",
+    "generation": "4.5",
+    "country": "South Korea",
+    "specs": {
+      "crew": 1,
+      "length_m": 16.9,
+      "wingspan_m": 11.2,
+      "max_speed_kmh": 1960,
+      "combat_radius_km": 1200,
+      "service_ceiling_m": 16764,
+      "max_payload_kg": 7700
+    },
+    "weapons": [
+      "M61A2 Vulcan",
+      "AIM-120 AMRAAM",
+      "IRIS-T",
+      "Meteor (planned)",
+      "JDAM"
+    ],
+    "description": "South Korea's indigenous 4.5-gen fighter. Semi-stealth design. First flight 2022. 120 planned."
+  },
+  "JF-17": {
+    "name": "CAC/PAC JF-17 Thunder",
+    "role": "Lightweight multirole",
+    "generation": "4",
+    "country": "Pakistan/China",
+    "specs": {
+      "crew": 1,
+      "length_m": 14.0,
+      "wingspan_m": 9.45,
+      "max_speed_kmh": 1960,
+      "combat_radius_km": 1352,
+      "service_ceiling_m": 16920,
+      "max_payload_kg": 3629
+    },
+    "weapons": [
+      "GSh-23-2 23mm cannon",
+      "PL-5E WVR AAM",
+      "SD-10 BVR AAM",
+      "C-802 anti-ship",
+      "LGB"
+    ],
+    "description": "Sino-Pakistani lightweight fighter. Pakistan's most numerous fighter (~150). Block 3 has AESA radar."
+  },
+  "F-7": {
+    "name": "Chengdu F-7 Airguard",
+    "role": "Interceptor",
+    "generation": "2+",
+    "country": "China",
+    "specs": {
+      "crew": 1,
+      "length_m": 14.9,
+      "wingspan_m": 7.15,
+      "max_speed_kmh": 2200,
+      "combat_radius_km": 370,
+      "service_ceiling_m": 17500,
+      "max_payload_kg": 1000
+    },
+    "weapons": [
+      "30mm cannon",
+      "PL-5 AAM",
+      "bombs"
+    ],
+    "description": "Chinese MiG-21 derivative. Operated by Iran, Bangladesh, Myanmar. Very limited capability."
+  },
+  "Mirage 2000-5": {
+    "name": "Dassault Mirage 2000-5",
+    "role": "Air superiority / multirole",
+    "generation": "4",
+    "country": "France",
+    "specs": {
+      "crew": 1,
+      "length_m": 14.36,
+      "wingspan_m": 9.13,
+      "max_speed_kmh": 2336,
+      "combat_radius_km": 1550,
+      "service_ceiling_m": 17060,
+      "max_payload_kg": 6300
+    },
+    "weapons": [
+      "DEFA 554 30mm cannon",
+      "MICA IR/EM AAM",
+      "Magic II WVR AAM",
+      "LGB"
+    ],
+    "description": "Advanced Mirage 2000 with RDY radar. Operated by France, Taiwan, Qatar, UAE."
+  },
+  "Mirage 2000-9": {
+    "name": "Dassault Mirage 2000-9",
+    "role": "Multirole fighter",
+    "generation": "4",
+    "country": "UAE",
+    "specs": {
+      "crew": 1,
+      "length_m": 14.36,
+      "wingspan_m": 9.13,
+      "max_speed_kmh": 2336,
+      "combat_radius_km": 1550,
+      "service_ceiling_m": 17060,
+      "max_payload_kg": 6300
+    },
+    "weapons": [
+      "DEFA 554 30mm cannon",
+      "MICA AAM",
+      "Black Shaheen cruise missile",
+      "PGM"
+    ],
+    "description": "UAE's upgraded Mirage 2000 with advanced weapons. 68 in service."
+  },
+  "MiG-29M2": {
+    "name": "MiG-29M2 Fulcrum-E",
+    "role": "Multirole fighter",
+    "generation": "4+",
+    "country": "Egypt",
+    "specs": {
+      "crew": 2,
+      "length_m": 17.3,
+      "wingspan_m": 11.4,
+      "max_speed_kmh": 2400,
+      "combat_radius_km": 1000,
+      "service_ceiling_m": 17500,
+      "max_payload_kg": 4500
+    },
+    "weapons": [
+      "GSh-30-1 30mm cannon",
+      "R-77 BVR AAM",
+      "R-73 WVR AAM",
+      "Kh-31/35 anti-ship"
+    ],
+    "description": "Russia's latest MiG-29 export variant. Egypt operates 46. AESA radar, precision strike capable."
+  },
+  "Su-30MKI": {
+    "name": "Su-30MKI Flanker-H",
+    "role": "Air superiority / multirole",
+    "generation": "4+",
+    "country": "India",
+    "specs": {
+      "crew": 2,
+      "length_m": 21.9,
+      "wingspan_m": 14.7,
+      "max_speed_kmh": 2120,
+      "combat_radius_km": 1500,
+      "service_ceiling_m": 17300,
+      "max_payload_kg": 8000
+    },
+    "weapons": [
+      "GSh-30-1 30mm cannon",
+      "R-77 BVR AAM",
+      "BrahMos-A cruise missile",
+      "KAB-500 PGM"
+    ],
+    "description": "India's most capable fighter. 272 in service. Can carry BrahMos supersonic cruise missile."
+  },
+  "A400M": {
+    "name": "Airbus A400M Atlas",
+    "role": "Tactical/strategic airlift",
+    "generation": "4",
+    "country": "Europe",
+    "specs": {
+      "crew": 3,
+      "length_m": 45.1,
+      "wingspan_m": 42.4,
+      "max_speed_kmh": 780,
+      "combat_radius_km": 3298,
+      "service_ceiling_m": 11300,
+      "max_payload_kg": 37000
+    },
+    "weapons": [
+      "Unarmed"
+    ],
+    "description": "European military airlifter. Turboprop, rough-field capable. Operated by France, Germany, UK, Spain, Turkey, Belgium, Malaysia."
+  },
+  "C-130J": {
+    "name": "C-130J Super Hercules",
+    "role": "Tactical airlift",
+    "generation": "4",
+    "country": "USA",
+    "specs": {
+      "crew": 3,
+      "length_m": 29.8,
+      "wingspan_m": 40.4,
+      "max_speed_kmh": 671,
+      "combat_radius_km": 3334,
+      "service_ceiling_m": 8615,
+      "max_payload_kg": 19090
+    },
+    "weapons": [
+      "Unarmed"
+    ],
+    "description": "Latest Hercules. Faster, higher, further than C-130H. 500+ delivered to 22 nations."
+  },
+  "C-130E": {
+    "name": "C-130E Hercules",
+    "role": "Tactical airlift",
+    "generation": "2+",
+    "country": "USA",
+    "specs": {
+      "crew": 5,
+      "length_m": 29.8,
+      "wingspan_m": 40.4,
+      "max_speed_kmh": 592,
+      "combat_radius_km": 2835,
+      "service_ceiling_m": 7077,
+      "max_payload_kg": 19356
+    },
+    "weapons": [
+      "Unarmed"
+    ],
+    "description": "Early C-130 variant. Still operated by Pakistan, Turkey."
+  },
+  "CC-130J": {
+    "name": "CC-130J Hercules (Canada)",
+    "role": "Tactical airlift",
+    "generation": "4",
+    "country": "Canada",
+    "specs": {
+      "crew": 3,
+      "length_m": 29.8,
+      "wingspan_m": 40.4,
+      "max_speed_kmh": 671,
+      "combat_radius_km": 3334,
+      "service_ceiling_m": 8615,
+      "max_payload_kg": 19090
+    },
+    "weapons": [
+      "Unarmed"
+    ],
+    "description": "Canadian C-130J designation."
+  },
+  "CC-177": {
+    "name": "CC-177 Globemaster III (Canada)",
+    "role": "Strategic airlift",
+    "generation": "4",
+    "country": "Canada",
+    "specs": {
+      "crew": 3,
+      "length_m": 53.0,
+      "wingspan_m": 51.7,
+      "max_speed_kmh": 830,
+      "combat_radius_km": 4482,
+      "service_ceiling_m": 13715,
+      "max_payload_kg": 77519
+    },
+    "weapons": [
+      "Unarmed"
+    ],
+    "description": "Canadian C-17 designation. 5 in service."
+  },
+  "C-2": {
+    "name": "Kawasaki C-2",
+    "role": "Strategic airlift",
+    "generation": "4",
+    "country": "Japan",
+    "specs": {
+      "crew": 3,
+      "length_m": 43.9,
+      "wingspan_m": 44.4,
+      "max_speed_kmh": 890,
+      "combat_radius_km": 4500,
+      "service_ceiling_m": 12200,
+      "max_payload_kg": 36000
+    },
+    "weapons": [
+      "Unarmed"
+    ],
+    "description": "Japan's indigenous strategic transport. Can carry 120 troops or MIM-104 Patriot. Faster than C-17 but smaller."
+  },
+  "E-767": {
+    "name": "Boeing E-767 AWACS",
+    "role": "Airborne early warning",
+    "generation": "4",
+    "country": "Japan",
+    "specs": {
+      "crew": 19,
+      "length_m": 48.5,
+      "wingspan_m": 47.6,
+      "max_speed_kmh": 955,
+      "combat_radius_km": 1600,
+      "service_ceiling_m": 12200
+    },
+    "weapons": [
+      "Unarmed"
+    ],
+    "description": "767-based AWACS. Only Japan operates 4. AN/APY-2 radar. Superior endurance to E-3."
+  },
+  "E-737": {
+    "name": "Boeing E-7A Wedgetail (Korea)",
+    "role": "AEW&C",
+    "generation": "4",
+    "country": "South Korea",
+    "specs": {
+      "crew": 12,
+      "length_m": 33.6,
+      "wingspan_m": 34.3,
+      "max_speed_kmh": 955,
+      "combat_radius_km": 1600,
+      "service_ceiling_m": 12500
+    },
+    "weapons": [
+      "Unarmed"
+    ],
+    "description": "737-based AEW&C. MESA AESA radar. Also operated by Australia, Turkey, UK."
+  },
+  "E-7": {
+    "name": "Boeing E-7 Wedgetail",
+    "role": "AEW&C",
+    "generation": "4",
+    "country": "NATO",
+    "specs": {
+      "crew": 12,
+      "length_m": 33.6,
+      "wingspan_m": 34.3,
+      "max_speed_kmh": 955,
+      "combat_radius_km": 1600,
+      "service_ceiling_m": 12500
+    },
+    "weapons": [
+      "Unarmed"
+    ],
+    "description": "NATO's next-gen AWACS replacing E-3. MESA AESA radar with 360° coverage."
+  },
+  "E-7 Wedgetail": {
+    "name": "Boeing E-7 Wedgetail",
+    "role": "AEW&C",
+    "generation": "4",
+    "country": "UK/NATO",
+    "specs": {
+      "crew": 12,
+      "length_m": 33.6,
+      "wingspan_m": 34.3,
+      "max_speed_kmh": 955,
+      "combat_radius_km": 1600,
+      "service_ceiling_m": 12500
+    },
+    "weapons": [
+      "Unarmed"
+    ],
+    "description": "RAF's E-3 replacement. 5 ordered for UK."
+  },
+  "E-3A": {
+    "name": "E-3A Sentry AWACS (NATO)",
+    "role": "AEW&C",
+    "generation": "3",
+    "country": "NATO",
+    "specs": {
+      "crew": 19,
+      "length_m": 46.6,
+      "wingspan_m": 44.4,
+      "max_speed_kmh": 855,
+      "combat_radius_km": 1610,
+      "service_ceiling_m": 12200
+    },
+    "weapons": [
+      "Unarmed"
+    ],
+    "description": "NATO-operated E-3 AWACS fleet based at Geilenkirchen, Germany."
+  },
+  "E-3F": {
+    "name": "E-3F Sentry (France)",
+    "role": "AEW&C",
+    "generation": "3",
+    "country": "France",
+    "specs": {
+      "crew": 17,
+      "length_m": 46.6,
+      "wingspan_m": 44.4,
+      "max_speed_kmh": 855,
+      "combat_radius_km": 1610,
+      "service_ceiling_m": 12200
+    },
+    "weapons": [
+      "Unarmed"
+    ],
+    "description": "French Air Force E-3 variant. 4 in service at Avord."
+  },
+  "E-2K": {
+    "name": "E-2K Hawkeye (Taiwan)",
+    "role": "AEW&C",
+    "generation": "3+",
+    "country": "Taiwan",
+    "specs": {
+      "crew": 5,
+      "length_m": 17.5,
+      "wingspan_m": 24.6,
+      "max_speed_kmh": 598,
+      "combat_radius_km": 320,
+      "service_ceiling_m": 10576
+    },
+    "weapons": [
+      "Unarmed"
+    ],
+    "description": "Taiwanese E-2 Hawkeye variant. 6 in service. Critical for Taiwan Strait surveillance."
+  },
+  "G550 CAEW": {
+    "name": "IAI EL/W-2085 (G550 CAEW)",
+    "role": "AEW&C",
+    "generation": "4",
+    "country": "Israel",
+    "specs": {
+      "crew": 10,
+      "length_m": 29.4,
+      "wingspan_m": 28.5,
+      "max_speed_kmh": 900,
+      "combat_radius_km": 3000,
+      "service_ceiling_m": 13716
+    },
+    "weapons": [
+      "Unarmed"
+    ],
+    "description": "Israeli AWACS on Gulfstream G550 platform. AESA conformal arrays. Also exported to Italy, Singapore."
+  },
+  "KC-767": {
+    "name": "KC-767 (Japan)",
+    "role": "Aerial refueling tanker",
+    "generation": "4",
+    "country": "Japan",
+    "specs": {
+      "crew": 3,
+      "length_m": 48.5,
+      "wingspan_m": 47.6,
+      "max_speed_kmh": 955,
+      "combat_radius_km": 3000,
+      "service_ceiling_m": 12200,
+      "max_payload_kg": 90720
+    },
+    "weapons": [
+      "Unarmed"
+    ],
+    "description": "767-based tanker. Japan operates 4. Can refuel fighters via boom or drogue."
+  },
+  "KC-330": {
+    "name": "Airbus KC-330 Cygnus (Korea)",
+    "role": "Aerial refueling / transport",
+    "generation": "4",
+    "country": "South Korea",
+    "specs": {
+      "crew": 3,
+      "length_m": 59.0,
+      "wingspan_m": 60.3,
+      "max_speed_kmh": 870,
+      "combat_radius_km": 4000,
+      "service_ceiling_m": 12500,
+      "max_payload_kg": 45000
+    },
+    "weapons": [
+      "Unarmed"
+    ],
+    "description": "A330 MRTT variant for South Korea. 4 in service. Can refuel any NATO fighter."
+  },
+  "KC-30A": {
+    "name": "KC-30A (Australia)",
+    "role": "Aerial refueling / transport",
+    "generation": "4",
+    "country": "Australia",
+    "specs": {
+      "crew": 3,
+      "length_m": 59.0,
+      "wingspan_m": 60.3,
+      "max_speed_kmh": 870,
+      "combat_radius_km": 4000,
+      "service_ceiling_m": 12500,
+      "max_payload_kg": 45000
+    },
+    "weapons": [
+      "Unarmed"
+    ],
+    "description": "Australian A330 MRTT. 7 in service."
+  },
+  "KC-130": {
+    "name": "KC-130 Hercules Tanker",
+    "role": "Tactical refueling",
+    "generation": "3",
+    "country": "USA",
+    "specs": {
+      "crew": 5,
+      "length_m": 29.8,
+      "wingspan_m": 40.4,
+      "max_speed_kmh": 592,
+      "combat_radius_km": 1600,
+      "service_ceiling_m": 7077,
+      "max_payload_kg": 19000
+    },
+    "weapons": [
+      "Unarmed"
+    ],
+    "description": "C-130 tanker variant with underwing refueling pods. USMC primary tanker."
+  },
+  "A330 MRTT": {
+    "name": "Airbus A330 MRTT",
+    "role": "Aerial refueling / transport",
+    "generation": "4",
+    "country": "Europe",
+    "specs": {
+      "crew": 3,
+      "length_m": 59.0,
+      "wingspan_m": 60.3,
+      "max_speed_kmh": 870,
+      "combat_radius_km": 4000,
+      "service_ceiling_m": 12500,
+      "max_payload_kg": 45000
+    },
+    "weapons": [
+      "Unarmed"
+    ],
+    "description": "Wide-body tanker/transport. Operated by UK (Voyager), France, Singapore, UAE, Australia, South Korea."
+  },
+  "Voyager": {
+    "name": "Airbus Voyager KC2/KC3",
+    "role": "Aerial refueling / transport",
+    "generation": "4",
+    "country": "UK",
+    "specs": {
+      "crew": 3,
+      "length_m": 59.0,
+      "wingspan_m": 60.3,
+      "max_speed_kmh": 870,
+      "combat_radius_km": 4000,
+      "service_ceiling_m": 12500,
+      "max_payload_kg": 45000
+    },
+    "weapons": [
+      "Unarmed"
+    ],
+    "description": "RAF's A330 MRTT. 14 in service. Can refuel via boom and hose-drogue simultaneously."
+  },
+  "Boeing 707": {
+    "name": "Boeing 707 Tanker/Transport",
+    "role": "Tanker / VIP transport",
+    "generation": "2",
+    "country": "Israel",
+    "specs": {
+      "crew": 4,
+      "length_m": 46.6,
+      "wingspan_m": 44.4,
+      "max_speed_kmh": 972,
+      "combat_radius_km": 3000,
+      "service_ceiling_m": 12800
+    },
+    "weapons": [
+      "Unarmed"
+    ],
+    "description": "IAF 707 tanker/transport fleet. Used for aerial refueling, VIP, and EW missions."
+  },
+  "P-1": {
+    "name": "Kawasaki P-1",
+    "role": "Maritime patrol / ASW",
+    "generation": "4",
+    "country": "Japan",
+    "specs": {
+      "crew": 11,
+      "length_m": 38.0,
+      "wingspan_m": 35.4,
+      "max_speed_kmh": 996,
+      "combat_radius_km": 2850,
+      "service_ceiling_m": 13520,
+      "max_payload_kg": 9000
+    },
+    "weapons": [
+      "ASM-1C anti-ship",
+      "Mk46/54 torpedoes",
+      "depth charges",
+      "sonobuoys"
+    ],
+    "description": "Japan's indigenous P-3 replacement. Fly-by-light controls, 4 turbofans. Superior to P-8 in some ASW capabilities."
+  },
+  "P-8A": {
+    "name": "Boeing P-8A Poseidon",
+    "role": "Maritime patrol / ASW",
+    "generation": "4",
+    "country": "USA",
+    "specs": {
+      "crew": 9,
+      "length_m": 39.5,
+      "wingspan_m": 37.6,
+      "max_speed_kmh": 907,
+      "combat_radius_km": 2222,
+      "service_ceiling_m": 12496,
+      "max_payload_kg": 5600
+    },
+    "weapons": [
+      "Mk54 torpedo",
+      "AGM-84 Harpoon",
+      "AGM-84K SLAM-ER",
+      "mines",
+      "sonobuoys"
+    ],
+    "description": "737-based maritime patrol aircraft replacing P-3C. Used by US, UK, Australia, India, Norway."
+  },
+  "P-8A Poseidon": {
+    "name": "Boeing P-8A Poseidon",
+    "role": "Maritime patrol / ASW",
+    "generation": "4",
+    "country": "USA/UK",
+    "specs": {
+      "crew": 9,
+      "length_m": 39.5,
+      "wingspan_m": 37.6,
+      "max_speed_kmh": 907,
+      "combat_radius_km": 2222,
+      "service_ceiling_m": 12496,
+      "max_payload_kg": 5600
+    },
+    "weapons": [
+      "Mk54 torpedo",
+      "Harpoon anti-ship",
+      "SLAM-ER",
+      "sonobuoys"
+    ],
+    "description": "Maritime patrol replacing P-3C. UK operates from RAF Lossiemouth."
+  },
+  "ATL2": {
+    "name": "Dassault ATL2 Atlantique 2",
+    "role": "Maritime patrol / ASW",
+    "generation": "3",
+    "country": "France",
+    "specs": {
+      "crew": 12,
+      "length_m": 31.6,
+      "wingspan_m": 37.4,
+      "max_speed_kmh": 648,
+      "combat_radius_km": 3300,
+      "service_ceiling_m": 9150,
+      "max_payload_kg": 3500
+    },
+    "weapons": [
+      "Exocet AM39 anti-ship",
+      "torpedoes",
+      "depth charges",
+      "mines"
+    ],
+    "description": "French maritime patrol. 18 in service. Regular Atlantic and Indian Ocean patrols."
+  },
+  "RF-4E": {
+    "name": "RF-4E Phantom (Recon)",
+    "role": "Tactical reconnaissance",
+    "generation": "3",
+    "country": "Iran",
+    "specs": {
+      "crew": 2,
+      "length_m": 19.2,
+      "wingspan_m": 11.7,
+      "max_speed_kmh": 2370,
+      "combat_radius_km": 680,
+      "service_ceiling_m": 18975
+    },
+    "weapons": [
+      "Cameras and sensors (unarmed)"
+    ],
+    "description": "Reconnaissance Phantom with cameras instead of weapons. Iran operates a small fleet for strategic ISR."
+  },
+  "A-50EI": {
+    "name": "A-50EI Phalcon (India)",
+    "role": "AEW&C",
+    "generation": "3+",
+    "country": "India",
+    "specs": {
+      "crew": 15,
+      "length_m": 46.6,
+      "wingspan_m": 50.5,
+      "max_speed_kmh": 850,
+      "combat_radius_km": 1000,
+      "service_ceiling_m": 12000
+    },
+    "weapons": [
+      "Unarmed"
+    ],
+    "description": "Indian A-50 with Israeli EL/W-2090 Phalcon AESA radar. 3 in service."
+  },
+  "Shahed-129 UAV": {
+    "name": "Shahed-129",
+    "role": "MALE UAV (ISR/Strike)",
+    "generation": "3",
+    "country": "Iran",
+    "specs": {
+      "crew": 0,
+      "length_m": 8.0,
+      "wingspan_m": 16.0,
+      "max_speed_kmh": 200,
+      "combat_radius_km": 1700,
+      "service_ceiling_m": 7300,
+      "max_payload_kg": 400
+    },
+    "weapons": [
+      "Sadid PGM",
+      "ISR cameras"
+    ],
+    "description": "Iran's primary armed UAV. MQ-1 Predator equivalent. Used in Syria, Iraq, Yemen."
+  },
+  "Mohajer UAV": {
+    "name": "Mohajer-6",
+    "role": "Tactical UAV (ISR/Strike)",
+    "generation": "3",
+    "country": "Iran",
+    "specs": {
+      "crew": 0,
+      "length_m": 5.6,
+      "wingspan_m": 10.0,
+      "max_speed_kmh": 200,
+      "combat_radius_km": 200,
+      "service_ceiling_m": 5500,
+      "max_payload_kg": 100
+    },
+    "weapons": [
+      "Qaem PGM",
+      "ISR cameras"
+    ],
+    "description": "Iranian tactical drone. Exported to Russia for use in Ukraine. Can carry precision-guided munitions."
+  }
 }
