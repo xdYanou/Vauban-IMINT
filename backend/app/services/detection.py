@@ -205,41 +205,128 @@ class DetectionService:
         self.model = YOLO("yolov8n.pt")
         logger.info("No trained model found — using pretrained COCO fallback")
 
+    def _slice_inference(self, image_path: str) -> list[DetectionResult]:
+        """
+        Sliced Aided Hyper Inference (SAHI).
+
+        Splits the image into overlapping 640x640 patches, runs detection
+        on each, then merges results with NMS. Aircraft appear ~2x larger
+        relative to input, dramatically improving detection of small objects.
+        """
+        from PIL import Image
+        import numpy as np
+
+        img = Image.open(image_path)
+        img_w, img_h = img.size
+
+        slice_size = 640
+        overlap = 128  # 20% overlap
+        stride = slice_size - overlap
+        conf = settings.detection_confidence_threshold
+
+        all_detections = []
+
+        # Generate slices
+        for y in range(0, img_h, stride):
+            for x in range(0, img_w, stride):
+                # Crop slice
+                x2 = min(x + slice_size, img_w)
+                y2 = min(y + slice_size, img_h)
+                x1 = max(0, x2 - slice_size)
+                y1 = max(0, y2 - slice_size)
+
+                crop = img.crop((x1, y1, x2, y2))
+                crop_arr = np.array(crop)
+
+                # Run inference on slice (no resize needed — already 640px)
+                results = self.model(crop_arr, conf=conf, imgsz=640, verbose=False)
+
+                for result in results:
+                    boxes = result.boxes
+                    if boxes is None:
+                        continue
+                    for i in range(len(boxes)):
+                        box = boxes[i]
+                        cls_id = int(box.cls[0])
+                        det_conf = float(box.conf[0])
+                        cx, cy, w, h = box.xywh[0].tolist()
+
+                        # Map bbox back to full image coordinates
+                        cx += x1
+                        cy += y1
+
+                        if self.model.names and cls_id in self.model.names:
+                            aircraft_type = self.model.names[cls_id]
+                        elif cls_id == 4:
+                            aircraft_type = "aircraft"
+                        else:
+                            continue
+
+                        all_detections.append(DetectionResult(
+                            aircraft_type=aircraft_type,
+                            confidence=det_conf,
+                            bbox_x=cx, bbox_y=cy, bbox_w=w, bbox_h=h,
+                        ))
+
+        # NMS across all slices to remove duplicates from overlapping regions
+        all_detections = self._nms_merge(all_detections, iou_threshold=0.4)
+
+        logger.info(f"SAHI: {img_w}x{img_h} -> {len(all_detections)} detections "
+                     f"({((img_w // stride + 1) * (img_h // stride + 1))} slices)")
+
+        return all_detections
+
+    def _nms_merge(self, detections: list, iou_threshold: float = 0.4) -> list:
+        """Non-Maximum Suppression across sliced detections."""
+        if not detections:
+            return []
+
+        # Sort by confidence descending
+        detections.sort(key=lambda d: d.confidence, reverse=True)
+
+        keep = []
+        for det in detections:
+            is_duplicate = False
+            for kept in keep:
+                iou = self._compute_iou(det, kept)
+                if iou > iou_threshold:
+                    is_duplicate = True
+                    break
+            if not is_duplicate:
+                keep.append(det)
+        return keep
+
+    @staticmethod
+    def _compute_iou(a, b) -> float:
+        """Compute IoU between two detections (xywh format)."""
+        ax1 = a.bbox_x - a.bbox_w / 2
+        ay1 = a.bbox_y - a.bbox_h / 2
+        ax2 = a.bbox_x + a.bbox_w / 2
+        ay2 = a.bbox_y + a.bbox_h / 2
+
+        bx1 = b.bbox_x - b.bbox_w / 2
+        by1 = b.bbox_y - b.bbox_h / 2
+        bx2 = b.bbox_x + b.bbox_w / 2
+        by2 = b.bbox_y + b.bbox_h / 2
+
+        ix1 = max(ax1, bx1)
+        iy1 = max(ay1, by1)
+        ix2 = min(ax2, bx2)
+        iy2 = min(ay2, by2)
+
+        inter = max(0, ix2 - ix1) * max(0, iy2 - iy1)
+        area_a = a.bbox_w * a.bbox_h
+        area_b = b.bbox_w * b.bbox_h
+        union = area_a + area_b - inter
+
+        return inter / union if union > 0 else 0
+
     def detect(self, image_path: str, airbase_name: str = None, country: str = None, known_units: str = None) -> list[DetectionResult]:
         if self.model is None:
             self.load_model()
 
-        results = self.model(
-            image_path,
-            conf=settings.detection_confidence_threshold,
-            imgsz=1280,
-            augment=True,
-            iou=0.4,  # Stricter NMS to remove duplicate boxes on same aircraft
-        )
-        detections = []
-
-        for result in results:
-            boxes = result.boxes
-            if boxes is None:
-                continue
-            for i in range(len(boxes)):
-                box = boxes[i]
-                cls_id = int(box.cls[0])
-                conf = float(box.conf[0])
-                cx, cy, w, h = box.xywh[0].tolist()
-
-                if self.model.names and cls_id in self.model.names:
-                    aircraft_type = self.model.names[cls_id]
-                elif cls_id == 4:
-                    aircraft_type = "aircraft"
-                else:
-                    continue
-
-                detections.append(DetectionResult(
-                    aircraft_type=aircraft_type,
-                    confidence=conf,
-                    bbox_x=cx, bbox_y=cy, bbox_w=w, bbox_h=h,
-                ))
+        # Use sliced inference for better small object detection
+        detections = self._slice_inference(image_path)
 
         # Apply intelligent reclassification
         if airbase_name:

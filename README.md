@@ -64,10 +64,13 @@ Named after [Sebastien Le Prestre de Vauban](https://en.wikipedia.org/wiki/Vauba
 
 ### Detection Pipeline
 
-**Stage 1 — YOLOv8 Detection**
-- Detects aircraft in satellite imagery with bounding boxes
+**Stage 1 — SAHI + YOLOv8 Detection**
+- **Sliced Aided Hyper Inference (SAHI)**: Images are split into overlapping 640x640 patches
+- Each patch is run through YOLOv8 at native resolution — no downscaling
+- Aircraft appear ~2x larger relative to input, dramatically improving small object detection
+- Results merged across slices with cross-slice NMS to remove duplicates
 - Classifies into 20 types trained on MAR20 satellite dataset
-- YOLOv8s model, trained at 960px with augmented oversampling
+- YOLOv8s model (11M params), trained at 960px with augmented oversampling
 
 **Stage 2 — Intelligent Reclassification**
 - **Base-specific context**: Known order of battle per base (Engels-2 → Tu-95MS, Tu-160)
