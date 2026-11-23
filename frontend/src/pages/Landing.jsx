@@ -28,7 +28,7 @@ export default function Landing() {
         {/* Stats */}
         <div className="landing-stats">
           <div className="landing-stat">
-            <span className="landing-stat-value">159</span>
+            <span className="landing-stat-value">160</span>
             <span className="landing-stat-label">Airbases Monitored</span>
           </div>
           <div className="landing-stat">
@@ -36,8 +36,8 @@ export default function Landing() {
             <span className="landing-stat-label">Countries</span>
           </div>
           <div className="landing-stat">
-            <span className="landing-stat-value">20</span>
-            <span className="landing-stat-label">Aircraft Types</span>
+            <span className="landing-stat-value">117</span>
+            <span className="landing-stat-label">Aircraft in Database</span>
           </div>
           <div className="landing-stat">
             <span className="landing-stat-value">3</span>

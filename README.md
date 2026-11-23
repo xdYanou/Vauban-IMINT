@@ -10,7 +10,7 @@
 
 ## Overview
 
-Vauban is a defence-oriented IMINT (Imagery Intelligence) platform that uses satellite imagery and computer vision to monitor military airbases worldwide. The system detects, classifies, and tracks military aircraft deployments across **161 airbases in 35 countries**.
+Vauban is a defence-oriented IMINT (Imagery Intelligence) platform that uses satellite imagery and computer vision to monitor military airbases worldwide. The system detects, classifies, and tracks military aircraft deployments across **160 airbases in 35 countries**.
 
 Named after [Sebastien Le Prestre de Vauban](https://en.wikipedia.org/wiki/Vauban), the French military engineer and Marshal of France.
 
@@ -90,7 +90,7 @@ Named after [Sebastien Le Prestre de Vauban](https://en.wikipedia.org/wiki/Vauba
 | **South America** | Brazil, Argentina | 6 |
 | **Africa** | Djibouti (US, France, China, Japan bases) | 4 |
 | **NATO** | Multi-national (Baltic Air Policing, Al Udeid) | 3 |
-| | **Total** | **161** |
+| | **Total** | **160** |
 
 ## Tech Stack
 
@@ -192,7 +192,7 @@ Every detected type links to a detailed intel card with:
 
 | Method | Endpoint | Description |
 |--------|----------|-------------|
-| GET | `/api/airbases/` | List all 161 monitored airbases |
+| GET | `/api/airbases/` | List all 160 monitored airbases |
 | GET | `/api/airbases/{id}` | Airbase details with capture zones |
 | PATCH | `/api/airbases/{id}/coords` | Update coordinates |
 | POST | `/api/airbases/{id}/zones` | Add capture zone |

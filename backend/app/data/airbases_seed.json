@@ -715,16 +715,6 @@
     "known_units": "EC 2/30 'Normandie-Niemen' (Rafale C), CEAM weapons test center"
   },
   {
-    "name": "BA 118 Mont-de-Marsan",
-    "icao_code": "LFBM",
-    "latitude": 43.9117,
-    "longitude": -0.5075,
-    "country": "France",
-    "region": "Landes",
-    "military_district": "Armée de l'Air",
-    "known_units": "Centre d'Expériences Aériennes Militaires (CEAM)"
-  },
-  {
     "name": "Évreux-Fauville",
     "icao_code": "LFOE",
     "latitude": 49.0287,
