@@ -12,7 +12,7 @@
     "name": "Dyagilevo",
     "icao_code": "UUBD",
     "latitude": 54.6117,
-    "longitude": 39.9440,
+    "longitude": 39.944,
     "region": "Ryazan Oblast",
     "military_district": "Western",
     "known_units": "43rd Combat Training Centre (Tu-95MS, Tu-22M3, Il-78)"
@@ -20,8 +20,8 @@
   {
     "name": "Shaykovka",
     "icao_code": "UUBT",
-    "latitude": 54.0270,
-    "longitude": 33.9120,
+    "latitude": 54.027,
+    "longitude": 33.912,
     "region": "Kaluga Oblast",
     "military_district": "Western",
     "known_units": "52nd Guards Heavy Bomber Aviation Regiment (Tu-22M3)"
@@ -29,8 +29,8 @@
   {
     "name": "Mozdok",
     "icao_code": "URMO",
-    "latitude": 43.7870,
-    "longitude": 44.5880,
+    "latitude": 43.787,
+    "longitude": 44.588,
     "region": "North Ossetia",
     "military_district": "Southern",
     "known_units": "Strategic bomber staging base"
@@ -38,8 +38,8 @@
   {
     "name": "Krymsk",
     "icao_code": "URKL",
-    "latitude": 44.9540,
-    "longitude": 37.3700,
+    "latitude": 44.954,
+    "longitude": 37.37,
     "region": "Krasnodar Krai",
     "military_district": "Southern",
     "known_units": "3rd Composite Aviation Division (Su-27SM, Su-30SM)"
@@ -47,8 +47,8 @@
   {
     "name": "Kushchyovskaya",
     "icao_code": null,
-    "latitude": 46.5450,
-    "longitude": 39.6080,
+    "latitude": 46.545,
+    "longitude": 39.608,
     "region": "Krasnodar Krai",
     "military_district": "Southern",
     "known_units": "Su-25, Su-34"
@@ -56,8 +56,8 @@
   {
     "name": "Lipetsk",
     "icao_code": "UUOL",
-    "latitude": 52.7020,
-    "longitude": 39.5370,
+    "latitude": 52.702,
+    "longitude": 39.537,
     "region": "Lipetsk Oblast",
     "military_district": "Western",
     "known_units": "Combat Training Centre (Su-35S, Su-34, Su-30SM, Su-57)"
@@ -66,7 +66,7 @@
     "name": "Kubinka",
     "icao_code": "UUMB",
     "latitude": 55.6115,
-    "longitude": 36.6500,
+    "longitude": 36.65,
     "region": "Moscow Oblast",
     "military_district": "Western",
     "known_units": "Russian Knights, Swifts aerobatic teams (Su-35S, MiG-29)"
@@ -74,8 +74,8 @@
   {
     "name": "Akhtubinsk",
     "icao_code": "URWA",
-    "latitude": 48.3150,
-    "longitude": 46.2830,
+    "latitude": 48.315,
+    "longitude": 46.283,
     "region": "Astrakhan Oblast",
     "military_district": "Southern",
     "known_units": "929th Flight Test Centre (all types)"
@@ -83,8 +83,8 @@
   {
     "name": "Domna",
     "icao_code": "UIID",
-    "latitude": 51.1470,
-    "longitude": 113.1500,
+    "latitude": 51.147,
+    "longitude": 113.15,
     "region": "Zabaykalsky Krai",
     "military_district": "Eastern",
     "known_units": "120th Guards Fighter Aviation Regiment (Su-30SM)"
@@ -92,8 +92,8 @@
   {
     "name": "Ukrainka",
     "icao_code": "UHBU",
-    "latitude": 50.8330,
-    "longitude": 128.3730,
+    "latitude": 50.833,
+    "longitude": 128.373,
     "region": "Amur Oblast",
     "military_district": "Eastern",
     "known_units": "326th Heavy Bomber Aviation Division (Tu-95MS)"
@@ -101,8 +101,8 @@
   {
     "name": "Tsentralnaya Uglovaya",
     "icao_code": "UHWW",
-    "latitude": 43.3980,
-    "longitude": 132.1480,
+    "latitude": 43.398,
+    "longitude": 132.148,
     "region": "Primorsky Krai",
     "military_district": "Eastern",
     "known_units": "22nd Fighter Aviation Regiment (Su-35S)"
@@ -110,8 +110,8 @@
   {
     "name": "Chelyabinsk-Shagol",
     "icao_code": "USSS",
-    "latitude": 55.3010,
-    "longitude": 61.2730,
+    "latitude": 55.301,
+    "longitude": 61.273,
     "region": "Chelyabinsk Oblast",
     "military_district": "Central",
     "known_units": "2nd Guards Fighter Aviation Regiment (MiG-31BM)"
@@ -128,8 +128,8 @@
   {
     "name": "Monchegorsk",
     "icao_code": "ULMK",
-    "latitude": 68.0670,
-    "longitude": 32.9530,
+    "latitude": 68.067,
+    "longitude": 32.953,
     "region": "Murmansk Oblast",
     "military_district": "Northern Fleet",
     "known_units": "98th Composite Aviation Regiment (Su-33, MiG-29K)"
@@ -137,8 +137,8 @@
   {
     "name": "Severomorsk-3",
     "icao_code": null,
-    "latitude": 68.8680,
-    "longitude": 33.7230,
+    "latitude": 68.868,
+    "longitude": 33.723,
     "region": "Murmansk Oblast",
     "military_district": "Northern Fleet",
     "known_units": "279th Shipborne Fighter Aviation Regiment (Su-33, MiG-29K)"
@@ -146,8 +146,8 @@
   {
     "name": "Besovets",
     "icao_code": "ULPB",
-    "latitude": 61.8950,
-    "longitude": 34.1580,
+    "latitude": 61.895,
+    "longitude": 34.158,
     "region": "Republic of Karelia",
     "military_district": "Western",
     "known_units": "159th Fighter Aviation Regiment (Su-35S)"
@@ -155,8 +155,8 @@
   {
     "name": "Khalino",
     "icao_code": "UUOK",
-    "latitude": 51.7640,
-    "longitude": 36.2520,
+    "latitude": 51.764,
+    "longitude": 36.252,
     "region": "Kursk Oblast",
     "military_district": "Western",
     "known_units": "14th Guards Fighter Aviation Regiment (MiG-29SMT)"
@@ -164,8 +164,8 @@
   {
     "name": "Voronezh-Baltimor",
     "icao_code": "UUOW",
-    "latitude": 51.8420,
-    "longitude": 39.1700,
+    "latitude": 51.842,
+    "longitude": 39.17,
     "region": "Voronezh Oblast",
     "military_district": "Western",
     "known_units": "47th Composite Aviation Regiment (Su-34)"
@@ -173,8 +173,8 @@
   {
     "name": "Marinovka",
     "icao_code": null,
-    "latitude": 48.8060,
-    "longitude": 43.2250,
+    "latitude": 48.806,
+    "longitude": 43.225,
     "region": "Volgograd Oblast",
     "military_district": "Southern",
     "known_units": "11th Composite Aviation Regiment (Su-24M)"
@@ -183,7 +183,7 @@
     "name": "Erebuni",
     "icao_code": "UDYE",
     "latitude": 40.1035,
-    "longitude": 44.4650,
+    "longitude": 44.465,
     "region": "Armenia (102nd Military Base)",
     "military_district": "Southern",
     "known_units": "MiG-29 (9-13)"
@@ -191,8 +191,8 @@
   {
     "name": "Hmeimim",
     "icao_code": "OSLK",
-    "latitude": 35.4010,
-    "longitude": 35.9490,
+    "latitude": 35.401,
+    "longitude": 35.949,
     "region": "Syria (Latakia)",
     "military_district": "Expeditionary",
     "known_units": "Su-35S, Su-34, Su-24M, Su-57 (rotational)"
@@ -200,8 +200,8 @@
   {
     "name": "Belbek",
     "icao_code": "UKFB",
-    "latitude": 44.6880,
-    "longitude": 33.5780,
+    "latitude": 44.688,
+    "longitude": 33.578,
     "region": "Crimea (occupied)",
     "military_district": "Southern",
     "known_units": "38th Fighter Aviation Regiment (Su-27SM, Su-30SM)"
@@ -209,8 +209,8 @@
   {
     "name": "Saki-Novofyodorovka",
     "icao_code": "UKFI",
-    "latitude": 45.0930,
-    "longitude": 33.5940,
+    "latitude": 45.093,
+    "longitude": 33.594,
     "region": "Crimea (occupied)",
     "military_district": "Southern",
     "known_units": "43rd Naval Aviation Regiment (Su-30SM, Su-24M)"
@@ -218,8 +218,8 @@
   {
     "name": "Gvardeyskoye",
     "icao_code": "UKFG",
-    "latitude": 45.1180,
-    "longitude": 33.9780,
+    "latitude": 45.118,
+    "longitude": 33.978,
     "region": "Crimea (occupied)",
     "military_district": "Southern",
     "known_units": "37th Composite Aviation Regiment (Su-24M, Su-25)"
@@ -227,8 +227,8 @@
   {
     "name": "Isfahan (Khatami)",
     "icao_code": "OIFM",
-    "latitude": 32.7510,
-    "longitude": 51.8610,
+    "latitude": 32.751,
+    "longitude": 51.861,
     "country": "Iran",
     "region": "Isfahan Province",
     "military_district": "Central",
@@ -237,8 +237,8 @@
   {
     "name": "Mehrabad (TFB.1)",
     "icao_code": "OIII",
-    "latitude": 35.6890,
-    "longitude": 51.3130,
+    "latitude": 35.689,
+    "longitude": 51.313,
     "country": "Iran",
     "region": "Tehran Province",
     "military_district": "Central",
@@ -247,8 +247,8 @@
   {
     "name": "Tabriz (TFB.2)",
     "icao_code": "OITT",
-    "latitude": 38.1340,
-    "longitude": 46.2400,
+    "latitude": 38.134,
+    "longitude": 46.24,
     "country": "Iran",
     "region": "East Azerbaijan",
     "military_district": "Northwest",
@@ -257,8 +257,8 @@
   {
     "name": "Nojeh (Hamadan)",
     "icao_code": "OIHS",
-    "latitude": 34.9460,
-    "longitude": 48.6520,
+    "latitude": 34.946,
+    "longitude": 48.652,
     "country": "Iran",
     "region": "Hamadan Province",
     "military_district": "Western",
@@ -267,8 +267,8 @@
   {
     "name": "Shiraz (TFB.6)",
     "icao_code": "OISS",
-    "latitude": 29.5420,
-    "longitude": 52.5900,
+    "latitude": 29.542,
+    "longitude": 52.59,
     "country": "Iran",
     "region": "Fars Province",
     "military_district": "Southern",
@@ -277,8 +277,8 @@
   {
     "name": "Bushehr (TFB.7)",
     "icao_code": "OIBB",
-    "latitude": 28.9490,
-    "longitude": 50.8360,
+    "latitude": 28.949,
+    "longitude": 50.836,
     "country": "Iran",
     "region": "Bushehr Province",
     "military_district": "Southern",
@@ -287,8 +287,8 @@
   {
     "name": "Bandar Abbas (TFB.9)",
     "icao_code": "OIKB",
-    "latitude": 27.2190,
-    "longitude": 56.2310,
+    "latitude": 27.219,
+    "longitude": 56.231,
     "country": "Iran",
     "region": "Hormozgan Province",
     "military_district": "Southeast",
@@ -297,8 +297,8 @@
   {
     "name": "Chahbahar (TFB.10)",
     "icao_code": "OIZC",
-    "latitude": 25.4430,
-    "longitude": 60.3820,
+    "latitude": 25.443,
+    "longitude": 60.382,
     "country": "Iran",
     "region": "Sistan-Baluchestan",
     "military_district": "Southeast",
@@ -307,8 +307,8 @@
   {
     "name": "Dezful (TFB.3)",
     "icao_code": "OIAD",
-    "latitude": 32.4340,
-    "longitude": 48.3960,
+    "latitude": 32.434,
+    "longitude": 48.396,
     "country": "Iran",
     "region": "Khuzestan Province",
     "military_district": "Southwest",
@@ -317,8 +317,8 @@
   {
     "name": "Omidiyeh (TFB.4)",
     "icao_code": "OIAJ",
-    "latitude": 30.8350,
-    "longitude": 49.5350,
+    "latitude": 30.835,
+    "longitude": 49.535,
     "country": "Iran",
     "region": "Khuzestan Province",
     "military_district": "Southwest",
@@ -327,8 +327,8 @@
   {
     "name": "Mashhad (TFB.12)",
     "icao_code": "OIMM",
-    "latitude": 36.2360,
-    "longitude": 59.6410,
+    "latitude": 36.236,
+    "longitude": 59.641,
     "country": "Iran",
     "region": "Razavi Khorasan",
     "military_district": "Northeast",
@@ -337,8 +337,8 @@
   {
     "name": "Birjand",
     "icao_code": "OIMB",
-    "latitude": 32.8980,
-    "longitude": 59.2660,
+    "latitude": 32.898,
+    "longitude": 59.266,
     "country": "Iran",
     "region": "South Khorasan",
     "military_district": "East",
@@ -358,7 +358,7 @@
     "name": "RAF Lakenheath",
     "icao_code": "EGUL",
     "latitude": 52.4093,
-    "longitude": 0.5610,
+    "longitude": 0.561,
     "country": "NATO",
     "region": "Suffolk, United Kingdom",
     "military_district": "USAFE",
@@ -368,163 +368,1220 @@
     "name": "Al Udeid",
     "icao_code": "OTBH",
     "latitude": 25.1174,
-    "longitude": 51.3150,
+    "longitude": 51.315,
     "country": "NATO",
     "region": "Qatar",
     "military_district": "CENTCOM",
     "known_units": "379th AEW (KC-135, B-52, F-15E, C-17, E-8, RQ-4)"
   },
-
-  {"name": "Nellis AFB", "icao_code": "KLSV", "latitude": 36.2361, "longitude": -115.0343, "country": "USA", "region": "Nevada", "military_district": "ACC", "known_units": "57th Wing (F-16, F-15, F-22, F-35), USAF Weapons School, Red Flag exercises"},
-  {"name": "Edwards AFB", "icao_code": "KEDW", "latitude": 34.9054, "longitude": -117.8839, "country": "USA", "region": "California", "military_district": "AFMC", "known_units": "412th Test Wing (F-35, B-21, experimental aircraft), NASA Armstrong"},
-  {"name": "Luke AFB", "icao_code": "KLUF", "latitude": 33.5350, "longitude": -112.3830, "country": "USA", "region": "Arizona", "military_district": "AETC", "known_units": "56th Fighter Wing (F-35A, F-16) — largest F-35 training base"},
-  {"name": "Eglin AFB", "icao_code": "KVPS", "latitude": 30.4834, "longitude": -86.5253, "country": "USA", "region": "Florida", "military_district": "AFMC", "known_units": "33rd Fighter Wing (F-35A), 96th Test Wing, 53rd Wing (weapons eval)"},
-  {"name": "Langley AFB", "icao_code": "KLFI", "latitude": 37.0833, "longitude": -76.3606, "country": "USA", "region": "Virginia", "military_district": "ACC", "known_units": "1st Fighter Wing (F-22 Raptor), ACC HQ"},
-  {"name": "Tyndall AFB", "icao_code": "KPAM", "latitude": 30.0696, "longitude": -85.5755, "country": "USA", "region": "Florida", "military_district": "AETC", "known_units": "325th Fighter Wing (F-22, F-35, QF-16 target drones)"},
-  {"name": "Hill AFB", "icao_code": "KHIF", "latitude": 41.1240, "longitude": -111.9730, "country": "USA", "region": "Utah", "military_district": "AFMC", "known_units": "388th Fighter Wing (F-35A), 419th FW Reserve (F-35A)"},
-  {"name": "Whiteman AFB", "icao_code": "KSZL", "latitude": 38.7303, "longitude": -93.5479, "country": "USA", "region": "Missouri", "military_district": "AFGSC", "known_units": "509th Bomb Wing (B-2 Spirit) — only B-2 base"},
-  {"name": "Barksdale AFB", "icao_code": "KBAD", "latitude": 32.5013, "longitude": -93.6627, "country": "USA", "region": "Louisiana", "military_district": "AFGSC", "known_units": "2nd Bomb Wing (B-52H), 8th Air Force HQ"},
-  {"name": "Dyess AFB", "icao_code": "KDYS", "latitude": 32.4208, "longitude": -99.8546, "country": "USA", "region": "Texas", "military_district": "ACC", "known_units": "7th Bomb Wing (B-1B Lancer), 317th Airlift Wing (C-130J)"},
-  {"name": "Minot AFB", "icao_code": "KMIB", "latitude": 48.4159, "longitude": -101.3581, "country": "USA", "region": "North Dakota", "military_district": "AFGSC", "known_units": "5th Bomb Wing (B-52H), 91st Missile Wing (Minuteman III)"},
-  {"name": "Ellsworth AFB", "icao_code": "KRCA", "latitude": 44.1453, "longitude": -103.1035, "country": "USA", "region": "South Dakota", "military_district": "AFGSC", "known_units": "28th Bomb Wing (B-1B Lancer)"},
-  {"name": "Joint Base Pearl Harbor-Hickam", "icao_code": "PHNL", "latitude": 21.3539, "longitude": -157.9500, "country": "USA", "region": "Hawaii", "military_district": "PACAF", "known_units": "15th Wing (F-22, C-17, KC-135), PACAF HQ"},
-  {"name": "Joint Base Elmendorf-Richardson", "icao_code": "PAED", "latitude": 61.2500, "longitude": -149.8070, "country": "USA", "region": "Alaska", "military_district": "PACAF", "known_units": "3rd Wing (F-22, F-35, C-17, E-3), 176th Wing ANG"},
-  {"name": "Travis AFB", "icao_code": "KSUU", "latitude": 38.2627, "longitude": -121.9437, "country": "USA", "region": "California", "military_district": "AMC", "known_units": "60th AMW (C-5M, C-17, KC-10) — largest AMC base"},
-  {"name": "Dover AFB", "icao_code": "KDOV", "latitude": 39.1296, "longitude": -75.4660, "country": "USA", "region": "Delaware", "military_district": "AMC", "known_units": "436th Airlift Wing (C-5M, C-17)"},
-  {"name": "NAS Oceana", "icao_code": "KNTU", "latitude": 36.8207, "longitude": -76.0336, "country": "USA", "region": "Virginia", "military_district": "USN", "known_units": "F/A-18E/F Super Hornet squadrons — East Coast Master Jet Base"},
-  {"name": "NAS Lemoore", "icao_code": "KNLC", "latitude": 36.3330, "longitude": -119.9521, "country": "USA", "region": "California", "military_district": "USN", "known_units": "F/A-18E/F, F-35C squadrons — West Coast Strike Fighter base"},
-  {"name": "MCAS Miramar", "icao_code": "KNKX", "latitude": 32.8684, "longitude": -117.1424, "country": "USA", "region": "California", "military_district": "USMC", "known_units": "3rd MAW (F/A-18, F-35B/C, MV-22) — Top Gun's former home"},
-
-  {"name": "RAF Lakenheath", "icao_code": "EGUL", "latitude": 52.4093, "longitude": 0.5610, "country": "UK", "region": "Suffolk, England", "military_district": "USAFE", "known_units": "48th Fighter Wing (F-15E Strike Eagle, F-35A Lightning II)"},
-  {"name": "RAF Marham", "icao_code": "EGYM", "latitude": 52.6484, "longitude": 0.5507, "country": "UK", "region": "Norfolk, England", "military_district": "RAF", "known_units": "RAF Lightning Force (F-35B Lightning II), 617 Sqn 'Dambusters'"},
-  {"name": "RAF Coningsby", "icao_code": "EGXC", "latitude": 53.0929, "longitude": -0.1663, "country": "UK", "region": "Lincolnshire, England", "military_district": "RAF", "known_units": "Typhoon Force (Eurofighter Typhoon), Battle of Britain Memorial Flight"},
-  {"name": "RAF Lossiemouth", "icao_code": "EGQS", "latitude": 57.7052, "longitude": -3.3392, "country": "UK", "region": "Moray, Scotland", "military_district": "RAF", "known_units": "Typhoon Force QRA North (Eurofighter Typhoon), P-8A Poseidon MPA"},
-  {"name": "RAF Waddington", "icao_code": "EGXW", "latitude": 53.1662, "longitude": -0.5218, "country": "UK", "region": "Lincolnshire, England", "military_district": "RAF", "known_units": "ISR Force (RC-135 Rivet Joint, E-7 Wedgetail, Protector UAV)"},
-  {"name": "RAF Brize Norton", "icao_code": "EGVN", "latitude": 51.7500, "longitude": -1.5836, "country": "UK", "region": "Oxfordshire, England", "military_district": "RAF", "known_units": "Air Mobility Force (C-17, A400M Atlas, Voyager tanker)"},
-
-  {"name": "Ramstein AB", "icao_code": "ETAR", "latitude": 49.4369, "longitude": 7.6003, "country": "Germany", "region": "Rhineland-Palatinate", "military_district": "USAFE", "known_units": "86th Airlift Wing (C-130J), HQ USAFE-AFAFRICA, NATO CAOC"},
-  {"name": "Spangdahlem AB", "icao_code": "ETAD", "latitude": 49.9726, "longitude": 6.6925, "country": "Germany", "region": "Rhineland-Palatinate", "military_district": "USAFE", "known_units": "52nd Fighter Wing (F-16CM, A-10C)"},
-  {"name": "Büchel Air Base", "icao_code": "ETSB", "latitude": 50.1738, "longitude": 7.0633, "country": "Germany", "region": "Rhineland-Palatinate", "military_district": "Luftwaffe", "known_units": "TaktLwG 33 (Tornado IDS) — NATO nuclear sharing base"},
-  {"name": "Neuburg Air Base", "icao_code": "ETSN", "latitude": 48.7110, "longitude": 11.2115, "country": "Germany", "region": "Bavaria", "military_district": "Luftwaffe", "known_units": "TaktLwG 74 (Eurofighter Typhoon) — QRA South"},
-  {"name": "Laage Air Base", "icao_code": "ETNL", "latitude": 53.9183, "longitude": 12.2703, "country": "Germany", "region": "Mecklenburg-Vorpommern", "military_district": "Luftwaffe", "known_units": "TaktLwG 73 'Steinhoff' (Eurofighter Typhoon)"},
-  {"name": "Wunstorf Air Base", "icao_code": "ETNW", "latitude": 52.4572, "longitude": 9.4267, "country": "Germany", "region": "Lower Saxony", "military_district": "Luftwaffe", "known_units": "LTG 62 (A400M Atlas) — German air transport hub"},
-
-  {"name": "Istres-Le Tubé", "icao_code": "LFMI", "latitude": 43.5237, "longitude": 4.9284, "country": "France", "region": "Bouches-du-Rhône", "military_district": "Armée de l'Air", "known_units": "Forces Aériennes Stratégiques (Rafale B, ASMP-A nuclear), EC 4 Rafale"},
-  {"name": "Saint-Dizier-Robinson", "icao_code": "LFSI", "latitude": 48.6361, "longitude": 4.8993, "country": "France", "region": "Haute-Marne", "military_district": "Armée de l'Air", "known_units": "EC 1/91 'Gascogne' (Rafale B) — nuclear strike role"},
-  {"name": "Mont-de-Marsan", "icao_code": "LFBM", "latitude": 43.9117, "longitude": -0.5075, "country": "France", "region": "Landes", "military_district": "Armée de l'Air", "known_units": "EC 2/30 'Normandie-Niemen' (Rafale C), CEAM weapons test center"},
-  {"name": "BA 118 Mont-de-Marsan", "icao_code": "LFBM", "latitude": 43.9117, "longitude": -0.5075, "country": "France", "region": "Landes", "military_district": "Armée de l'Air", "known_units": "Centre d'Expériences Aériennes Militaires (CEAM)"},
-  {"name": "Évreux-Fauville", "icao_code": "LFOE", "latitude": 49.0287, "longitude": 1.2199, "country": "France", "region": "Eure", "military_district": "Armée de l'Air", "known_units": "ET 1/64 'Béarn' (A400M Atlas), CPA 10 special forces"},
-  {"name": "Avord Air Base", "icao_code": "LFOA", "latitude": 47.0533, "longitude": 2.6325, "country": "France", "region": "Cher", "military_district": "Armée de l'Air", "known_units": "E-3F AWACS (36e EDCA), Centre Militaire d'Observation par Satellites"},
-
-  {"name": "Aviano AB", "icao_code": "LIPA", "latitude": 46.0319, "longitude": 12.5965, "country": "Italy", "region": "Friuli Venezia Giulia", "military_district": "USAFE", "known_units": "31st Fighter Wing (F-16CM)"},
-  {"name": "Ghedi Air Base", "icao_code": "LIPL", "latitude": 45.4322, "longitude": 10.2677, "country": "Italy", "region": "Lombardy", "military_district": "AMI", "known_units": "6° Stormo (Tornado IDS) — NATO nuclear sharing, transitioning to F-35A"},
-  {"name": "Amendola Air Base", "icao_code": "LIBA", "latitude": 41.5414, "longitude": 15.7181, "country": "Italy", "region": "Puglia", "military_district": "AMI", "known_units": "32° Stormo (F-35A Lightning II), MQ-9 Reaper UAV wing"},
-  {"name": "Gioia del Colle", "icao_code": "LIBV", "latitude": 40.7676, "longitude": 16.9333, "country": "Italy", "region": "Puglia", "military_district": "AMI", "known_units": "36° Stormo (Eurofighter Typhoon)"},
-
-  {"name": "Ørland Air Station", "icao_code": "ENOL", "latitude": 63.6989, "longitude": 9.6040, "country": "Norway", "region": "Trøndelag", "military_district": "RNoAF", "known_units": "132 Air Wing (F-35A Lightning II) — Norway's main fighter base"},
-  {"name": "Bodø Air Station", "icao_code": "ENBO", "latitude": 67.2692, "longitude": 14.3653, "country": "Norway", "region": "Nordland", "military_district": "RNoAF", "known_units": "NATO QRA, P-8A Poseidon maritime patrol"},
-
-  {"name": "Leeuwarden Air Base", "icao_code": "EHLW", "latitude": 53.2286, "longitude": 5.7606, "country": "Netherlands", "region": "Friesland", "military_district": "RNLAF", "known_units": "322 Squadron (F-35A Lightning II)"},
-
-  {"name": "Florennes Air Base", "icao_code": "EBFS", "latitude": 50.2433, "longitude": 4.6489, "country": "Belgium", "region": "Namur", "military_district": "BAF", "known_units": "2 Wing Tactical (F-16AM)"},
-  {"name": "Kleine Brogel Air Base", "icao_code": "EBBL", "latitude": 51.1683, "longitude": 5.4700, "country": "Belgium", "region": "Limburg", "military_district": "BAF", "known_units": "10 Wing Tactical (F-16AM) — NATO nuclear sharing base"},
-
-  {"name": "Poznań-Krzesiny", "icao_code": "EPKS", "latitude": 52.3317, "longitude": 16.9664, "country": "Poland", "region": "Greater Poland", "military_district": "Polish AF", "known_units": "31st Tactical Air Base (F-16C/D Block 52+)"},
-  {"name": "Łask Air Base", "icao_code": "EPLK", "latitude": 51.5519, "longitude": 19.1792, "country": "Poland", "region": "Łódź", "military_district": "Polish AF", "known_units": "32nd Tactical Air Base (F-16C/D, MQ-9), US rotational F-35 deployments"},
-
-  {"name": "Kadena AB", "icao_code": "RODN", "latitude": 26.3516, "longitude": 127.7695, "country": "Japan", "region": "Okinawa", "military_district": "PACAF", "known_units": "18th Wing (F-15C/D, KC-135, E-3, HH-60) — largest USAF wing in Pacific"},
-  {"name": "Misawa AB", "icao_code": "RJSM", "latitude": 40.7032, "longitude": 141.3684, "country": "Japan", "region": "Aomori", "military_district": "PACAF", "known_units": "35th Fighter Wing (F-16CM), JASDF F-35A"},
-  {"name": "Hyakuri Air Base", "icao_code": "RJAH", "latitude": 36.1811, "longitude": 140.4186, "country": "Japan", "region": "Ibaraki", "military_district": "JASDF", "known_units": "7th Air Wing (F-2A/B), 302 Sqn (F-35A)"},
-
-  {"name": "Osan AB", "icao_code": "RKSO", "latitude": 37.0906, "longitude": 127.0295, "country": "South Korea", "region": "Gyeonggi", "military_district": "PACAF", "known_units": "51st Fighter Wing (F-16, A-10C, U-2S)"},
-  {"name": "Kunsan AB", "icao_code": "RKJK", "latitude": 35.9038, "longitude": 126.6159, "country": "South Korea", "region": "North Jeolla", "military_district": "PACAF", "known_units": "8th Fighter Wing 'Wolf Pack' (F-16C/D)"},
-
-  {"name": "Incirlik AB", "icao_code": "LTAG", "latitude": 37.0021, "longitude": 35.4259, "country": "Turkey", "region": "Adana", "military_district": "USAFE", "known_units": "39th ABW, TuAF (F-16), NATO nuclear sharing storage"},
-
-  {"name": "Čáslav Air Base", "icao_code": "LKCV", "latitude": 49.9397, "longitude": 15.3817, "country": "Czech Republic", "region": "Central Bohemia", "military_district": "Czech AF", "known_units": "211th Tactical Squadron (JAS 39 Gripen)"},
-
-  {"name": "Siauliai Air Base", "icao_code": "EYSA", "latitude": 55.8939, "longitude": 23.3950, "country": "Lithuania", "region": "Šiauliai", "military_district": "NATO", "known_units": "NATO Baltic Air Policing — rotational NATO fighters (Eurofighter, F-16, Rafale)"},
-  {"name": "Ämari Air Base", "icao_code": "EEEI", "latitude": 59.2603, "longitude": 24.2086, "country": "Estonia", "region": "Harju", "military_district": "NATO", "known_units": "NATO Baltic Air Policing — rotational NATO fighters"},
-
-  {"name": "Graf Ignatievo Air Base", "icao_code": "LBPG", "latitude": 42.2905, "longitude": 24.7140, "country": "Bulgaria", "region": "Plovdiv", "military_district": "Bulgarian AF", "known_units": "MiG-29 (upgrading to F-16V)"},
-
-  {"name": "Câmpia Turzii", "icao_code": "LRCT", "latitude": 46.5024, "longitude": 23.8860, "country": "Romania", "region": "Cluj", "military_district": "RoAF", "known_units": "71st Air Base (F-16AM), US rotational MQ-9, F-35 planned"},
-
-  {"name": "Morón AB", "icao_code": "LEMO", "latitude": 37.1749, "longitude": -5.6161, "country": "Spain", "region": "Seville, Andalusia", "military_district": "USAFE/EdA", "known_units": "Ala 11 (EF-18 Hornet), US AFRICOM forward staging"},
-  {"name": "Zaragoza AB", "icao_code": "LEZG", "latitude": 41.6662, "longitude": -1.0415, "country": "Spain", "region": "Aragón", "military_district": "EdA", "known_units": "Ala 15 (EF-18 Hornet), 31 Wing (Eurofighter Typhoon)"},
-  {"name": "Gando AB (Gran Canaria)", "icao_code": "GCLP", "latitude": 27.9346, "longitude": -15.3886, "country": "Spain", "region": "Canary Islands", "military_district": "EdA", "known_units": "Ala 46 (Eurofighter Typhoon) — Atlantic/Africa patrol"},
-
-  {"name": "Monte Real AB (BA5)", "icao_code": "LPMR", "latitude": 39.8283, "longitude": -8.8875, "country": "Portugal", "region": "Leiria", "military_district": "FAP", "known_units": "Esq 201 'Falcões' (F-16AM MLU)"},
-  {"name": "Beja AB (BA11)", "icao_code": "LPBJ", "latitude": 38.0789, "longitude": -7.9324, "country": "Portugal", "region": "Beja, Alentejo", "military_district": "FAP", "known_units": "NATO Tactical Leadership Programme, NTM training"},
-
-  {"name": "Anápolis AB", "icao_code": "SBAN", "latitude": -16.2292, "longitude": -48.9644, "country": "Brazil", "region": "Goiás", "military_district": "FAB", "known_units": "1° GDA (Gripen E/F) — Brazil's new fighter, air defense of Brasília"},
-  {"name": "Natal AB (BANT)", "icao_code": "SBNT", "latitude": -5.9114, "longitude": -35.2478, "country": "Brazil", "region": "Rio Grande do Norte", "military_district": "FAB", "known_units": "3°/7° GAv (A-29 Super Tucano), CRUZEX multinational exercises"},
-  {"name": "Canoas AB", "icao_code": "SBCO", "latitude": -29.9458, "longitude": -51.1444, "country": "Brazil", "region": "Rio Grande do Sul", "military_district": "FAB", "known_units": "1° GAvCa (F-5EM Tiger III), transitioning to Gripen"},
-
-  {"name": "Ambala AFS", "icao_code": "VIAM", "latitude": 30.3681, "longitude": 76.8172, "country": "India", "region": "Haryana", "military_district": "WAC", "known_units": "17 Sqn 'Golden Arrows' (Rafale), 7 Sqn (MiG-21 Bison)"},
-  {"name": "Halwara AFS", "icao_code": "VIHR", "latitude": 30.6414, "longitude": 75.7647, "country": "India", "region": "Punjab", "military_district": "WAC", "known_units": "220 Sqn (Su-30MKI), 20 Sqn 'Lightnings' (Su-30MKI)"},
-  {"name": "Thanjavur AFS", "icao_code": null, "latitude": 10.7225, "longitude": 79.1014, "country": "India", "region": "Tamil Nadu", "military_district": "SAC", "known_units": "222 Sqn 'Tigersharks' (Su-30MKI) — first Su-30 unit in South India"},
-  {"name": "Hashimara AFS", "icao_code": null, "latitude": 26.7042, "longitude": 89.3681, "country": "India", "region": "West Bengal", "military_district": "EAC", "known_units": "2 Sqn 'Winged Arrows' (Rafale), strategic China border coverage"},
-  {"name": "Leh AFS (Kushok Bakula)", "icao_code": "VILH", "latitude": 34.1359, "longitude": 77.5465, "country": "India", "region": "Ladakh", "military_district": "WAC", "known_units": "MiG-29, C-130J, Apache — world's highest fighter base (3,256m)"},
-
-  {"name": "PAF Mushaf (Sargodha)", "icao_code": "OPSR", "latitude": 32.0486, "longitude": 72.6650, "country": "Pakistan", "region": "Punjab", "military_district": "PAF", "known_units": "No. 2 Sqn (F-16A/B), No. 14 Sqn (JF-17 Thunder)"},
-  {"name": "PAF Kamra", "icao_code": "OPKT", "latitude": 33.8691, "longitude": 72.4015, "country": "Pakistan", "region": "Punjab", "military_district": "PAF", "known_units": "PAC factory (JF-17 production), No. 16 Sqn (JF-17)"},
-  {"name": "PAF Jacobabad", "icao_code": "OPJA", "latitude": 28.2842, "longitude": 68.4497, "country": "Pakistan", "region": "Sindh", "military_district": "PAF", "known_units": "No. 28 Sqn (Mirage III/V), forward operating base"},
-  {"name": "PAF Masroor (Karachi)", "icao_code": "OPMR", "latitude": 24.8936, "longitude": 66.9386, "country": "Pakistan", "region": "Sindh", "military_district": "PAF", "known_units": "No. 8 Sqn (F-16C/D Block 52), maritime strike"},
-
-  {"name": "RAAF Williamtown", "icao_code": "YWLM", "latitude": -32.7950, "longitude": 151.8428, "country": "Australia", "region": "New South Wales", "military_district": "RAAF", "known_units": "2 OCU & 3 Sqn (F-35A), 6 Sqn (EA-18G Growler), Fighter World"},
-  {"name": "RAAF Amberley", "icao_code": "YAMB", "latitude": -27.6406, "longitude": 152.7111, "country": "Australia", "region": "Queensland", "military_district": "RAAF", "known_units": "1 Sqn & 6 Sqn (F/A-18F Super Hornet), 33 Sqn (KC-30A)"},
-  {"name": "RAAF Tindal", "icao_code": "YPTN", "latitude": -14.5214, "longitude": 132.3781, "country": "Australia", "region": "Northern Territory", "military_district": "RAAF", "known_units": "75 Sqn (F-35A) — northern air defense, USAF B-52 rotations"},
-  {"name": "RAAF Edinburgh", "icao_code": "YPED", "latitude": -34.7028, "longitude": 138.6208, "country": "Australia", "region": "South Australia", "military_district": "RAAF", "known_units": "92 Wing (P-8A Poseidon), 2 Sqn EWSP, ISR hub"},
-
-  {"name": "El Palomar (BAM)", "icao_code": "SADP", "latitude": -34.6098, "longitude": -58.6126, "country": "Argentina", "region": "Buenos Aires", "military_district": "FAA", "known_units": "III Brigada Aérea, A-4AR Fightinghawk"},
-  {"name": "Mendoza (BAM)", "icao_code": "SAME", "latitude": -32.8317, "longitude": -68.7929, "country": "Argentina", "region": "Mendoza", "military_district": "FAA", "known_units": "IV Brigada Aérea, IA-63 Pampa trainer"},
-  {"name": "Río Gallegos (BAM)", "icao_code": "SAWG", "latitude": -51.6097, "longitude": -69.3126, "country": "Argentina", "region": "Santa Cruz", "military_district": "FAA", "known_units": "IX Brigada — Falklands/Malvinas staging, southern air defense"},
-
-  {"name": "Santa Lucía AB", "icao_code": "MMSM", "latitude": 19.5339, "longitude": -99.0150, "country": "Mexico", "region": "State of Mexico", "military_district": "FAM", "known_units": "Military Air Base 1 — FAM HQ, F-5E/F Tiger II"},
-  {"name": "Zapopan AB", "icao_code": "MMZP", "latitude": 20.7467, "longitude": -103.4611, "country": "Mexico", "region": "Jalisco", "military_district": "FAM", "known_units": "BAM 5 — C-130, PC-7 Turbo Trainer, counter-narcotics ops"},
-
-  {"name": "CFB Cold Lake", "icao_code": "CYOD", "latitude": 54.4050, "longitude": -110.2794, "country": "Canada", "region": "Alberta", "military_district": "RCAF", "known_units": "4 Wing (CF-18 Hornet), Fighter Lead-In Training, Maple Flag exercises"},
-  {"name": "CFB Bagotville", "icao_code": "CYBG", "latitude": 48.3306, "longitude": -70.9964, "country": "Canada", "region": "Quebec", "military_district": "RCAF", "known_units": "3 Wing (CF-18 Hornet) — NORAD QRA East, bilingual ops"},
-  {"name": "CFB Trenton", "icao_code": "CYTR", "latitude": 44.1189, "longitude": -77.5281, "country": "Canada", "region": "Ontario", "military_district": "RCAF", "known_units": "8 Wing (CC-177 Globemaster, CC-130J Hercules) — airlift hub"},
-
-  {"name": "Camp Lemonnier", "icao_code": "HDAM", "latitude": 11.5467, "longitude": 43.1489, "country": "USA", "region": "Djibouti City, Djibouti", "military_district": "AFRICOM", "known_units": "US CJTF-HOA (P-3C, MQ-9, F-15E rotational), only permanent US base in Africa"},
-  {"name": "BA 188 (French - Djibouti)", "icao_code": "HDAM", "latitude": 11.5533, "longitude": 43.1583, "country": "France", "region": "Djibouti City, Djibouti", "military_district": "FFDJT", "known_units": "French Forces Djibouti (Mirage 2000-5, SA342 Gazelle, C-160)"},
-  {"name": "PLA Support Base Djibouti", "icao_code": null, "latitude": 11.5892, "longitude": 43.0458, "country": "China", "region": "Doraleh, Djibouti", "military_district": "PLA", "known_units": "China's first overseas military base — logistics, naval, helo ops"},
-  {"name": "JSDF Base Djibouti", "icao_code": null, "latitude": 11.5525, "longitude": 43.1575, "country": "Japan", "region": "Djibouti City", "military_district": "JSDF", "known_units": "JMSDF P-3C Orion — anti-piracy patrols, Japan's only foreign base"},
-
-  {"name": "Nevatim AB", "icao_code": "LLNV", "latitude": 31.2083, "longitude": 34.9389, "country": "Israel", "region": "Negev Desert", "military_district": "IAF", "known_units": "140 Sqn 'Golden Eagle' (F-35I Adir), 253 Sqn (F-16I Sufa)"},
-  {"name": "Ramon AB", "icao_code": "LLIR", "latitude": 30.7764, "longitude": 34.6667, "country": "Israel", "region": "Negev Desert", "military_district": "IAF", "known_units": "116 Sqn 'Lions of the South' (F-16D), 190 Sqn (F-16I), 69 Sqn (F-15I Ra'am)"},
-  {"name": "Hatzerim AB", "icao_code": "LLHB", "latitude": 31.2325, "longitude": 34.6628, "country": "Israel", "region": "Negev Desert", "military_district": "IAF", "known_units": "IAF Flight Academy, 107 Sqn (F-16C), aerial display team"},
-  {"name": "Tel Nof AB", "icao_code": "LLET", "latitude": 31.8394, "longitude": 34.8178, "country": "Israel", "region": "Central District", "military_district": "IAF", "known_units": "69 Sqn (F-15I Ra'am), 106 Sqn (Boeing 707 tanker), strategic ops"},
-
-  {"name": "Dingxin AB", "icao_code": null, "latitude": 40.1600, "longitude": 99.7150, "country": "China", "region": "Gansu Province", "military_district": "WTC", "known_units": "PLAAF test & training (J-20, J-16, J-10C) — China's Nellis equivalent"},
-  {"name": "Wuhu-Wanli AB", "icao_code": null, "latitude": 31.3917, "longitude": 118.4083, "country": "China", "region": "Anhui Province", "military_district": "ETC", "known_units": "J-20 Mighty Dragon stealth fighter — first operational J-20 brigade"},
-  {"name": "Cangzhou AB", "icao_code": null, "latitude": 38.3333, "longitude": 116.8333, "country": "China", "region": "Hebei Province", "military_district": "NTC", "known_units": "PLAAF Flight Test & Training Centre (J-20, J-16, J-10C)"},
-  {"name": "Longtian AB", "icao_code": null, "latitude": 25.0300, "longitude": 118.6400, "country": "China", "region": "Fujian Province", "military_district": "ETC", "known_units": "J-16, Su-30MKK — Taiwan Strait front-line base"},
-  {"name": "Suixi AB", "icao_code": null, "latitude": 21.2500, "longitude": 110.3000, "country": "China", "region": "Guangdong Province", "military_district": "STC", "known_units": "H-6K/N strategic bomber — South China Sea patrol, cruise missile carrier"},
-  {"name": "Hotan AB", "icao_code": "ZWTN", "latitude": 37.0381, "longitude": 79.8650, "country": "China", "region": "Xinjiang", "military_district": "WTC", "known_units": "J-11B, J-16 — India border coverage, Aksai Chin front"},
-
-  {"name": "Hualien AFB", "icao_code": "RCYU", "latitude": 24.0269, "longitude": 121.6186, "country": "Taiwan", "region": "Hualien County", "military_district": "ROCAF", "known_units": "F-16V Viper (upgraded Block 70), mountain-carved hardened shelters"},
-  {"name": "Taitung (Chihhang) AFB", "icao_code": "RCFN", "latitude": 22.7931, "longitude": 121.1817, "country": "Taiwan", "region": "Taitung County", "military_district": "ROCAF", "known_units": "F-5E/F Tiger II, cave hangar base — east coast defense"},
-  {"name": "Chiayi AFB", "icao_code": "RCKU", "latitude": 23.4617, "longitude": 120.3928, "country": "Taiwan", "region": "Chiayi County", "military_district": "ROCAF", "known_units": "F-16A/B (upgrading to F-16V), SAM defense"},
-  {"name": "Hsinchu AFB", "icao_code": "RCSS", "latitude": 24.8181, "longitude": 120.9394, "country": "Taiwan", "region": "Hsinchu", "military_district": "ROCAF", "known_units": "Mirage 2000-5, E-2K Hawkeye AWACS — Taiwan Strait front-line"},
-
-  {"name": "Cairo West AB", "icao_code": "HEOW", "latitude": 30.1164, "longitude": 30.9153, "country": "Egypt", "region": "Giza", "military_district": "EAF", "known_units": "F-16C/D Block 40/52, Mirage 2000 — EAF's primary fighter base"},
-  {"name": "Gebel El Basur AB", "icao_code": null, "latitude": 30.3978, "longitude": 30.1414, "country": "Egypt", "region": "Giza", "military_district": "EAF", "known_units": "MiG-29M/M2 — Russia's latest export fighters to Egypt"},
-  {"name": "Berenice Military Base", "icao_code": null, "latitude": 23.9683, "longitude": 35.4683, "country": "Egypt", "region": "Red Sea Coast", "military_district": "EAF", "known_units": "Rafale DM, Su-35SE — Egypt's newest multi-billion dollar base"},
-  {"name": "Mersa Matruh AB", "icao_code": "HEMM", "latitude": 31.3253, "longitude": 27.2217, "country": "Egypt", "region": "Matrouh", "military_district": "EAF", "known_units": "Rafale DM, F-16 — western border defense"},
-
-  {"name": "Muwaffaq Salti AB", "icao_code": "OJMF", "latitude": 31.8256, "longitude": 36.7822, "country": "Jordan", "region": "Azraq", "military_district": "RJAF/USAF", "known_units": "RJAF F-16AM/BM, US F-15E rotational, anti-ISIS coalition hub"},
-  {"name": "King Abdullah II AB (Marka)", "icao_code": "OJAM", "latitude": 31.9722, "longitude": 35.9933, "country": "Jordan", "region": "Amman", "military_district": "RJAF", "known_units": "RJAF HQ, F-5E/F, UH-60, AH-1 Cobra"},
-
-  {"name": "Al Dhafra AB", "icao_code": "OMAM", "latitude": 24.2481, "longitude": 54.5472, "country": "UAE", "region": "Abu Dhabi", "military_district": "UAEAF/USAF", "known_units": "UAEAF Mirage 2000-9, F-16E/F Block 60; USAF F-35A, F-22, KC-10, RQ-4"},
-  {"name": "Al Minhad AB", "icao_code": "OMDM", "latitude": 25.0268, "longitude": 55.3658, "country": "UAE", "region": "Dubai", "military_district": "UAEAF", "known_units": "Australian, Canadian, NZ forces hub; UAEAF transport wing"},
-  {"name": "Al Ain AB", "icao_code": "OMAA", "latitude": 24.2617, "longitude": 55.6092, "country": "UAE", "region": "Abu Dhabi/Al Ain", "military_district": "UAEAF", "known_units": "Hawk Mk.102 trainers, PC-21, Pilatus — pilot training center"},
-
-  {"name": "King Abdulaziz AB (Dhahran)", "icao_code": "OEDR", "latitude": 26.2654, "longitude": 50.1522, "country": "Saudi Arabia", "region": "Eastern Province", "military_district": "RSAF", "known_units": "F-15SA Strike Eagle, E-3A AWACS — eastern air defense"},
-  {"name": "King Faisal AB (Tabuk)", "icao_code": "OETB", "latitude": 28.3654, "longitude": 36.6189, "country": "Saudi Arabia", "region": "Tabuk", "military_district": "RSAF", "known_units": "F-15C/D Eagle — northwestern border, Red Sea/Israel coverage"},
-  {"name": "King Khalid AB (Khamis Mushait)", "icao_code": "OEKK", "latitude": 18.2978, "longitude": 42.8044, "country": "Saudi Arabia", "region": "Asir", "military_district": "RSAF", "known_units": "Tornado IDS, Eurofighter Typhoon — Yemen border, Houthi strikes"},
-  {"name": "King Fahd AB (Taif)", "icao_code": "OETF", "latitude": 21.4833, "longitude": 40.5433, "country": "Saudi Arabia", "region": "Mecca Province", "military_district": "RSAF", "known_units": "F-15SA, Eurofighter Typhoon — central strategic reserve"},
-  {"name": "Prince Sultan AB", "icao_code": "OEPS", "latitude": 24.0633, "longitude": 47.5806, "country": "Saudi Arabia", "region": "Al Kharj", "military_district": "RSAF/USAF", "known_units": "USAF F-15E, F-16, Patriot; RSAF F-15SA — CENTCOM forward hub"}
+  {
+    "name": "Nellis AFB",
+    "icao_code": "KLSV",
+    "latitude": 36.2361,
+    "longitude": -115.0343,
+    "country": "USA",
+    "region": "Nevada",
+    "military_district": "ACC",
+    "known_units": "57th Wing (F-16, F-15, F-22, F-35), USAF Weapons School, Red Flag exercises"
+  },
+  {
+    "name": "Edwards AFB",
+    "icao_code": "KEDW",
+    "latitude": 34.9054,
+    "longitude": -117.8839,
+    "country": "USA",
+    "region": "California",
+    "military_district": "AFMC",
+    "known_units": "412th Test Wing (F-35, B-21, experimental aircraft), NASA Armstrong"
+  },
+  {
+    "name": "Luke AFB",
+    "icao_code": "KLUF",
+    "latitude": 33.535,
+    "longitude": -112.383,
+    "country": "USA",
+    "region": "Arizona",
+    "military_district": "AETC",
+    "known_units": "56th Fighter Wing (F-35A, F-16) — largest F-35 training base"
+  },
+  {
+    "name": "Eglin AFB",
+    "icao_code": "KVPS",
+    "latitude": 30.4834,
+    "longitude": -86.5253,
+    "country": "USA",
+    "region": "Florida",
+    "military_district": "AFMC",
+    "known_units": "33rd Fighter Wing (F-35A), 96th Test Wing, 53rd Wing (weapons eval)"
+  },
+  {
+    "name": "Langley AFB",
+    "icao_code": "KLFI",
+    "latitude": 37.0833,
+    "longitude": -76.3606,
+    "country": "USA",
+    "region": "Virginia",
+    "military_district": "ACC",
+    "known_units": "1st Fighter Wing (F-22 Raptor), ACC HQ"
+  },
+  {
+    "name": "Tyndall AFB",
+    "icao_code": "KPAM",
+    "latitude": 30.0696,
+    "longitude": -85.5755,
+    "country": "USA",
+    "region": "Florida",
+    "military_district": "AETC",
+    "known_units": "325th Fighter Wing (F-22, F-35, QF-16 target drones)"
+  },
+  {
+    "name": "Hill AFB",
+    "icao_code": "KHIF",
+    "latitude": 41.124,
+    "longitude": -111.973,
+    "country": "USA",
+    "region": "Utah",
+    "military_district": "AFMC",
+    "known_units": "388th Fighter Wing (F-35A), 419th FW Reserve (F-35A)"
+  },
+  {
+    "name": "Whiteman AFB",
+    "icao_code": "KSZL",
+    "latitude": 38.7303,
+    "longitude": -93.5479,
+    "country": "USA",
+    "region": "Missouri",
+    "military_district": "AFGSC",
+    "known_units": "509th Bomb Wing (B-2 Spirit) — only B-2 base"
+  },
+  {
+    "name": "Barksdale AFB",
+    "icao_code": "KBAD",
+    "latitude": 32.5013,
+    "longitude": -93.6627,
+    "country": "USA",
+    "region": "Louisiana",
+    "military_district": "AFGSC",
+    "known_units": "2nd Bomb Wing (B-52H), 8th Air Force HQ"
+  },
+  {
+    "name": "Dyess AFB",
+    "icao_code": "KDYS",
+    "latitude": 32.4208,
+    "longitude": -99.8546,
+    "country": "USA",
+    "region": "Texas",
+    "military_district": "ACC",
+    "known_units": "7th Bomb Wing (B-1B Lancer), 317th Airlift Wing (C-130J)"
+  },
+  {
+    "name": "Minot AFB",
+    "icao_code": "KMIB",
+    "latitude": 48.4159,
+    "longitude": -101.3581,
+    "country": "USA",
+    "region": "North Dakota",
+    "military_district": "AFGSC",
+    "known_units": "5th Bomb Wing (B-52H), 91st Missile Wing (Minuteman III)"
+  },
+  {
+    "name": "Ellsworth AFB",
+    "icao_code": "KRCA",
+    "latitude": 44.1453,
+    "longitude": -103.1035,
+    "country": "USA",
+    "region": "South Dakota",
+    "military_district": "AFGSC",
+    "known_units": "28th Bomb Wing (B-1B Lancer)"
+  },
+  {
+    "name": "Joint Base Pearl Harbor-Hickam",
+    "icao_code": "PHNL",
+    "latitude": 21.3539,
+    "longitude": -157.95,
+    "country": "USA",
+    "region": "Hawaii",
+    "military_district": "PACAF",
+    "known_units": "15th Wing (F-22, C-17, KC-135), PACAF HQ"
+  },
+  {
+    "name": "Joint Base Elmendorf-Richardson",
+    "icao_code": "PAED",
+    "latitude": 61.25,
+    "longitude": -149.807,
+    "country": "USA",
+    "region": "Alaska",
+    "military_district": "PACAF",
+    "known_units": "3rd Wing (F-22, F-35, C-17, E-3), 176th Wing ANG"
+  },
+  {
+    "name": "Travis AFB",
+    "icao_code": "KSUU",
+    "latitude": 38.2627,
+    "longitude": -121.9437,
+    "country": "USA",
+    "region": "California",
+    "military_district": "AMC",
+    "known_units": "60th AMW (C-5M, C-17, KC-10) — largest AMC base"
+  },
+  {
+    "name": "Dover AFB",
+    "icao_code": "KDOV",
+    "latitude": 39.1296,
+    "longitude": -75.466,
+    "country": "USA",
+    "region": "Delaware",
+    "military_district": "AMC",
+    "known_units": "436th Airlift Wing (C-5M, C-17)"
+  },
+  {
+    "name": "NAS Oceana",
+    "icao_code": "KNTU",
+    "latitude": 36.8207,
+    "longitude": -76.0336,
+    "country": "USA",
+    "region": "Virginia",
+    "military_district": "USN",
+    "known_units": "F/A-18E/F Super Hornet squadrons — East Coast Master Jet Base"
+  },
+  {
+    "name": "NAS Lemoore",
+    "icao_code": "KNLC",
+    "latitude": 36.333,
+    "longitude": -119.9521,
+    "country": "USA",
+    "region": "California",
+    "military_district": "USN",
+    "known_units": "F/A-18E/F, F-35C squadrons — West Coast Strike Fighter base"
+  },
+  {
+    "name": "MCAS Miramar",
+    "icao_code": "KNKX",
+    "latitude": 32.8684,
+    "longitude": -117.1424,
+    "country": "USA",
+    "region": "California",
+    "military_district": "USMC",
+    "known_units": "3rd MAW (F/A-18, F-35B/C, MV-22) — Top Gun's former home"
+  },
+  {
+    "name": "RAF Lakenheath",
+    "icao_code": "EGUL",
+    "latitude": 52.4093,
+    "longitude": 0.561,
+    "country": "UK",
+    "region": "Suffolk, England",
+    "military_district": "USAFE",
+    "known_units": "48th Fighter Wing (F-15E Strike Eagle, F-35A Lightning II)"
+  },
+  {
+    "name": "RAF Marham",
+    "icao_code": "EGYM",
+    "latitude": 52.6484,
+    "longitude": 0.5507,
+    "country": "UK",
+    "region": "Norfolk, England",
+    "military_district": "RAF",
+    "known_units": "RAF Lightning Force (F-35B Lightning II), 617 Sqn 'Dambusters'"
+  },
+  {
+    "name": "RAF Coningsby",
+    "icao_code": "EGXC",
+    "latitude": 53.0929,
+    "longitude": -0.1663,
+    "country": "UK",
+    "region": "Lincolnshire, England",
+    "military_district": "RAF",
+    "known_units": "Typhoon Force (Eurofighter Typhoon), Battle of Britain Memorial Flight"
+  },
+  {
+    "name": "RAF Lossiemouth",
+    "icao_code": "EGQS",
+    "latitude": 57.7052,
+    "longitude": -3.3392,
+    "country": "UK",
+    "region": "Moray, Scotland",
+    "military_district": "RAF",
+    "known_units": "Typhoon Force QRA North (Eurofighter Typhoon), P-8A Poseidon MPA"
+  },
+  {
+    "name": "RAF Waddington",
+    "icao_code": "EGXW",
+    "latitude": 53.1662,
+    "longitude": -0.5218,
+    "country": "UK",
+    "region": "Lincolnshire, England",
+    "military_district": "RAF",
+    "known_units": "ISR Force (RC-135 Rivet Joint, E-7 Wedgetail, Protector UAV)"
+  },
+  {
+    "name": "RAF Brize Norton",
+    "icao_code": "EGVN",
+    "latitude": 51.75,
+    "longitude": -1.5836,
+    "country": "UK",
+    "region": "Oxfordshire, England",
+    "military_district": "RAF",
+    "known_units": "Air Mobility Force (C-17, A400M Atlas, Voyager tanker)"
+  },
+  {
+    "name": "Ramstein AB",
+    "icao_code": "ETAR",
+    "latitude": 49.4369,
+    "longitude": 7.6003,
+    "country": "Germany",
+    "region": "Rhineland-Palatinate",
+    "military_district": "USAFE",
+    "known_units": "86th Airlift Wing (C-130J), HQ USAFE-AFAFRICA, NATO CAOC"
+  },
+  {
+    "name": "Spangdahlem AB",
+    "icao_code": "ETAD",
+    "latitude": 49.9726,
+    "longitude": 6.6925,
+    "country": "Germany",
+    "region": "Rhineland-Palatinate",
+    "military_district": "USAFE",
+    "known_units": "52nd Fighter Wing (F-16CM, A-10C)"
+  },
+  {
+    "name": "Büchel Air Base",
+    "icao_code": "ETSB",
+    "latitude": 50.1738,
+    "longitude": 7.0633,
+    "country": "Germany",
+    "region": "Rhineland-Palatinate",
+    "military_district": "Luftwaffe",
+    "known_units": "TaktLwG 33 (Tornado IDS) — NATO nuclear sharing base"
+  },
+  {
+    "name": "Neuburg Air Base",
+    "icao_code": "ETSN",
+    "latitude": 48.711,
+    "longitude": 11.2115,
+    "country": "Germany",
+    "region": "Bavaria",
+    "military_district": "Luftwaffe",
+    "known_units": "TaktLwG 74 (Eurofighter Typhoon) — QRA South"
+  },
+  {
+    "name": "Laage Air Base",
+    "icao_code": "ETNL",
+    "latitude": 53.9183,
+    "longitude": 12.2703,
+    "country": "Germany",
+    "region": "Mecklenburg-Vorpommern",
+    "military_district": "Luftwaffe",
+    "known_units": "TaktLwG 73 'Steinhoff' (Eurofighter Typhoon)"
+  },
+  {
+    "name": "Wunstorf Air Base",
+    "icao_code": "ETNW",
+    "latitude": 52.4572,
+    "longitude": 9.4267,
+    "country": "Germany",
+    "region": "Lower Saxony",
+    "military_district": "Luftwaffe",
+    "known_units": "LTG 62 (A400M Atlas) — German air transport hub"
+  },
+  {
+    "name": "Istres-Le Tubé",
+    "icao_code": "LFMI",
+    "latitude": 43.5237,
+    "longitude": 4.9284,
+    "country": "France",
+    "region": "Bouches-du-Rhône",
+    "military_district": "Armée de l'Air",
+    "known_units": "Forces Aériennes Stratégiques (Rafale B, ASMP-A nuclear), EC 4 Rafale"
+  },
+  {
+    "name": "Saint-Dizier-Robinson",
+    "icao_code": "LFSI",
+    "latitude": 48.6361,
+    "longitude": 4.8993,
+    "country": "France",
+    "region": "Haute-Marne",
+    "military_district": "Armée de l'Air",
+    "known_units": "EC 1/91 'Gascogne' (Rafale B) — nuclear strike role"
+  },
+  {
+    "name": "Mont-de-Marsan",
+    "icao_code": "LFBM",
+    "latitude": 43.9117,
+    "longitude": -0.5075,
+    "country": "France",
+    "region": "Landes",
+    "military_district": "Armée de l'Air",
+    "known_units": "EC 2/30 'Normandie-Niemen' (Rafale C), CEAM weapons test center"
+  },
+  {
+    "name": "BA 118 Mont-de-Marsan",
+    "icao_code": "LFBM",
+    "latitude": 43.9117,
+    "longitude": -0.5075,
+    "country": "France",
+    "region": "Landes",
+    "military_district": "Armée de l'Air",
+    "known_units": "Centre d'Expériences Aériennes Militaires (CEAM)"
+  },
+  {
+    "name": "Évreux-Fauville",
+    "icao_code": "LFOE",
+    "latitude": 49.0287,
+    "longitude": 1.2199,
+    "country": "France",
+    "region": "Eure",
+    "military_district": "Armée de l'Air",
+    "known_units": "ET 1/64 'Béarn' (A400M Atlas), CPA 10 special forces"
+  },
+  {
+    "name": "Avord Air Base",
+    "icao_code": "LFOA",
+    "latitude": 47.0533,
+    "longitude": 2.6325,
+    "country": "France",
+    "region": "Cher",
+    "military_district": "Armée de l'Air",
+    "known_units": "E-3F AWACS (36e EDCA), Centre Militaire d'Observation par Satellites"
+  },
+  {
+    "name": "Aviano AB",
+    "icao_code": "LIPA",
+    "latitude": 46.0319,
+    "longitude": 12.5965,
+    "country": "Italy",
+    "region": "Friuli Venezia Giulia",
+    "military_district": "USAFE",
+    "known_units": "31st Fighter Wing (F-16CM)"
+  },
+  {
+    "name": "Ghedi Air Base",
+    "icao_code": "LIPL",
+    "latitude": 45.4322,
+    "longitude": 10.2677,
+    "country": "Italy",
+    "region": "Lombardy",
+    "military_district": "AMI",
+    "known_units": "6° Stormo (Tornado IDS) — NATO nuclear sharing, transitioning to F-35A"
+  },
+  {
+    "name": "Amendola Air Base",
+    "icao_code": "LIBA",
+    "latitude": 41.5414,
+    "longitude": 15.7181,
+    "country": "Italy",
+    "region": "Puglia",
+    "military_district": "AMI",
+    "known_units": "32° Stormo (F-35A Lightning II), MQ-9 Reaper UAV wing"
+  },
+  {
+    "name": "Gioia del Colle",
+    "icao_code": "LIBV",
+    "latitude": 40.7676,
+    "longitude": 16.9333,
+    "country": "Italy",
+    "region": "Puglia",
+    "military_district": "AMI",
+    "known_units": "36° Stormo (Eurofighter Typhoon)"
+  },
+  {
+    "name": "Ørland Air Station",
+    "icao_code": "ENOL",
+    "latitude": 63.6989,
+    "longitude": 9.604,
+    "country": "Norway",
+    "region": "Trøndelag",
+    "military_district": "RNoAF",
+    "known_units": "132 Air Wing (F-35A Lightning II) — Norway's main fighter base"
+  },
+  {
+    "name": "Bodø Air Station",
+    "icao_code": "ENBO",
+    "latitude": 67.2692,
+    "longitude": 14.3653,
+    "country": "Norway",
+    "region": "Nordland",
+    "military_district": "RNoAF",
+    "known_units": "NATO QRA, P-8A Poseidon maritime patrol"
+  },
+  {
+    "name": "Leeuwarden Air Base",
+    "icao_code": "EHLW",
+    "latitude": 53.2286,
+    "longitude": 5.7606,
+    "country": "Netherlands",
+    "region": "Friesland",
+    "military_district": "RNLAF",
+    "known_units": "322 Squadron (F-35A Lightning II)"
+  },
+  {
+    "name": "Florennes Air Base",
+    "icao_code": "EBFS",
+    "latitude": 50.2433,
+    "longitude": 4.6489,
+    "country": "Belgium",
+    "region": "Namur",
+    "military_district": "BAF",
+    "known_units": "2 Wing Tactical (F-16AM)"
+  },
+  {
+    "name": "Kleine Brogel Air Base",
+    "icao_code": "EBBL",
+    "latitude": 51.1683,
+    "longitude": 5.47,
+    "country": "Belgium",
+    "region": "Limburg",
+    "military_district": "BAF",
+    "known_units": "10 Wing Tactical (F-16AM) — NATO nuclear sharing base"
+  },
+  {
+    "name": "Poznań-Krzesiny",
+    "icao_code": "EPKS",
+    "latitude": 52.3317,
+    "longitude": 16.9664,
+    "country": "Poland",
+    "region": "Greater Poland",
+    "military_district": "Polish AF",
+    "known_units": "31st Tactical Air Base (F-16C/D Block 52+)"
+  },
+  {
+    "name": "Łask Air Base",
+    "icao_code": "EPLK",
+    "latitude": 51.5519,
+    "longitude": 19.1792,
+    "country": "Poland",
+    "region": "Łódź",
+    "military_district": "Polish AF",
+    "known_units": "32nd Tactical Air Base (F-16C/D, MQ-9), US rotational F-35 deployments"
+  },
+  {
+    "name": "Kadena AB",
+    "icao_code": "RODN",
+    "latitude": 26.3516,
+    "longitude": 127.7695,
+    "country": "Japan",
+    "region": "Okinawa",
+    "military_district": "PACAF",
+    "known_units": "18th Wing (F-15C/D, KC-135, E-3, HH-60) — largest USAF wing in Pacific"
+  },
+  {
+    "name": "Misawa AB",
+    "icao_code": "RJSM",
+    "latitude": 40.7032,
+    "longitude": 141.3684,
+    "country": "Japan",
+    "region": "Aomori",
+    "military_district": "PACAF",
+    "known_units": "35th Fighter Wing (F-16CM), JASDF F-35A"
+  },
+  {
+    "name": "Hyakuri Air Base",
+    "icao_code": "RJAH",
+    "latitude": 36.1811,
+    "longitude": 140.4186,
+    "country": "Japan",
+    "region": "Ibaraki",
+    "military_district": "JASDF",
+    "known_units": "7th Air Wing (F-2A/B), 302 Sqn (F-35A)"
+  },
+  {
+    "name": "Osan AB",
+    "icao_code": "RKSO",
+    "latitude": 37.0906,
+    "longitude": 127.0295,
+    "country": "South Korea",
+    "region": "Gyeonggi",
+    "military_district": "PACAF",
+    "known_units": "51st Fighter Wing (F-16, A-10C, U-2S)"
+  },
+  {
+    "name": "Kunsan AB",
+    "icao_code": "RKJK",
+    "latitude": 35.9038,
+    "longitude": 126.6159,
+    "country": "South Korea",
+    "region": "North Jeolla",
+    "military_district": "PACAF",
+    "known_units": "8th Fighter Wing 'Wolf Pack' (F-16C/D)"
+  },
+  {
+    "name": "Incirlik AB",
+    "icao_code": "LTAG",
+    "latitude": 37.0021,
+    "longitude": 35.4259,
+    "country": "Turkey",
+    "region": "Adana",
+    "military_district": "USAFE",
+    "known_units": "39th ABW, TuAF (F-16), NATO nuclear sharing storage"
+  },
+  {
+    "name": "Čáslav Air Base",
+    "icao_code": "LKCV",
+    "latitude": 49.9397,
+    "longitude": 15.3817,
+    "country": "Czech Republic",
+    "region": "Central Bohemia",
+    "military_district": "Czech AF",
+    "known_units": "211th Tactical Squadron (JAS 39 Gripen)"
+  },
+  {
+    "name": "Siauliai Air Base",
+    "icao_code": "EYSA",
+    "latitude": 55.8939,
+    "longitude": 23.395,
+    "country": "Lithuania",
+    "region": "Šiauliai",
+    "military_district": "NATO",
+    "known_units": "NATO Baltic Air Policing — rotational NATO fighters (Eurofighter, F-16, Rafale)"
+  },
+  {
+    "name": "Ämari Air Base",
+    "icao_code": "EEEI",
+    "latitude": 59.2603,
+    "longitude": 24.2086,
+    "country": "Estonia",
+    "region": "Harju",
+    "military_district": "NATO",
+    "known_units": "NATO Baltic Air Policing — rotational NATO fighters"
+  },
+  {
+    "name": "Graf Ignatievo Air Base",
+    "icao_code": "LBPG",
+    "latitude": 42.2905,
+    "longitude": 24.714,
+    "country": "Bulgaria",
+    "region": "Plovdiv",
+    "military_district": "Bulgarian AF",
+    "known_units": "MiG-29 (upgrading to F-16V)"
+  },
+  {
+    "name": "Câmpia Turzii",
+    "icao_code": "LRCT",
+    "latitude": 46.5024,
+    "longitude": 23.886,
+    "country": "Romania",
+    "region": "Cluj",
+    "military_district": "RoAF",
+    "known_units": "71st Air Base (F-16AM), US rotational MQ-9, F-35 planned"
+  },
+  {
+    "name": "Morón AB",
+    "icao_code": "LEMO",
+    "latitude": 37.1749,
+    "longitude": -5.6161,
+    "country": "Spain",
+    "region": "Seville, Andalusia",
+    "military_district": "USAFE/EdA",
+    "known_units": "Ala 11 (EF-18 Hornet), US AFRICOM forward staging"
+  },
+  {
+    "name": "Zaragoza AB",
+    "icao_code": "LEZG",
+    "latitude": 41.6662,
+    "longitude": -1.0415,
+    "country": "Spain",
+    "region": "Aragón",
+    "military_district": "EdA",
+    "known_units": "Ala 15 (EF-18 Hornet), 31 Wing (Eurofighter Typhoon)"
+  },
+  {
+    "name": "Gando AB (Gran Canaria)",
+    "icao_code": "GCLP",
+    "latitude": 27.9346,
+    "longitude": -15.3886,
+    "country": "Spain",
+    "region": "Canary Islands",
+    "military_district": "EdA",
+    "known_units": "Ala 46 (Eurofighter Typhoon) — Atlantic/Africa patrol"
+  },
+  {
+    "name": "Monte Real AB (BA5)",
+    "icao_code": "LPMR",
+    "latitude": 39.8283,
+    "longitude": -8.8875,
+    "country": "Portugal",
+    "region": "Leiria",
+    "military_district": "FAP",
+    "known_units": "Esq 201 'Falcões' (F-16AM MLU)"
+  },
+  {
+    "name": "Beja AB (BA11)",
+    "icao_code": "LPBJ",
+    "latitude": 38.0789,
+    "longitude": -7.9324,
+    "country": "Portugal",
+    "region": "Beja, Alentejo",
+    "military_district": "FAP",
+    "known_units": "NATO Tactical Leadership Programme, NTM training"
+  },
+  {
+    "name": "Anápolis AB",
+    "icao_code": "SBAN",
+    "latitude": -16.2292,
+    "longitude": -48.9644,
+    "country": "Brazil",
+    "region": "Goiás",
+    "military_district": "FAB",
+    "known_units": "1° GDA (Gripen E/F) — Brazil's new fighter, air defense of Brasília"
+  },
+  {
+    "name": "Natal AB (BANT)",
+    "icao_code": "SBNT",
+    "latitude": -5.9114,
+    "longitude": -35.2478,
+    "country": "Brazil",
+    "region": "Rio Grande do Norte",
+    "military_district": "FAB",
+    "known_units": "3°/7° GAv (A-29 Super Tucano), CRUZEX multinational exercises"
+  },
+  {
+    "name": "Canoas AB",
+    "icao_code": "SBCO",
+    "latitude": -29.9458,
+    "longitude": -51.1444,
+    "country": "Brazil",
+    "region": "Rio Grande do Sul",
+    "military_district": "FAB",
+    "known_units": "1° GAvCa (F-5EM Tiger III), transitioning to Gripen"
+  },
+  {
+    "name": "Ambala AFS",
+    "icao_code": "VIAM",
+    "latitude": 30.3681,
+    "longitude": 76.8172,
+    "country": "India",
+    "region": "Haryana",
+    "military_district": "WAC",
+    "known_units": "17 Sqn 'Golden Arrows' (Rafale), 7 Sqn (MiG-21 Bison)"
+  },
+  {
+    "name": "Halwara AFS",
+    "icao_code": "VIHR",
+    "latitude": 30.6414,
+    "longitude": 75.7647,
+    "country": "India",
+    "region": "Punjab",
+    "military_district": "WAC",
+    "known_units": "220 Sqn (Su-30MKI), 20 Sqn 'Lightnings' (Su-30MKI)"
+  },
+  {
+    "name": "Thanjavur AFS",
+    "icao_code": null,
+    "latitude": 10.7225,
+    "longitude": 79.1014,
+    "country": "India",
+    "region": "Tamil Nadu",
+    "military_district": "SAC",
+    "known_units": "222 Sqn 'Tigersharks' (Su-30MKI) — first Su-30 unit in South India"
+  },
+  {
+    "name": "Hashimara AFS",
+    "icao_code": null,
+    "latitude": 26.7042,
+    "longitude": 89.3681,
+    "country": "India",
+    "region": "West Bengal",
+    "military_district": "EAC",
+    "known_units": "2 Sqn 'Winged Arrows' (Rafale), strategic China border coverage"
+  },
+  {
+    "name": "Leh AFS (Kushok Bakula)",
+    "icao_code": "VILH",
+    "latitude": 34.1359,
+    "longitude": 77.5465,
+    "country": "India",
+    "region": "Ladakh",
+    "military_district": "WAC",
+    "known_units": "MiG-29, C-130J, Apache — world's highest fighter base (3,256m)"
+  },
+  {
+    "name": "PAF Mushaf (Sargodha)",
+    "icao_code": "OPSR",
+    "latitude": 32.0486,
+    "longitude": 72.665,
+    "country": "Pakistan",
+    "region": "Punjab",
+    "military_district": "PAF",
+    "known_units": "No. 2 Sqn (F-16A/B), No. 14 Sqn (JF-17 Thunder)"
+  },
+  {
+    "name": "PAF Kamra",
+    "icao_code": "OPKT",
+    "latitude": 33.8691,
+    "longitude": 72.4015,
+    "country": "Pakistan",
+    "region": "Punjab",
+    "military_district": "PAF",
+    "known_units": "PAC factory (JF-17 production), No. 16 Sqn (JF-17)"
+  },
+  {
+    "name": "PAF Jacobabad",
+    "icao_code": "OPJA",
+    "latitude": 28.2842,
+    "longitude": 68.4497,
+    "country": "Pakistan",
+    "region": "Sindh",
+    "military_district": "PAF",
+    "known_units": "No. 28 Sqn (Mirage III/V), forward operating base"
+  },
+  {
+    "name": "PAF Masroor (Karachi)",
+    "icao_code": "OPMR",
+    "latitude": 24.8936,
+    "longitude": 66.9386,
+    "country": "Pakistan",
+    "region": "Sindh",
+    "military_district": "PAF",
+    "known_units": "No. 8 Sqn (F-16C/D Block 52), maritime strike"
+  },
+  {
+    "name": "RAAF Williamtown",
+    "icao_code": "YWLM",
+    "latitude": -32.795,
+    "longitude": 151.8428,
+    "country": "Australia",
+    "region": "New South Wales",
+    "military_district": "RAAF",
+    "known_units": "2 OCU & 3 Sqn (F-35A), 6 Sqn (EA-18G Growler), Fighter World"
+  },
+  {
+    "name": "RAAF Amberley",
+    "icao_code": "YAMB",
+    "latitude": -27.6406,
+    "longitude": 152.7111,
+    "country": "Australia",
+    "region": "Queensland",
+    "military_district": "RAAF",
+    "known_units": "1 Sqn & 6 Sqn (F/A-18F Super Hornet), 33 Sqn (KC-30A)"
+  },
+  {
+    "name": "RAAF Tindal",
+    "icao_code": "YPTN",
+    "latitude": -14.5214,
+    "longitude": 132.3781,
+    "country": "Australia",
+    "region": "Northern Territory",
+    "military_district": "RAAF",
+    "known_units": "75 Sqn (F-35A) — northern air defense, USAF B-52 rotations"
+  },
+  {
+    "name": "RAAF Edinburgh",
+    "icao_code": "YPED",
+    "latitude": -34.7028,
+    "longitude": 138.6208,
+    "country": "Australia",
+    "region": "South Australia",
+    "military_district": "RAAF",
+    "known_units": "92 Wing (P-8A Poseidon), 2 Sqn EWSP, ISR hub"
+  },
+  {
+    "name": "El Palomar (BAM)",
+    "icao_code": "SADP",
+    "latitude": -34.6098,
+    "longitude": -58.6126,
+    "country": "Argentina",
+    "region": "Buenos Aires",
+    "military_district": "FAA",
+    "known_units": "III Brigada Aérea, A-4AR Fightinghawk"
+  },
+  {
+    "name": "Mendoza (BAM)",
+    "icao_code": "SAME",
+    "latitude": -32.8317,
+    "longitude": -68.7929,
+    "country": "Argentina",
+    "region": "Mendoza",
+    "military_district": "FAA",
+    "known_units": "IV Brigada Aérea, IA-63 Pampa trainer"
+  },
+  {
+    "name": "Río Gallegos (BAM)",
+    "icao_code": "SAWG",
+    "latitude": -51.6097,
+    "longitude": -69.3126,
+    "country": "Argentina",
+    "region": "Santa Cruz",
+    "military_district": "FAA",
+    "known_units": "IX Brigada — Falklands/Malvinas staging, southern air defense"
+  },
+  {
+    "name": "Santa Lucía AB",
+    "icao_code": "MMSM",
+    "latitude": 19.5339,
+    "longitude": -99.015,
+    "country": "Mexico",
+    "region": "State of Mexico",
+    "military_district": "FAM",
+    "known_units": "Military Air Base 1 — FAM HQ, F-5E/F Tiger II"
+  },
+  {
+    "name": "Zapopan AB",
+    "icao_code": "MMZP",
+    "latitude": 20.7467,
+    "longitude": -103.4611,
+    "country": "Mexico",
+    "region": "Jalisco",
+    "military_district": "FAM",
+    "known_units": "BAM 5 — C-130, PC-7 Turbo Trainer, counter-narcotics ops"
+  },
+  {
+    "name": "CFB Cold Lake",
+    "icao_code": "CYOD",
+    "latitude": 54.405,
+    "longitude": -110.2794,
+    "country": "Canada",
+    "region": "Alberta",
+    "military_district": "RCAF",
+    "known_units": "4 Wing (CF-18 Hornet), Fighter Lead-In Training, Maple Flag exercises"
+  },
+  {
+    "name": "CFB Bagotville",
+    "icao_code": "CYBG",
+    "latitude": 48.3306,
+    "longitude": -70.9964,
+    "country": "Canada",
+    "region": "Quebec",
+    "military_district": "RCAF",
+    "known_units": "3 Wing (CF-18 Hornet) — NORAD QRA East, bilingual ops"
+  },
+  {
+    "name": "CFB Trenton",
+    "icao_code": "CYTR",
+    "latitude": 44.1189,
+    "longitude": -77.5281,
+    "country": "Canada",
+    "region": "Ontario",
+    "military_district": "RCAF",
+    "known_units": "8 Wing (CC-177 Globemaster, CC-130J Hercules) — airlift hub"
+  },
+  {
+    "name": "Camp Lemonnier",
+    "icao_code": "HDAM",
+    "latitude": 11.5467,
+    "longitude": 43.1489,
+    "country": "USA",
+    "region": "Djibouti City, Djibouti",
+    "military_district": "AFRICOM",
+    "known_units": "US CJTF-HOA (P-3C, MQ-9, F-15E rotational), only permanent US base in Africa"
+  },
+  {
+    "name": "BA 188 (French - Djibouti)",
+    "icao_code": "HDAM",
+    "latitude": 11.5533,
+    "longitude": 43.1583,
+    "country": "France",
+    "region": "Djibouti City, Djibouti",
+    "military_district": "FFDJT",
+    "known_units": "French Forces Djibouti (Mirage 2000-5, SA342 Gazelle, C-160)"
+  },
+  {
+    "name": "PLA Support Base Djibouti",
+    "icao_code": null,
+    "latitude": 11.5892,
+    "longitude": 43.0458,
+    "country": "China",
+    "region": "Doraleh, Djibouti",
+    "military_district": "PLA",
+    "known_units": "China's first overseas military base — logistics, naval, helo ops"
+  },
+  {
+    "name": "JSDF Base Djibouti",
+    "icao_code": null,
+    "latitude": 11.5525,
+    "longitude": 43.1575,
+    "country": "Japan",
+    "region": "Djibouti City",
+    "military_district": "JSDF",
+    "known_units": "JMSDF P-3C Orion — anti-piracy patrols, Japan's only foreign base"
+  },
+  {
+    "name": "Nevatim AB",
+    "icao_code": "LLNV",
+    "latitude": 31.2083,
+    "longitude": 34.9389,
+    "country": "Israel",
+    "region": "Negev Desert",
+    "military_district": "IAF",
+    "known_units": "140 Sqn 'Golden Eagle' (F-35I Adir), 253 Sqn (F-16I Sufa)"
+  },
+  {
+    "name": "Ramon AB",
+    "icao_code": "LLIR",
+    "latitude": 30.7764,
+    "longitude": 34.6667,
+    "country": "Israel",
+    "region": "Negev Desert",
+    "military_district": "IAF",
+    "known_units": "116 Sqn 'Lions of the South' (F-16D), 190 Sqn (F-16I), 69 Sqn (F-15I Ra'am)"
+  },
+  {
+    "name": "Hatzerim AB",
+    "icao_code": "LLHB",
+    "latitude": 31.2325,
+    "longitude": 34.6628,
+    "country": "Israel",
+    "region": "Negev Desert",
+    "military_district": "IAF",
+    "known_units": "IAF Flight Academy, 107 Sqn (F-16C), aerial display team"
+  },
+  {
+    "name": "Tel Nof AB",
+    "icao_code": "LLET",
+    "latitude": 31.8394,
+    "longitude": 34.8178,
+    "country": "Israel",
+    "region": "Central District",
+    "military_district": "IAF",
+    "known_units": "69 Sqn (F-15I Ra'am), 106 Sqn (Boeing 707 tanker), strategic ops"
+  },
+  {
+    "name": "Dingxin AB",
+    "icao_code": null,
+    "latitude": 40.16,
+    "longitude": 99.715,
+    "country": "China",
+    "region": "Gansu Province",
+    "military_district": "WTC",
+    "known_units": "PLAAF test & training (J-20, J-16, J-10C) — China's Nellis equivalent"
+  },
+  {
+    "name": "Wuhu-Wanli AB",
+    "icao_code": null,
+    "latitude": 31.3917,
+    "longitude": 118.4083,
+    "country": "China",
+    "region": "Anhui Province",
+    "military_district": "ETC",
+    "known_units": "J-20 Mighty Dragon stealth fighter — first operational J-20 brigade"
+  },
+  {
+    "name": "Cangzhou AB",
+    "icao_code": null,
+    "latitude": 38.3333,
+    "longitude": 116.8333,
+    "country": "China",
+    "region": "Hebei Province",
+    "military_district": "NTC",
+    "known_units": "PLAAF Flight Test & Training Centre (J-20, J-16, J-10C)"
+  },
+  {
+    "name": "Longtian AB",
+    "icao_code": null,
+    "latitude": 25.03,
+    "longitude": 118.64,
+    "country": "China",
+    "region": "Fujian Province",
+    "military_district": "ETC",
+    "known_units": "J-16, Su-30MKK — Taiwan Strait front-line base"
+  },
+  {
+    "name": "Suixi AB",
+    "icao_code": null,
+    "latitude": 21.25,
+    "longitude": 110.3,
+    "country": "China",
+    "region": "Guangdong Province",
+    "military_district": "STC",
+    "known_units": "H-6K/N strategic bomber — South China Sea patrol, cruise missile carrier"
+  },
+  {
+    "name": "Hotan AB",
+    "icao_code": "ZWTN",
+    "latitude": 37.0381,
+    "longitude": 79.865,
+    "country": "China",
+    "region": "Xinjiang",
+    "military_district": "WTC",
+    "known_units": "J-11B, J-16 — India border coverage, Aksai Chin front"
+  },
+  {
+    "name": "Hualien AFB",
+    "icao_code": "RCYU",
+    "latitude": 24.0269,
+    "longitude": 121.6186,
+    "country": "Taiwan",
+    "region": "Hualien County",
+    "military_district": "ROCAF",
+    "known_units": "F-16V Viper (upgraded Block 70), mountain-carved hardened shelters"
+  },
+  {
+    "name": "Taitung (Chihhang) AFB",
+    "icao_code": "RCFN",
+    "latitude": 22.7931,
+    "longitude": 121.1817,
+    "country": "Taiwan",
+    "region": "Taitung County",
+    "military_district": "ROCAF",
+    "known_units": "F-5E/F Tiger II, cave hangar base — east coast defense"
+  },
+  {
+    "name": "Chiayi AFB",
+    "icao_code": "RCKU",
+    "latitude": 23.4617,
+    "longitude": 120.3928,
+    "country": "Taiwan",
+    "region": "Chiayi County",
+    "military_district": "ROCAF",
+    "known_units": "F-16A/B (upgrading to F-16V), SAM defense"
+  },
+  {
+    "name": "Hsinchu AFB",
+    "icao_code": "RCSS",
+    "latitude": 24.8181,
+    "longitude": 120.9394,
+    "country": "Taiwan",
+    "region": "Hsinchu",
+    "military_district": "ROCAF",
+    "known_units": "Mirage 2000-5, E-2K Hawkeye AWACS — Taiwan Strait front-line"
+  },
+  {
+    "name": "Cairo West AB",
+    "icao_code": "HEOW",
+    "latitude": 30.1164,
+    "longitude": 30.9153,
+    "country": "Egypt",
+    "region": "Giza",
+    "military_district": "EAF",
+    "known_units": "F-16C/D Block 40/52, Mirage 2000 — EAF's primary fighter base"
+  },
+  {
+    "name": "Gebel El Basur AB",
+    "icao_code": null,
+    "latitude": 30.3978,
+    "longitude": 30.1414,
+    "country": "Egypt",
+    "region": "Giza",
+    "military_district": "EAF",
+    "known_units": "MiG-29M/M2 — Russia's latest export fighters to Egypt"
+  },
+  {
+    "name": "Berenice Military Base",
+    "icao_code": null,
+    "latitude": 23.9683,
+    "longitude": 35.4683,
+    "country": "Egypt",
+    "region": "Red Sea Coast",
+    "military_district": "EAF",
+    "known_units": "Rafale DM, Su-35SE — Egypt's newest multi-billion dollar base"
+  },
+  {
+    "name": "Mersa Matruh AB",
+    "icao_code": "HEMM",
+    "latitude": 31.3253,
+    "longitude": 27.2217,
+    "country": "Egypt",
+    "region": "Matrouh",
+    "military_district": "EAF",
+    "known_units": "Rafale DM, F-16 — western border defense"
+  },
+  {
+    "name": "Muwaffaq Salti AB",
+    "icao_code": "OJMF",
+    "latitude": 31.8256,
+    "longitude": 36.7822,
+    "country": "Jordan",
+    "region": "Azraq",
+    "military_district": "RJAF/USAF",
+    "known_units": "RJAF F-16AM/BM, US F-15E rotational, anti-ISIS coalition hub"
+  },
+  {
+    "name": "King Abdullah II AB (Marka)",
+    "icao_code": "OJAM",
+    "latitude": 31.9722,
+    "longitude": 35.9933,
+    "country": "Jordan",
+    "region": "Amman",
+    "military_district": "RJAF",
+    "known_units": "RJAF HQ, F-5E/F, UH-60, AH-1 Cobra"
+  },
+  {
+    "name": "Al Dhafra AB",
+    "icao_code": "OMAM",
+    "latitude": 24.2481,
+    "longitude": 54.5472,
+    "country": "UAE",
+    "region": "Abu Dhabi",
+    "military_district": "UAEAF/USAF",
+    "known_units": "UAEAF Mirage 2000-9, F-16E/F Block 60; USAF F-35A, F-22, KC-10, RQ-4"
+  },
+  {
+    "name": "Al Minhad AB",
+    "icao_code": "OMDM",
+    "latitude": 25.0268,
+    "longitude": 55.3658,
+    "country": "UAE",
+    "region": "Dubai",
+    "military_district": "UAEAF",
+    "known_units": "Australian, Canadian, NZ forces hub; UAEAF transport wing"
+  },
+  {
+    "name": "Al Ain AB",
+    "icao_code": "OMAA",
+    "latitude": 24.2617,
+    "longitude": 55.6092,
+    "country": "UAE",
+    "region": "Abu Dhabi/Al Ain",
+    "military_district": "UAEAF",
+    "known_units": "Hawk Mk.102 trainers, PC-21, Pilatus — pilot training center"
+  },
+  {
+    "name": "King Abdulaziz AB (Dhahran)",
+    "icao_code": "OEDR",
+    "latitude": 26.2654,
+    "longitude": 50.1522,
+    "country": "Saudi Arabia",
+    "region": "Eastern Province",
+    "military_district": "RSAF",
+    "known_units": "F-15SA Strike Eagle, E-3A AWACS — eastern air defense"
+  },
+  {
+    "name": "King Faisal AB (Tabuk)",
+    "icao_code": "OETB",
+    "latitude": 28.3654,
+    "longitude": 36.6189,
+    "country": "Saudi Arabia",
+    "region": "Tabuk",
+    "military_district": "RSAF",
+    "known_units": "F-15C/D Eagle — northwestern border, Red Sea/Israel coverage"
+  },
+  {
+    "name": "King Khalid AB (Khamis Mushait)",
+    "icao_code": "OEKK",
+    "latitude": 18.2978,
+    "longitude": 42.8044,
+    "country": "Saudi Arabia",
+    "region": "Asir",
+    "military_district": "RSAF",
+    "known_units": "Tornado IDS, Eurofighter Typhoon — Yemen border, Houthi strikes"
+  },
+  {
+    "name": "King Fahd AB (Taif)",
+    "icao_code": "OETF",
+    "latitude": 21.4833,
+    "longitude": 40.5433,
+    "country": "Saudi Arabia",
+    "region": "Mecca Province",
+    "military_district": "RSAF",
+    "known_units": "F-15SA, Eurofighter Typhoon — central strategic reserve"
+  },
+  {
+    "name": "Prince Sultan AB",
+    "icao_code": "OEPS",
+    "latitude": 24.0633,
+    "longitude": 47.5806,
+    "country": "Saudi Arabia",
+    "region": "Al Kharj",
+    "military_district": "RSAF/USAF",
+    "known_units": "USAF F-15E, F-16, Patriot; RSAF F-15SA — CENTCOM forward hub"
+  },
+  {
+    "name": "BA 701 Salon-de-Provence",
+    "icao_code": "LFMY",
+    "latitude": 43.6064,
+    "longitude": 5.1092,
+    "country": "France",
+    "region": "Bouches-du-Rhône, Provence",
+    "military_district": "Armée de l'Air",
+    "known_units": "École de l'Air et de l'Espace, Patrouille de France (Alpha Jet), GE 315"
+  }
 ]

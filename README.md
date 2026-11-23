@@ -10,7 +10,7 @@
 
 ## Overview
 
-Vauban is a defence-oriented IMINT (Imagery Intelligence) platform that uses satellite imagery and computer vision to monitor military airbases worldwide. The system detects, classifies, and tracks military aircraft deployments across **159 airbases in 35 countries**.
+Vauban is a defence-oriented IMINT (Imagery Intelligence) platform that uses satellite imagery and computer vision to monitor military airbases worldwide. The system detects, classifies, and tracks military aircraft deployments across **161 airbases in 35 countries**.
 
 Named after [Sebastien Le Prestre de Vauban](https://en.wikipedia.org/wiki/Vauban), the French military engineer and Marshal of France.
 
@@ -38,13 +38,8 @@ Named after [Sebastien Le Prestre de Vauban](https://en.wikipedia.org/wiki/Vauba
                     |   FastAPI Backend |
                     |                  |
                     |  +------------+  |
-                    |  | Tile       |  |  Esri World Imagery
-                    |  | Service    |  |  (0.6-1.2m resolution)
-                    |  +------------+  |
-                    |                  |
-                    |  +------------+  |
-                    |  | Sentinel-2 |  |  Copernicus Data Space
-                    |  | Service    |  |  (10m, change detection)
+                    |  | Multi-Src  |  |  Esri, Google, Bing
+                    |  | Tile Svc   |  |  (0.6-1.2m resolution)
                     |  +------------+  |
                     |                  |
                     |  +------------+  |
@@ -56,7 +51,7 @@ Named after [Sebastien Le Prestre de Vauban](https://en.wikipedia.org/wiki/Vauba
               +---------------+---------------+
               |                               |
        +------+------+               +-------+-------+
-       | YOLOv8      |               | Country-Aware |
+       | YOLOv8s     |               | Country-Aware |
        | Detection   |      --->     | Reclassifier  |
        | (20 types)  |               | (35 countries)|
        +-------------+               +---------------+
@@ -95,7 +90,7 @@ Named after [Sebastien Le Prestre de Vauban](https://en.wikipedia.org/wiki/Vauba
 | **South America** | Brazil, Argentina | 6 |
 | **Africa** | Djibouti (US, France, China, Japan bases) | 4 |
 | **NATO** | Multi-national (Baltic Air Policing, Al Udeid) | 3 |
-| | **Total** | **159** |
+| | **Total** | **161** |
 
 ## Tech Stack
 
@@ -104,7 +99,7 @@ Named after [Sebastien Le Prestre de Vauban](https://en.wikipedia.org/wiki/Vauba
 | Frontend | React, Vite, Leaflet, Recharts |
 | Backend | Python, FastAPI, SQLAlchemy, SQLite |
 | ML/CV | PyTorch, YOLOv8 (ultralytics) |
-| Satellite | Esri World Imagery tiles, Copernicus/Sentinel-2 |
+| Satellite | Esri, Google, Bing tile servers (multi-source) |
 | Training | Google Colab (GPU) |
 
 ## Project Structure
@@ -115,7 +110,7 @@ Vauban/
     app/
       api/            # REST endpoints
       models/          # SQLAlchemy models (Airbase, CaptureZone, Observation, Detection)
-      services/        # Detection pipeline, tile fetcher, sentinel service
+      services/        # Detection pipeline, multi-source tile fetcher
       data/            # Seed data, aircraft specs, base context, zone backups
     storage/
       images/          # Captured satellite imagery
@@ -137,7 +132,6 @@ Vauban/
 
 - Python 3.10+
 - Node.js 18+
-- Copernicus Data Space account (free, optional) — [Register here](https://dataspace.copernicus.eu/)
 
 ### Backend
 
@@ -149,7 +143,6 @@ pip install -r requirements.txt
 
 # Configure credentials
 cp .env.example .env
-# Edit .env with your Copernicus credentials (optional)
 
 # Run
 uvicorn app.main:app --reload --reload-dir app --port 8000
@@ -199,7 +192,7 @@ Every detected type links to a detailed intel card with:
 
 | Method | Endpoint | Description |
 |--------|----------|-------------|
-| GET | `/api/airbases/` | List all 159 monitored airbases |
+| GET | `/api/airbases/` | List all 161 monitored airbases |
 | GET | `/api/airbases/{id}` | Airbase details with capture zones |
 | PATCH | `/api/airbases/{id}/coords` | Update coordinates |
 | POST | `/api/airbases/{id}/zones` | Add capture zone |
