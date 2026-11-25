@@ -20,40 +20,26 @@ Named after [Sebastien Le Prestre de Vauban](https://en.wikipedia.org/wiki/Vauba
 
 ### Screenshots
 
-<details>
-<summary><strong>Global Dashboard</strong> — 160 airbases across 35 countries with flag markers</summary>
+**Global Dashboard** — 160 airbases across 35 countries with flag markers
 <img src="screenshots/02_dashboard.png" width="100%" alt="Dashboard" />
-</details>
 
-<details>
-<summary><strong>Aircraft Detection</strong> — YOLOv8 bounding boxes on satellite imagery</summary>
+**Aircraft Detection** — YOLOv8 bounding boxes on satellite imagery
 <img src="screenshots/03_detections.png" width="100%" alt="Detection Results" />
-</details>
 
-<details>
-<summary><strong>Aircraft Intelligence</strong> — 117 aircraft types with photos, specs, and weapons</summary>
+**Aircraft Intelligence** — 117 aircraft types with photos, specs, and weapons
 <img src="screenshots/04_aircraft_intel.png" width="100%" alt="Aircraft Intel" />
-</details>
 
-<details>
-<summary><strong>Analytics Dashboard</strong> — Force composition, timeline, role distribution</summary>
+**Analytics Dashboard** — Force composition, timeline, role distribution
 <img src="screenshots/05_analytics_charts.png" width="100%" alt="Analytics Charts" />
-</details>
 
-<details>
-<summary><strong>Detection Matrix</strong> — Type × capture heatmap with change detection</summary>
+**Detection Matrix** — Type × capture heatmap with change detection
 <img src="screenshots/06_analytics_matrix.png" width="100%" alt="Detection Matrix" />
-</details>
 
-<details>
-<summary><strong>Capture History</strong> — Multi-source temporal imagery gallery</summary>
+**Capture History** — Multi-source temporal imagery gallery
 <img src="screenshots/07_history.png" width="100%" alt="History" />
-</details>
 
-<details>
-<summary><strong>Zone Editor</strong> — Draggable capture zones on satellite map</summary>
+**Zone Editor** — Draggable capture zones on satellite map
 <img src="screenshots/08_zone_editor.png" width="100%" alt="Zone Editor" />
-</details>
 
 ### What it does
 
